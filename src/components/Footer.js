@@ -9,10 +9,10 @@ export default function Footer(props) {
           Our little JavaScript community in Bend, Oregon. Thank you so much to our excellent sponsors!
         </FlexDiv>
         <FlexDiv justify="flex-start" align="center">
-          <a href="https://www.codepen.io" target="_blank">
+          <a href="https://www.codepen.io" target="_blank" rel="noopener noreferrer">
             <StyledImg src="/images/codepen_logo.png" alt="Codepen" />
           </a>
-          <a href="https://www.uptechstudio.com" target="_blank">
+          <a href="https://www.uptechstudio.com" target="_blank" rel="noopener noreferrer">
             <StyledImg src="/images/uptech_logo.png" alt="Uptech Studio" />
           </a>
         </FlexDiv>
