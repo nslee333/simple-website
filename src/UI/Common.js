@@ -61,7 +61,14 @@ const FlexDiv = styled.div`
   justify-content: ${({ justify }) => justify || "center"};
   width: ${({ width }) => width || "100%"};
   height: ${({ height }) => (height ? height : "100%")};
+  margin: 5px;
 `;
 
-export { StyledModule, StyledHeader, StyledFooter, FlexDiv };
+const StyledImg = styled.img`
+  width: 5vw;
+  height: auto;
+  margin-left: 10px;
+`;
+
+export { StyledModule, StyledHeader, StyledFooter, FlexDiv, StyledImg };
 
