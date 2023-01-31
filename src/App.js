@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./screens/Home";
 import Header from "./components/Header";
@@ -16,9 +16,9 @@ function App() {
         </Header>
 
         <main>
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+          </Routes>
         </main>
 
         <Footer />
