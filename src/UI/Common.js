@@ -67,7 +67,111 @@ const StyledWelcome = styled.div`
 `;
 
 const StyledSponsor = styled.div`
+  background: #ffffff;
+  margin-top: min(14rem, 14vw);
+  height: auto;
+  
+  
+  .StyledSponsor__title {
+    display: flex;
+    justify-content: center;
+    min-width: 5rem;
+    padding: 3.5rem;
+    font-style: italic;
+    font-weight: bold;
+    font-size: max(2rem, 2vw);
+  }
 
+  
+  .StyledSponsor__logos {
+    display: flex;
+    justify-content: space-around;
+    padding: max(2rem, 2vw);
+  }
+
+  .uptech_logo {
+    max-height: 64px;
+  }
+
+  .TAO_logo {
+    height: max(4rem, 4vw);
+    max-width: 300px;
+  }
+  
+  .ladd_logo {
+    height: max(6rem, 6vw);
+  }
+  
+  .codepen_logo {
+    margin-top: max(2rem, 1vw);
+    height: max(2.5rem, 2.5vw);
+  }
+
+
+  .StyledSponsor__new-sponsors {
+    padding: max(2rem, 2vw);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .new-sponsors__div {
+    font-size: max(1.5rem, 1.5vw);
+    justify-content: center;
+    margin: 1rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    max-width: 35rem;
+
+    .button_div {
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+      min-width: 15rem;
+    }
+
+    .new-sponsors__button {
+      background-color: #7FE7D7;
+      border: 0px;
+      border-radius: 7px;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      width: max(10rem, 10vw);
+    }
+  }
+  
+  @media (max-width: 885px) {
+    .StyledSponsor__title {
+      padding: max(1rem, 1vw);
+      margin: 1rem;
+    }
+
+    .StyledSponsor__logos {
+      display: grid;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .uptech_logo {
+      margin: 1rem;
+    }
+
+    .TAO_logo {
+      margin: 1rem;
+    }
+
+    .ladd_logo {
+      margin: 1rem;
+    }
+    
+    .codepen_logo {
+      margin: 1rem;
+    }
+
+    .new_sponsors {
+      margin: 0rem;
+      padding: 0;
+    }  
+  }
 `;
 
 const StyledFooter = styled.footer`
@@ -76,9 +180,6 @@ const StyledFooter = styled.footer`
   margin-top: 2rem;
   min-height: 50px;
 
-  @media (max-width: 700px) {
-    margin-left: 1rem;
-  }
 `;
 
 const FlexDiv = styled.div`
