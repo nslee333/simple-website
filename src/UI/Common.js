@@ -103,7 +103,7 @@ const StyledSponsor = styled.div`
   }
   
   .codepen_logo {
-    margin-top: max(2rem, 1vw);
+    margin-top: max(1rem, 1vw);
     height: max(2.5rem, 2.5vw);
   }
 
@@ -116,6 +116,7 @@ const StyledSponsor = styled.div`
 
   .new-sponsors__div {
     font-size: max(1.5rem, 1.5vw);
+    font-style: italic;
     justify-content: center;
     margin: 1rem;
     padding-inline: 0.5rem;
@@ -133,9 +134,10 @@ const StyledSponsor = styled.div`
       background-color: #7FE7D7;
       border: 0px;
       border-radius: 7px;
-      font-size: 1.5rem;
-      padding: 0.5rem;
-      width: max(10rem, 10vw);
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem;
+      width: max(13rem, 12vw);
     }
   }
   
@@ -152,19 +154,27 @@ const StyledSponsor = styled.div`
     }
 
     .uptech_logo {
-      margin: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      margin-left: .5rem;
     }
 
     .TAO_logo {
-      margin: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
     }
 
     .ladd_logo {
-      margin: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
     }
     
     .codepen_logo {
-      margin: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
     }
 
     .new_sponsors {

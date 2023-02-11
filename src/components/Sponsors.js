@@ -19,8 +19,8 @@ export default function Sponsors() {
         <div className='StyledSponsor__logos'>
           <img src={uptech_logo} className='uptech_logo'/>
           <img src={TAO_logo} className='TAO_logo'/>
-          <img src={ladd_group} className='ladd_logo'/>
           <img src={codepen_logo} className='codepen_logo'/>
+          <img src={ladd_group} className='ladd_logo'/>
         </div>
         <div className='StyledSponsor__new-sponsors'>
           <div className='new-sponsors__div'>
