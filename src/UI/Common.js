@@ -185,16 +185,13 @@ const StyledSponsor = styled.div`
 `;
 
 const StyledSocials = styled.div`
-  // border: 2px solid hotpink;
 
   .title_div {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     padding: 1rem;
-    // border: 2px solid hotpink;
     font-size: max(2rem, 2vw);
-    // width: 30rem;
 
   }
   
@@ -285,5 +282,5 @@ const StyledImg = styled.img`
   margin-left: 10px;
 `;
 
-export { StyledModule, StyledHeader, StyledWelcome, StyledSponsor, StyledSocials, StyledFooter, FlexDiv, StyledImg };
+export { StyledModule, StyledHeader, StyledWelcome, StyledSponsor, StyledSocials, StyledGallery, StyledFooter, FlexDiv, StyledImg };
 

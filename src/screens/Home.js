@@ -3,6 +3,7 @@ import "../App.scss";
 import Welcome from "../components/Welcome";
 import Sponsors from "../components/Sponsors";
 import Socials from "../components/Socials";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Welcome/>
       <Sponsors/>
       <Socials />
+      <Gallery />
     </>
   );
 }
