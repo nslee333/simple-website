@@ -185,7 +185,81 @@ const StyledSponsor = styled.div`
 `;
 
 const StyledSocials = styled.div`
+  // border: 2px solid hotpink;
 
+  .title_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    // border: 2px solid hotpink;
+    font-size: max(2rem, 2vw);
+    // width: 30rem;
+
+  }
+  
+  .social_logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    height: auto;
+  }
+  
+  .slack_logo {
+    height: max(7rem, 7vw);
+    margin-top: -2rem;
+  }
+  
+  .meetup_div {
+    margin-top: -2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+
+    width: min(15rem, 15vw);
+    // border: 2px solid hotpink;
+
+    font-size: max(2rem, 2vw);
+    
+    
+  }
+  
+  
+  .meetup_logo {
+    margin: 0px;
+    height: max(5rem, 5vw);
+    
+  }
+  
+  .youtube_logo {
+    margin-top: .5rem;
+    margin-left: 2rem;
+    height: min(5rem, 5vw);
+  }
+
+  @media (max-width: 885px) {
+    .social_logos {
+      display: grid;
+      justify-content: center;
+    }
+
+    .slack_logo {
+      margin-left: 4rem;
+      margin-bottom: 1rem;
+      margin-top: -2rem;
+    }
+
+    .meetup_div {
+      width: 12rem;
+    }
+
+    .youtube_logo {
+      height: 3.5rem;
+      margin-top: 1rem;
+      margin-left: 5rem;
+    }
+  }
 
 `;
 
