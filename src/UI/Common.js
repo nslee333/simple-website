@@ -1,39 +1,16 @@
 import styled from "styled-components";
 
 const StyledModule = styled.div`
-  // background: white;
-  // padding: 2rem;
-  // border-radius: 5px;
-  // box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  // min-height: 250px;
-  // display: flex;
-  // flex-direction: column;
-  // .heading {
-  //   font-size: 1.17em;
-  //   color: red;
-  //   text-transform: uppercase;
-  // }
-  // .subheading {
-  //   margin-bottom: 1rem;
-  //   font-size: 1.5em;
-  //   font-weight: bold;
-  // }
-  // .button {
-  //   margin-top: auto;
-  // }
+  
 `;
 
 const StyledHeader = styled.header`
-
-border: 2px solid white;
 display: flex;
 justify-content: space-around;
 
 height: min(30vw, 12rem);
-// width: min(rem, 1000vw);
-width: 133.5rem;
+width: screen.width;
 padding: 1rem;
-
 
 
 .BendJSLogo {
@@ -41,16 +18,9 @@ padding: 1rem;
   width: min(9rem, 25vw);
   height: auto;
   
-  
   margin-right: min(1rem, 50vw);
-  margin-top: min(1rem, 2vw);
+  margin-top: min(3rem, 2vw);
 
-  
-
-  // @media (max-width: 700px) {
-  //   // margin-left: 8rem;
-  //   // margin-top: 2rem;
-  // }
 }
 
 .SocialsLink {
@@ -63,32 +33,27 @@ padding: 1rem;
   font-size: min(3rem, 10vw);
   
   margin-right: min(1rem, 50vw);
-  margin-top: min(4rem, 6vw);
+  margin-top: min(6rem, 6vw);
 
 }
 `;
 
 const StyledWelcome = styled.div`
-
-  margin-top: min(10rem, 10vw);
-
-
-
+  display: flex;
+  justify-content: center;
+  margin-top: min(13rem, 13vw);
+  height: auto;
+  font-size: max(2rem, 2vw);
+  
   .StyledWelcome__Div {
-    border: 2px solid white;
     display: columns;
+
     align-items: center;
+
     width: min(70rem, 70vw);
-    width: 80rem;
+    min-width: 22rem; 
   }
   
-  height: auto;
-
-
-  font-size: min(3rem, 3vw);
-
-  padding: min(1rem, 1vw);
-  border: 2px solid white;
 
   h4, h5 {
     margin: max(1rem, 1vw);

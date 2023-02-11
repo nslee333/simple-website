@@ -1,5 +1,5 @@
 import React from "react";
-import {StyledWelcome} from "../UI/Common"; 
+import {StyledWelcome} from "../UI/Common";
 
 export default function Welcome () {
   return (
