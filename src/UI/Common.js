@@ -66,6 +66,10 @@ const StyledWelcome = styled.div`
 
 `;
 
+const StyledSponsor = styled.div`
+
+`;
+
 const StyledFooter = styled.footer`
   padding: 1rem 0 3rem 1rem;
   margin-left: calc(50% - 700px / 2);
@@ -93,5 +97,5 @@ const StyledImg = styled.img`
   margin-left: 10px;
 `;
 
-export { StyledModule, StyledHeader, StyledWelcome, StyledFooter, FlexDiv, StyledImg };
+export { StyledModule, StyledHeader, StyledWelcome, StyledSponsor, StyledFooter, FlexDiv, StyledImg };
 
