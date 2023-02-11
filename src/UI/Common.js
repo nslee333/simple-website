@@ -218,18 +218,13 @@ const StyledSocials = styled.div`
     align-items: center;
 
     width: min(15rem, 15vw);
-    // border: 2px solid hotpink;
 
     font-size: max(2rem, 2vw);
-    
-    
   }
-  
   
   .meetup_logo {
     margin: 0px;
     height: max(5rem, 5vw);
-    
   }
   
   .youtube_logo {
@@ -260,6 +255,9 @@ const StyledSocials = styled.div`
       margin-left: 5rem;
     }
   }
+`;
+
+const StyledGallery = styled.div`
 
 `;
 
