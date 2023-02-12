@@ -278,6 +278,54 @@ const StyledGallery = styled.div`
   }
 `;
 
+const StyledMemberSpotlight = styled.div`
+  background-color: #000;
+  color: #fff;
+  margin-top: 5rem;
+
+  height: clamp(40rem, 41rem, 50rem);
+  
+  .Member_title {
+    display: flex;
+    justify-content: center;
+    
+    font-size: max(25px, 2vw);
+    font-weight: medium;
+    margin-top: 5rem;
+    padding: 3rem;
+    
+  }
+
+  .photo_frame {
+
+  }
+  
+  .member_photo {
+    margin-top: 2rem;
+    width: 15rem;
+  }
+
+  .Member_div {
+    border: 2px solid hotpink;
+    display: flex;
+    justify-content: space-around;
+    height: 30rem;
+  }
+
+  .Member_frame {
+    border: 2px solid hotpink;
+    margin: 2px;
+    font-size: 2rem;
+    // display: flex;
+    justify-content: center;
+  }
+
+  .bio {
+    width: 20rem;
+  }
+  
+`;
+
 const StyledFooter = styled.footer`
   padding: 1rem 0 3rem 1rem;
   margin-left: calc(50% - 700px / 2);
@@ -302,5 +350,5 @@ const StyledImg = styled.img`
   margin-left: 10px;
 `;
 
-export { StyledModule, StyledHeader, StyledWelcome, StyledSponsor, StyledSocials, StyledGallery, StyledFooter, FlexDiv, StyledImg };
+export { StyledModule, StyledHeader, StyledWelcome, StyledSponsor, StyledSocials, StyledGallery, StyledMemberSpotlight, StyledFooter, FlexDiv, StyledImg };
 

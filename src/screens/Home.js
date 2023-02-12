@@ -4,6 +4,7 @@ import Welcome from "../components/Welcome";
 import Sponsors from "../components/Sponsors";
 import Socials from "../components/Socials";
 import Gallery from "../components/Gallery";
+import { MemberSpotlight } from "../components/MemberSpotlight";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Sponsors/>
       <Socials />
       <Gallery />
+      <MemberSpotlight />
     </>
   );
 }
