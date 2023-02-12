@@ -185,6 +185,8 @@ const StyledSponsor = styled.div`
 `;
 
 const StyledSocials = styled.div`
+  margin-top 5rem;
+  margin-bottom: 5rem;
 
   .title_div {
     display: flex;
@@ -255,7 +257,25 @@ const StyledSocials = styled.div`
 `;
 
 const StyledGallery = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 
+  .gallery_frame {
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+
+    width: clamp(200px, 100%, 1300px);
+  }
+
+  .gallery_image {
+    width: clamp(100px, 95%, 1000px);
+    height: clamp(100px, 95%, 1300px);
+    border-radius: 7px;
+  }
 `;
 
 const StyledFooter = styled.footer`
