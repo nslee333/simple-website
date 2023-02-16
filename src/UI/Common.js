@@ -85,26 +85,32 @@ const StyledSponsor = styled.div`
   
   .StyledSponsor__logos {
     display: flex;
-    justify-content: space-around;
-    padding: max(2rem, 2vw);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .uptech_logo {
     max-height: 64px;
+    margin: 1rem;
   }
 
   .TAO_logo {
     height: max(4rem, 4vw);
     max-width: 300px;
+    margin: 1rem;
   }
   
   .ladd_logo {
     height: max(6rem, 6vw);
+    margin: 1rem;
   }
   
   .codepen_logo {
-    margin-top: max(1rem, 1vw);
+    margin-top: max(2rem, 1.5vw);
     height: max(2.5rem, 2.5vw);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
 
@@ -139,48 +145,6 @@ const StyledSponsor = styled.div`
       padding: 1rem;
       width: max(13rem, 12vw);
     }
-  }
-  
-  @media (max-width: 885px) {
-    .StyledSponsor__title {
-      padding: max(1rem, 1vw);
-      margin: 1rem;
-    }
-
-    .StyledSponsor__logos {
-      display: grid;
-      justify-content: center;
-      padding: 0;
-    }
-
-    .uptech_logo {
-      margin-top: 2rem;
-      margin-bottom: 1.5rem;
-      margin-left: .5rem;
-    }
-
-    .TAO_logo {
-      margin-top: 2rem;
-      margin-bottom: 1.5rem;
-      margin-left: 2rem;
-    }
-
-    .ladd_logo {
-      margin-top: 2rem;
-      margin-bottom: 1.5rem;
-      margin-left: 2rem;
-    }
-    
-    .codepen_logo {
-      margin-top: 2rem;
-      margin-bottom: 1.5rem;
-      margin-left: 2rem;
-    }
-
-    .new_sponsors {
-      margin: 0rem;
-      padding: 0;
-    }  
   }
 `;
 
