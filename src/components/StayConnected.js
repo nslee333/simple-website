@@ -7,18 +7,11 @@ const StyledStayConnected = styled.div`
   justify-content: space-around;
   align-items: center;
   border: 2px solid yellow;
-  // margin-top: 7rem;
 
   .Newsletter {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-evenly;
-    // align-items: space-evenly;
-
-    // margin-block: 2rem;
-    // margin-inline: max(1rem, 1vw);
-    // margin-block: 2rem;
     background-color: #fff;
 
     min-height: 29rem;
@@ -38,11 +31,9 @@ const StyledStayConnected = styled.div`
 
     
     
-    // font-size: clamp(20px, 50%, 30px);
     font-size: max(20px, 2vw);
 
     h3 {
-      // font-size: 30px;
       font-size: max(35px, 2vw);
       font-weight: normal;
       font-style: italic;
@@ -50,7 +41,6 @@ const StyledStayConnected = styled.div`
     }
 
     h4 {
-      // font-size: 25px;
       font-size: max(30px, 1.5vw);
       font-weight: normal;
       margin-bottom: min(2rem, 2vw);
@@ -71,32 +61,9 @@ const StyledStayConnected = styled.div`
       border-radius: 7px;
       padding: 1rem 2rem;
 
-      // margin-left: 4rem;
       margin-top: 2rem;
-      // margin-left: 4rem;
     }
-    @media (max-width: 745px) {
-      .Newsletter_Signup {
-        // transform: scale(0.9);
-        // margin-top: 2rem;
-        // margin-left: -.5rem;
-      }
-    }
-
-    @media (max-width: 370px) {
-      // margin-block: 0;
-      // padding: 2rem;
-
-      // h4 h5 {
-      //   margin-left: 2rem;
-      // }
-
-      // .Newsletter_Signup {
-      //   // transform: scale(0.9);
-      //   // margin-top: 0.5rem;
-      
-      // }
-    }
+  
   }
   
   .Speaker {
@@ -133,22 +100,12 @@ const StyledStayConnected = styled.div`
     }
 
     div {
-      // font-size: max(25px, .5vw);
       font-size: 20px;
-      // max-width: 30rem;
     }
-    // @media (max-width: 1385px) {
-      
-    //   button {
-
-    //     transform: scale(0.85);
-    //   }
-      
-    // }
+    
 
     @media (max-width: 745px) {
       height: auto;
-      // width:
     }
 
     button {
@@ -164,14 +121,7 @@ const StyledStayConnected = styled.div`
     
   }
 
-  // @media (max-width: 1385px) {
-  //   display: flex;
-  //   justify-content: flow-root;
-  // }
-
   @media (max-width: 370px) {
-    // margin-top: 0;
-
     .Newsletter, .Speaker {
       transform: scale(0.85);
       margin-bottom: 0.5rem;
