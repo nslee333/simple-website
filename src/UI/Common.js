@@ -449,6 +449,8 @@ const StyledMemberSpotlight = styled.div`
   
 `;
 
+
+
 const StyledFooter = styled.footer`
   padding: 1rem 0 3rem 1rem;
   margin-left: calc(50% - 700px / 2);
