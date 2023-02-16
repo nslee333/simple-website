@@ -13,14 +13,40 @@ const Form = styled.form`
   }
 
   input {
+    border: 1px solid #fff;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    display: block;
     width: auto;
-    border: none;
-    border: 1px solid #ccc;
-    font-size: 1.5rem;
-    padding: 0.5rem
-    margin: 0 0 1rem 0;
-    border-radius: 4px;
+    height: 2rem;
+    
+    font-size: 1.25rem;
+    border-radius: 5px;
+    padding-left: 0.5rem;
   }
+  
+  input::placeholder {
+    font-style: italic;
+    color: #000;
+  }
+
+  input:focus {
+    padding-left: 0.5rem;
+  }
+
+  button {
+    background-color: #fff;
+    color: #000;
+    padding: .25rem;
+    height: 2.25rem;
+    width: 7rem;
+    border: 0px;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+
+  }
+
 `;
 
 export default function SignupForm({ children }) {
@@ -28,12 +54,10 @@ export default function SignupForm({ children }) {
     <Form name="newsletter" netlify method="post">
       <input type="hidden" name="form-name" value="newsletter" />
       <label>
-        <span>Full Name</span>
-        <input type="text" name="name" />
+        <input type="text" name="name" placeholder='Full Name' />
       </label>
       <label>
-        <span>Email Address</span>
-        <input type="email" name="email" />
+        <input type="email" name="email" placeholder='Email' />
       </label>
 
       <button className="button" type="submit">
