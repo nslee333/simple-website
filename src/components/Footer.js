@@ -1,17 +1,19 @@
 import React from "react";
-import { StyledFooter, FlexDiv } from "../UI/Common";
+import styled from "styled-components";
+
+const StyledFooter = styled.footer`
+  padding: 1rem 0 3rem 1rem;
+  margin-left: calc(50% - 700px / 2);
+  margin-top: 2rem;
+  min-height: 50px;
+`;
+
+
 
 export default function Footer() {
   return (
     <StyledFooter>
-      <FlexDiv justify="flex-start" align="flex-start" direction="column">
-        <FlexDiv justify="flex-start" align="center">
-
-        </FlexDiv>
-        <FlexDiv justify="flex-start" align="center">
-          
-        </FlexDiv>
-      </FlexDiv>
+      
     </StyledFooter>
   );
 }
