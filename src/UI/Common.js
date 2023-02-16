@@ -61,7 +61,6 @@ const StyledWelcome = styled.div`
 
   h4 {
     font-style: italic;
-    font-weight: bold;
   }
 
 `;
@@ -77,8 +76,8 @@ const StyledSponsor = styled.div`
     justify-content: center;
     min-width: 5rem;
     padding: 3.5rem;
+    font-weight: 100;
     font-style: italic;
-    font-weight: bold;
     font-size: max(2rem, 2vw);
   }
 
@@ -118,6 +117,8 @@ const StyledSponsor = styled.div`
     padding: max(2rem, 2vw);
     display: flex;
     justify-content: space-around;
+    font-weight: 300;
+    font-style: italic;
   }
 
   .new-sponsors__div {
@@ -141,7 +142,7 @@ const StyledSponsor = styled.div`
       border: 0px;
       border-radius: 7px;
       font-size: 2rem;
-      font-weight: bold;
+      font-weight: normal;
       padding: 1rem;
       width: max(13rem, 12vw);
     }
@@ -163,6 +164,10 @@ const StyledSocials = styled.div`
   
   .social_logos {
     display: flex;
+    // flex-wrap: wrap;
+    // margin-inline: 2rem 30rem;
+    // margin-block: 5rem;
+    // justify-content: space-around;
     justify-content: center;
     margin-top: 2rem;
     height: auto;
@@ -191,15 +196,18 @@ const StyledSocials = styled.div`
   }
   
   .youtube_logo {
-    margin-top: .5rem;
-    margin-left: 2rem;
-    height: min(5rem, 5vw);
+    // margin-top: .25rem;
+    // margin-left: 2rem;
+    // margin-left: 2rem;
+    height: max(3.5rem, 3.5vw);
   }
 
-  @media (max-width: 885px) {
+  @media (max-width: 485px) {
     .social_logos {
-      display: grid;
-      justify-content: center;
+      // display: grid;
+      // justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .slack_logo {

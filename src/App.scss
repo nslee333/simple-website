@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-
 * {
   margin: 0;
   padding: 0;
+  font-weight: 500;
 }
 
 html {
@@ -12,8 +11,6 @@ html {
   background-attachment: fixed;
   background-position: top right;
 
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
 }
 
 main {
