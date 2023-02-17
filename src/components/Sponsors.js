@@ -34,7 +34,7 @@ export default function Sponsors() {
           <div className='new-sponsors__div'>
             <h5>We are always looking for new sponsors</h5>
             <div className='button_div'>
-              <button className='new-sponsors__button'>Contact Us</button>
+              <a htmlFor='button' className='sponsors_a' href='mailto:bendjsgroup@gmail.com'>Contact Us</a>
             </div>
           </div>
         </div>

@@ -135,16 +135,28 @@ const StyledSponsor = styled.div`
       justify-content: center;
       margin: 1rem;
       min-width: 15rem;
+      font-style: normal;
+      font-size: 2rem;
+      font-weight: normal;
     }
-
-    .new-sponsors__button {
+    
+    .sponsors_a {
+      display: flex;
+      justify-content: center;
+      padding-left: 2rem;
+      padding: 1rem;
       background-color: #7FE7D7;
       border: 0px;
       border-radius: 7px;
-      font-size: 2rem;
-      font-weight: normal;
-      padding: 1rem;
-      width: max(13rem, 12vw);
+      width: 13rem;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        box-shadow: none;
+        transform: translate(1px, 1px);
+  }
     }
   }
 `;

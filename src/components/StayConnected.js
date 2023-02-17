@@ -83,17 +83,18 @@ const StyledStayConnected = styled.div`
       font-weight: normal;
       font-size: max(35px, 2vw);
       font-style: italic;
-      margin-bottom: .5rem;
+      margin-bottom: 4rem;
     }
     
     h4 {
       font-weight: normal;
       font-size: 30px;
-      margin-bottom: .5rem;
+      margin-bottom: 4rem;
     }
 
     div {
       font-size: 20px;
+      margin-bottom: 3rem;
     }
     
 
@@ -101,15 +102,25 @@ const StyledStayConnected = styled.div`
       height: auto;
     }
 
-    button {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: #7FE7D7;
       width: 20rem;
-      height: 4rem;
+      height: 3rem;
       font-size: 1.75rem;
       border-radius: 7px;
       border: none;
       cursor: pointer;
-      margin-top: 1rem;
+
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        box-shadow: none;
+        transform: translate(1px, 1px);
     }
     
   }
@@ -149,7 +160,7 @@ export default function Connected () {
             If you have something to share, big or small,
             big or small, please get in touch!
           </div>
-          <button href='mailto:bendjsgroup@gmail.com'>Contact Us</button>
+          <a htmlFor='button' href='mailto:bendjsgroup@gmail.com'>Contact Us</a>
         </div>
       </StyledStayConnected>
     </>
