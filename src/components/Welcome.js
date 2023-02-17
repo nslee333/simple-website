@@ -9,11 +9,11 @@ export default function Welcome () {
           <h4>BendJS</h4>
           <h5>A Javascript meetup in Bend, Oregon</h5>
           <h5>
-          This group is for anyone interested in learning Javascript, 
-          sharing something they know, networking with other devs, and having a great time! 
+            This group is for anyone interested in learning Javascript, 
+            sharing something they know, networking with other devs, and having a great time! 
           </h5>
           <h5>
-          All levels are welcome. Please join our slack workspace for future updates and continuing the conversation.
+            All levels are welcome. Please join our slack workspace for future updates and continuing the conversation.
           </h5>
         </div>
       </StyledWelcome>

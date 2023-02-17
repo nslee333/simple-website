@@ -19,11 +19,6 @@ const StyledStayConnected = styled.div`
     max-width: 45rem;
     min-width: 300px;
 
-
-    
-
-
-
     padding: 2rem;
     margin-inline: max(2rem, 2vw);
     border-radius: 7px;
@@ -46,7 +41,6 @@ const StyledStayConnected = styled.div`
     }
 
     .Newsletter_text {
-      // max-width: 20rem;
       font-size: 20px;
     }
 
@@ -114,7 +108,7 @@ const StyledStayConnected = styled.div`
       font-size: 1.75rem;
       border-radius: 7px;
       border: none;
-      
+      cursor: pointer;
       margin-top: 1rem;
     }
     
@@ -155,7 +149,7 @@ export default function Connected () {
             If you have something to share, big or small,
             big or small, please get in touch!
           </div>
-          <button>Contact Us</button>
+          <button href='mailto:bendjsgroup@gmail.com'>Contact Us</button>
         </div>
       </StyledStayConnected>
     </>
