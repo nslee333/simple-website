@@ -17,10 +17,18 @@ export default function Sponsors() {
       </div>
       <div>
         <div className='StyledSponsor__logos'>
-          <img src={uptech_logo} className='uptech_logo'/>
-          <img src={TAO_logo} className='TAO_logo'/>
-          <img src={codepen_logo} className='codepen_logo'/>
-          <img src={ladd_group} className='ladd_logo'/>
+          <a href='https://www.uptechstudio.com/'>
+            <img src={uptech_logo} className='uptech_logo'/>
+          </a>
+          <a href='https://www.techoregon.org/'>
+            <img src={TAO_logo} className='TAO_logo'/>
+          </a>
+          <a href='https://codepen.io/'>
+            <img src={codepen_logo} className='codepen_logo'/>
+          </a>
+          <a href='https://www.bendpropertysource.com/'>
+            <img src={ladd_group} className='ladd_logo'/>
+          </a>
         </div>
         <div className='StyledSponsor__new-sponsors'>
           <div className='new-sponsors__div'>

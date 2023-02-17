@@ -104,10 +104,6 @@ const StyledSocials = styled.div`
 `;
 
 
-
-
-
-
 export default function Socials() {
   return (
     <>
