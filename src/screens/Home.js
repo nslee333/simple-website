@@ -18,7 +18,6 @@ export default function Home() {
       <Gallery />
       <MemberSpotlight />
       <Connected />
-      <Footer />
     </>
   );
 }

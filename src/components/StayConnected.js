@@ -6,7 +6,6 @@ const StyledStayConnected = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid yellow;
 
   .Newsletter {
     margin: 20px;
