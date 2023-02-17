@@ -149,84 +149,6 @@ const StyledSponsor = styled.div`
   }
 `;
 
-const StyledSocials = styled.div`
-  margin-top 5rem;
-  margin-bottom: 5rem;
-
-  .title_div {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    padding: 1rem;
-    font-size: max(2rem, 2vw);
-
-  }
-  
-  .social_logos {
-    display: flex;
-    // flex-wrap: wrap;
-    // margin-inline: 2rem 30rem;
-    // margin-block: 5rem;
-    // justify-content: space-around;
-    justify-content: center;
-    margin-top: 2rem;
-    height: auto;
-  }
-  
-  .slack_logo {
-    height: max(7rem, 7vw);
-    margin-top: -2rem;
-  }
-  
-  .meetup_div {
-    margin-top: -2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    align-items: center;
-
-    width: min(15rem, 15vw);
-
-    font-size: max(2rem, 2vw);
-  }
-  
-  .meetup_logo {
-    margin: 0px;
-    height: max(5rem, 5vw);
-  }
-  
-  .youtube_logo {
-    // margin-top: .25rem;
-    // margin-left: 2rem;
-    // margin-left: 2rem;
-    height: max(3.5rem, 3.5vw);
-  }
-
-  @media (max-width: 485px) {
-    .social_logos {
-      // display: grid;
-      // justify-content: center;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .slack_logo {
-      margin-left: 4rem;
-      margin-bottom: 1rem;
-      margin-top: -2rem;
-    }
-
-    .meetup_div {
-      width: 12rem;
-    }
-
-    .youtube_logo {
-      height: 3.5rem;
-      margin-top: 1rem;
-      margin-left: 5rem;
-    }
-  }
-`;
 
 const StyledGallery = styled.div`
   display: flex;
@@ -442,8 +364,7 @@ export {
   StyledModule, 
   StyledHeader, 
   StyledWelcome, 
-  StyledSponsor, 
-  StyledSocials, 
+  StyledSponsor,
   StyledGallery, 
   StyledMemberSpotlight, 
   FlexDiv, 
