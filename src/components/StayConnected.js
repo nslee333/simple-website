@@ -8,7 +8,7 @@ const StyledStayConnected = styled.div`
   align-items: center;
   display: flex;
 
-  .Newsletter {
+  .newsletter {
     flex-wrap: wrap;
     display: flex;
 
@@ -29,6 +29,10 @@ const StyledStayConnected = styled.div`
     
     font-size: max(20px, 2vw);
 
+    .newsletter__text-container {
+      font-size: 20px;
+    }
+    
     h3 {
       margin-bottom: 1.5rem;
       font-size: max(35px, 2vw);
@@ -44,11 +48,7 @@ const StyledStayConnected = styled.div`
       font-weight: normal;
     }
 
-    .Newsletter_text {
-      font-size: 20px;
-    }
-
-    .Newsletter_Signup {
+    .newsletter__signup-container {
       background: #e1e1e1;
       margin-top: 2rem;
 
@@ -66,7 +66,7 @@ const StyledStayConnected = styled.div`
     }
   }
   
-  .Speaker {
+  .speaker {
     flex-wrap: wrap;
     display: flex;
     
@@ -105,11 +105,6 @@ const StyledStayConnected = styled.div`
       margin-bottom: 3rem;
       font-size: 20px;
     }
-    
-
-    @media (max-width: 745px) {
-      height: auto;
-    }
 
     a {
       justify-content: center;
@@ -128,13 +123,17 @@ const StyledStayConnected = styled.div`
 
       font-size: 1.75rem;
 
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
       &:hover,
       &:focus,
       &:active,
       &:visited {
         box-shadow: none;
         transform: translate(1px, 1px);
+    }
+
+    @media (max-width: 745px) {
+      height: auto;
     }
   }
   
@@ -165,8 +164,8 @@ export default function Connected () {
   return (
     <>
       <StyledStayConnected>
-        <div className='Newsletter'>
-          <div className='Newsletter_text'>
+        <div className='newsletter'>
+          <div className='newsletter__text-container'>
             <h3>Newsletter</h3>
             <h4>Stay up to date</h4>
             <div>
@@ -174,11 +173,11 @@ export default function Connected () {
             in Bend, tech news and our community member spotlight!
             </div>
           </div>
-          <div className='Newsletter_Signup'>
+          <div className='newsletter__signup-container'>
             <SignupForm />
           </div>
         </div>
-        <div className='Speaker'>
+        <div className='speaker'>
           <h3>Have something to share?</h3>
           <h4>We're always looking for speakers</h4>
           <div>

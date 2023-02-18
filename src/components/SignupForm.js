@@ -38,10 +38,13 @@ const Form = styled.form`
   }
 
   button {
+
+    display: block;
     background-color: #fff;
     color: #000;
 
     border: 0px;
+    border-radius: 8px;
 
     height: 2.25rem;
     width: 7rem;
@@ -51,10 +54,21 @@ const Form = styled.form`
 
     font-size: 1.25rem;
     font-weight: normal;
+
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      box-shadow: none;
+      transform: translate(1px, 1px);
+    }
   }
+  
 `;
 
-export default function SignupForm({ children }) {
+export default function SignupForm() {
   return (
     <Form name="newsletter" netlify method="post">
       <input type="hidden" name="form-name" value="newsletter" />

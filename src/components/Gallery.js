@@ -7,7 +7,7 @@ const StyledGallery = styled.div`
 
   margin-top: 5rem;
 
-  .gallery_frame {
+  .gallery {
     justify-content: center;
     align-items: center;
 
@@ -19,7 +19,7 @@ const StyledGallery = styled.div`
     background-color: #ffffff;
   }
 
-  .gallery_image {
+  .gallery__image {
     width: clamp(100px, 95%, 1000px);
     height: clamp(100px, 95%, 1300px);
 
@@ -35,8 +35,8 @@ export default function Gallery() {
   return (
     <>
       <StyledGallery>
-        <div className='gallery_frame'>
-          <img className='gallery_image' src={bendjs_photo} />
+        <div className='gallery'>
+          <img className='gallery__image' src={bendjs_photo} />
         </div>
       </StyledGallery>
     </>

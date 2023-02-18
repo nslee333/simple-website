@@ -12,7 +12,7 @@ const StyledMemberSpotlight = styled.div`
   color: #fff;
   
   
-  .Member_title {
+  .title-container {
     justify-content: center;
     display: flex;
     
@@ -23,40 +23,7 @@ const StyledMemberSpotlight = styled.div`
     font-weight: medium;
   }
 
-  .photo_frame {
-    border-radius: 7px;
-
-    width: 22rem;
-    height: 22rem;
-    
-    min-height: px;
-    padding: 1rem;
-
-    background-color: #7FE7D7;
-  }
-  
-  .photo_frame_black {
-    display: flex;
-    border-radius: 7px;
-        
-    width: 22rem;
-    height: 22rem;
-    
-    background-color: #000;
-  }
-  
-  .member_photo {
-    margin-left: 2rem;
-    margin-top: 2rem;
-
-    border-radius: 5px;
-
-    width: 18rem;
-    height: 18rem;
-  }
-  
-  
-  .Member_div {
+  .member-container {
     justify-content: space-evenly;
     align-items: center;
 
@@ -74,7 +41,7 @@ const StyledMemberSpotlight = styled.div`
       margin-top: 2rem;
       margin-botttom: 2rem;
 
-      .Member_frame {
+      .member-container__bio-teal-frame {
         margin-top: 2rem;
       }
     }
@@ -87,26 +54,26 @@ const StyledMemberSpotlight = styled.div`
     }
 
     @media (max-width: 420px) {
-      transform: scale(0.85);
+      transform: scale(0.80);
 
-      .Member_title {
+      .title-container {
         margin-bottom: 0;
         padding: .5rem;
       }
 
-      .photo_frame {
+      .member-container__photo-teal-frame {
         width: auto;
         height: auto;
       }
       
-      .photo_frame_black {
+      .member-container__photo-black-frame {
         width: 16rem;
 
         height: 16rem;
         min-height: 0;
       }
       
-      .member_photo {
+      .member-container__photo {
         width: 15rem;
         height: 15rem;
 
@@ -114,21 +81,47 @@ const StyledMemberSpotlight = styled.div`
         margin-left: .5rem;
       }
     }
-    
 
-  .member_name {
-    margin-bottom: max(2rem, 2vw);
-    font-size: 25px;
+  .member-container__photo-teal-frame {
+    border-radius: 7px;
+
+    width: 22rem;
+    height: 22rem;
+    
+    min-height: px;
+    padding: 1rem;
+
+    background-color: #7FE7D7;
   }
   
-  .Member_frame {
+  .member-container__photo-black-frame {
+    display: flex;
+    border-radius: 7px;
+        
+    width: 22rem;
+    height: 22rem;
+    
+    background-color: #000;
+  }
+  
+  .member-container__photo {
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+    border-radius: 5px;
+
+    width: 18rem;
+    height: 18rem;
+  }
+  
+  .member-container__bio-teal-frame {
     border-radius: 7px;
     padding: 1rem;
     
     background-color: #7FE7D7;
   }
-
-  .member_black_frame {
+    
+  .member-container__bio-black-frame {
     border-radius: 7px;
     padding: max(1rem, 1vw);
 
@@ -137,8 +130,13 @@ const StyledMemberSpotlight = styled.div`
 
     background-color: #000;
   }
+
+  .member-container__bio-member-name {
+    margin-bottom: max(2rem, 2vw);
+    font-size: 25px;
+  }
   
-  .bio {
+  .member-container__bio-text {
     font-size: 20px  
   }
   
@@ -148,31 +146,30 @@ export function MemberSpotlight() {
   return (
     <>
       <StyledMemberSpotlight>
-        <div className='Member_title'>
+        <div className='title-container'>
           <h5>Member Spotlight</h5>
         </div>
-        
-          <div className='Member_div'>
-            <div className='photo_frame'>
-              <div className='photo_frame_black'>
-                <img src={slack_user_photo} className='member_photo'/>
-              </div>
+        <div className='member-container'>
+          <div className='member-container__photo-teal-frame'>
+            <div className='member-container__photo-black-frame'>
+              <img src={slack_user_photo} className='member-container__photo'/>
             </div>
-            <div className='Member_frame'>
-              <div className='member_black_frame'>
-                <h5 className='member_name'>John Doe</h5>
-                <div className='bio'>
-                If you can keep your head when all about you
-                Are losing theirs and blaming it on you,
-                If you can trust yourself when all men doubt you,
-                But make allowance for their doubting too;
-                If you can keep your head when all about you
-                Are losing theirs and blaming it on you,
-                If you can trust yourself when all men doubt you,d 
-                </div>
+          </div>
+          <div className='member-container__bio-teal-frame'>
+            <div className='member-container__bio-black-frame'>
+              <h5 className='member-container__bio-member-name'>John Doe</h5>
+              <div className='member-container__bio-text'>
+              If you can keep your head when all about you
+              Are losing theirs and blaming it on you,
+              If you can trust yourself when all men doubt you,
+              But make allowance for their doubting too;
+              If you can keep your head when all about you
+              Are losing theirs and blaming it on you,
+              If you can trust yourself when all men doubt you,d 
               </div>
             </div>
           </div>
+        </div>
       </StyledMemberSpotlight>
     </>
   );

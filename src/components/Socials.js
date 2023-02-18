@@ -7,7 +7,7 @@ const StyledSocials = styled.div`
   margin-top 5rem;
   margin-bottom: 5rem;
 
-  .title_div {
+  .social-title {
     justify-content: center;
     display: flex;
 
@@ -17,7 +17,7 @@ const StyledSocials = styled.div`
     font-size: max(2rem, 2vw);
   }
   
-  .social_logos {
+  .social-logos {
     justify-content: space-evenly;
     align-items: space-evenly;
     flex-wrap: wrap;
@@ -28,7 +28,7 @@ const StyledSocials = styled.div`
     height: auto;
   }
 
-  .slack_div {
+  .social-logos__slack {
     justify-content: center;
     align-items: center;
 
@@ -36,7 +36,7 @@ const StyledSocials = styled.div`
     height: 7rem;
   }
   
-  .slack_logo {
+  .social-logos__slack-logo {
     height: 10rem;
   }
 
@@ -45,7 +45,7 @@ const StyledSocials = styled.div`
     display: flex;
   }
   
-  .meetup_div {
+  .social-logos__meetup {
     justify-content: center;
     align-items: center;
 
@@ -62,12 +62,12 @@ const StyledSocials = styled.div`
     font-size: max(2rem, 2vw);
   }
   
-  .meetup_logo {
+  .social-logos__meetup-logo {
     margin: 0px;
     height: 7rem;
   }
 
-  .youtube_div {
+  .social-logos__youtube {
     justify-content: center;
     align-items: center;
 
@@ -76,7 +76,7 @@ const StyledSocials = styled.div`
     height: 7rem;
   }
   
-  .youtube_logo {
+  .social-logos__youtube-logo {
     height: 5rem;
   }
 
@@ -85,7 +85,7 @@ const StyledSocials = styled.div`
     margin-top: 0rem;
     margin-bottom: 0rem;
 
-    .social_logos {
+    .social-logos {
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: space-evenly;
@@ -96,19 +96,19 @@ const StyledSocials = styled.div`
     }
 
    
-    .slack_div {
+    .social-logos__slack {
       margin-top: 1rem;
       margin-right: 0;
     }
 
-    .meetup_div {
+    .social-logos__meetup {
       margin-top: 1rem;
       margin-left: 0;
       
       margin-right: 0;
     }
 
-    .youtube_div {
+    .social-logos__youtube {
       margin-top: 1rem;
     }
   }
@@ -119,24 +119,24 @@ export default function Socials() {
   return (
     <>
       <StyledSocials>
-        <div className='title_div'>
+        <div className='social-title'>
           <h5>Check us out on...</h5>
         </div>
-        <div className='social_logos'>
-          <div className='slack_div'>
+        <div className='social-logos'>
+          <div className='social-logos__slack'>
             <a href='https://bendjs.slack.com/ssb/redirect'>
-              <img src={slack_logo} className='slack_logo' alt='slack logo'/>
+              <img src={slack_logo} className='social-logos__slack-logo' alt='Slack Logo'/>
             </a>
           </div>
-          <div className='meetup_div'>
+          <div className='social-logos__meetup'>
             <a href='https://www.meetup.com/BendJS/'>
-              <img src={meetup_logo} className='meetup_logo' alt='meetup logo'/>
+              <img src={meetup_logo} className='social-logos__meetup-logo' alt='Meetup Logo'/>
               <h5>/BendJS</h5>
             </a>
           </div>
-          <div className='youtube_div'>
+          <div className='social-logos__youtube'>
             <a href='https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ'>
-              <img src={youtube_logo} className='youtube_logo' alt='youtube logo'/>
+              <img src={youtube_logo} className='social-logos__youtube-logo' alt='Youtube Logo'/>
             </a>
           </div>
         </div>

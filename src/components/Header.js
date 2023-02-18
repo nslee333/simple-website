@@ -13,7 +13,7 @@ height: min(30vw, 12rem);
 padding: 1rem;
 
 
-.BendJSLogo {
+.bendjs-logo {
   margin-right: min(1rem, 50vw);
   margin-top: min(3rem, 2vw);
 
@@ -23,7 +23,7 @@ padding: 1rem;
   height: auto;
 }
 
-.SocialsLink {
+.socials-link {
   justify-content: center;
   align-items: center;
 
@@ -44,10 +44,10 @@ export default function Header() {
   return (
     <StyledHeader>
       <div>
-        <img className="BendJSLogo"src={bendjs_logo} alt="bendjs logo"></img>
+        <img className="bendjs-logo"src={bendjs_logo} alt="bendjs logo"></img>
       </div>
-      <div className="SocialsLink">
-        <a url="" alt="bendjs logo">/BendJS</a>
+      <div className="socials-link">
+        <a url="" alt="bendjs socials link">/BendJS</a>
       </div>
     </StyledHeader>
   )

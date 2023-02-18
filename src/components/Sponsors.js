@@ -1,7 +1,7 @@
 import ladd_group from "../images/ladd_group_logo.jpg";
-import TAO_logo from "../images/TAO_logo-with-wordmark.png";
-import uptech_logo from "../images/uptech_logo.png";
-import codepen_logo from "../images/codepen_logo.png";
+import tao from "../images/TAO_logo-with-wordmark.png";
+import uptech from "../images/uptech_logo.png";
+import codepen from "../images/codepen_logo.png";
 import styled from "styled-components";
 
 const StyledSponsor = styled.div`
@@ -10,7 +10,7 @@ const StyledSponsor = styled.div`
 
   background: #ffffff;
   
-  .StyledSponsor__title {
+  .sponsor-title {
     justify-content: center;
     display: flex;
 
@@ -23,30 +23,30 @@ const StyledSponsor = styled.div`
   }
 
   
-  .StyledSponsor__logos {
+  .sponsor-logos {
     flex-wrap: wrap;
     justify-content: space-evenly;
 
     display: flex;
   }
 
-  .uptech_logo {
+  .sponsor-logos__uptech-logo {
     margin: 1rem;
     max-height: 64px;
   }
 
-  .TAO_logo {
+  .sponsor-logos__tao-logo {
     margin: 1rem;
     max-width: 300px;
     height: max(4rem, 4vw);
   }
   
-  .ladd_logo {
+  .sponsor-logos__ladd-logo {
     margin: 1rem;
     height: max(6rem, 6vw);
   }
   
-  .codepen_logo {
+  .sponsor-logos__codepen-logo {
     margin-top: max(2rem, 1.5vw);
     margin-right: 1rem;
 
@@ -57,7 +57,7 @@ const StyledSponsor = styled.div`
   }
 
 
-  .StyledSponsor__new-sponsors {
+  .sponsor-new {
     justify-content: space-around;
     display: flex;
 
@@ -67,7 +67,7 @@ const StyledSponsor = styled.div`
     font-style: italic;
   }
 
-  .new-sponsors__div {
+  .sponsor-new__container {
     justify-content: center;
 
     margin: 1rem;
@@ -79,7 +79,7 @@ const StyledSponsor = styled.div`
     font-size: max(1.5rem, 1.5vw);
     font-style: italic;
 
-    .button_div {
+    .sponsor-new__contact-container {
       justify-content: center;
       display: flex;
 
@@ -92,20 +92,20 @@ const StyledSponsor = styled.div`
       font-weight: normal;
     }
     
-    .sponsors_a {
+    .sponsor-new__contact-link {
       justify-content: center;
       display: flex;
       
       border: 0px;
       border-radius: 7px;
+
+      padding: 1rem;
       padding-left: 2rem;
       
       width: 13rem;
-      padding: 1rem;
-      
       background-color: #7FE7D7;
       
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
       &:hover,
       &:focus,
       &:active,
@@ -122,32 +122,32 @@ export default function Sponsors() {
   return (
     <>
       <StyledSponsor>
-      <div className='StyledSponsor__title'>
+      <div className='sponsor-title'>
         <h5>
           Thank you so much to our 
           incredible sponsors!
         </h5>
       </div>
       <div>
-        <div className='StyledSponsor__logos'>
+        <div className='sponsor-logos'>
           <a href='https://www.uptechstudio.com/'>
-            <img src={uptech_logo} className='uptech_logo'/>
+            <img src={uptech} className='sponsor-logos__uptech-logo'/>
           </a>
           <a href='https://www.techoregon.org/'>
-            <img src={TAO_logo} className='TAO_logo'/>
+            <img src={tao} className='sponsor-logos__tao-logo'/>
           </a>
           <a href='https://codepen.io/'>
-            <img src={codepen_logo} className='codepen_logo'/>
+            <img src={codepen} className='sponsor-logos__codepen-logo'/>
           </a>
           <a href='https://www.bendpropertysource.com/'>
-            <img src={ladd_group} className='ladd_logo'/>
+            <img src={ladd_group} className='sponsor-logos__ladd-logo'/>
           </a>
         </div>
-        <div className='StyledSponsor__new-sponsors'>
-          <div className='new-sponsors__div'>
+        <div className='sponsor-new'>
+          <div className='sponsor-new__container'>
             <h5>We are always looking for new sponsors</h5>
-            <div className='button_div'>
-              <a htmlFor='button' className='sponsors_a' href='mailto:bendjsgroup@gmail.com'>Contact Us</a>
+            <div className='sponsor-new__contact-container'>
+              <a htmlFor='button' className='sponsor-new__contact-link' href='mailto:bendjsgroup@gmail.com'>Contact Us</a>
             </div>
           </div>
         </div>
