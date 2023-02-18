@@ -68,7 +68,6 @@ const StyledMemberSpotlight = styled.div`
   
   .Member_div {
     background-color: #000;
-    border: 2px solid hotpink;
 
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +94,7 @@ const StyledMemberSpotlight = styled.div`
     }
 
     @media (max-width: 420px) {
-      transform: scale(0.80);
+      transform: scale(0.85);
       .Member_title {
         padding: .5rem;
         margin-bottom: 0;

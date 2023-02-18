@@ -24,6 +24,6 @@ const StyledImg = styled.img`
 export { 
   StyledModule, 
   FlexDiv, 
-  StyledImg 
+  StyledImg
 };
 

@@ -1,4 +1,3 @@
-import { StyledGallery } from "../UI/Common";
 import bendjs_photo from "../images/bendjs_meeting_photo.webp";
 import styled from "styled-components";
 

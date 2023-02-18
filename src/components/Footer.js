@@ -3,12 +3,11 @@ import styled from "styled-components";
 import GitHubLogo from "../images/github-mark.svg";
 
 const StyledFooter = styled.footer`
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: center;
   font-size: 1.25rem;
-  // border: 2px solid hotpink;
 
   div {
     display: grid;
