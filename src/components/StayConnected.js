@@ -8,7 +8,6 @@ const StyledStayConnected = styled.div`
   align-items: center;
 
   .Newsletter {
-    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
@@ -21,9 +20,11 @@ const StyledStayConnected = styled.div`
 
     padding: 2rem;
     margin-inline: max(2rem, 2vw);
+    
     border-radius: 7px;
 
-    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     
     font-size: max(20px, 2vw);
 
@@ -56,6 +57,12 @@ const StyledStayConnected = styled.div`
 
       margin-top: 2rem;
     }
+
+    @media (max-width: 370px) {
+      transform: scale(0.85);
+      margin-top: 0;
+
+    }
   
   }
   
@@ -73,7 +80,8 @@ const StyledStayConnected = styled.div`
 
     padding: 2rem;
 
-    margin-block: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-inline: max(2rem, 2vw);
     border-radius: 7px;
 
@@ -122,16 +130,28 @@ const StyledStayConnected = styled.div`
         box-shadow: none;
         transform: translate(1px, 1px);
     }
+
+    
     
   }
-
+  
   @media (max-width: 370px) {
-    .Newsletter, .Speaker {
-      transform: scale(0.85);
-      margin-bottom: 0.5rem;
-      margin-top: 0.5rem;
+    .Newsletter {
+      margin-block: 0.5rem;
+      margin-inline: 0.5rem;
     }
+    
+    .Speaker {
+      transform: scale(0.75);
+      margin-block: 0.5rem;
+      margin-inline: 0.5rem;
+      
+    }
+
+    transform: scale(0.85);
+      margin-top: 0;
   }
+
 `;
 
 

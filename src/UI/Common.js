@@ -63,6 +63,9 @@ const StyledWelcome = styled.div`
     font-style: italic;
   }
 
+  @media (max-width: 400px) {
+    transform: scale(0.9);
+  }
 `;
 
 const StyledSponsor = styled.div`

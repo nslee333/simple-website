@@ -5,6 +5,8 @@ const StyledMemberSpotlight = styled.div`
   background-color: #000;
   color: #fff;
   margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 
   height: auto;
   
@@ -12,7 +14,7 @@ const StyledMemberSpotlight = styled.div`
     display: flex;
     justify-content: center;
     
-    font-size: max(25px, 2vw);
+    font-size: 30px;
     font-weight: medium;
     margin-top: 5rem;
     padding: 3rem;
@@ -24,8 +26,11 @@ const StyledMemberSpotlight = styled.div`
     padding: 1rem;
     min-height: px;
     background-color: #7FE7D7;
-    height: min(24rem, 24vw);
-    width: min(25rem, 25vw);
+    // height: min(24rem, 24vw);
+    // width: min(25rem, 25vw);
+
+    height: 22rem;
+    width: 22rem;
   }
   
   .photo_frame_black {
@@ -33,122 +38,113 @@ const StyledMemberSpotlight = styled.div`
     display: flex;
     border-radius: 7px;
 
-    width: clamp(15rem, 100%, 30rem);
-    height: min(24rem, 24vw);
+    // width: clamp(15rem, 100%, 30rem);
+    // height: min(24rem, 24vw);
+
+    height: 22rem;
+    width: 22rem;
 
     
 
   }
   
   .member_photo {
-    margin-left: max(1.5rem, 1.5vw);
-    margin-top: max(1.5rem, 1.5vw);
-    margin-right: max(1.5rem, 1.5vw);
-    margin-bottom: max(1.5rem, 1.vw);
+    // margin-left: max(1.5rem, 1.5vw);
+    // margin-top: max(1.5rem, 1.5vw);
+    // margin-right: max(1.5rem, 1.5vw);
+    // margin-bottom: max(1.5rem, 1.vw);
 
-    height: min(20rem, 20vw);
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+    // height: min(20rem, 20vw);
+    height: 18rem;
+    width: 18rem;
+
   
     border-radius: 5px;
   }
   
-  .Member_Over {
-    display: flex;
-    justify-content: center;
-  }
   
   .Member_div {
     background-color: #000;
+    border: 2px solid hotpink;
+
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
 
-    justify-content: center;
 
-    height: 30rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
 
-    
-    
-    
-    @media (max-width: 885px) {
-      display: grid;
-      align-items: center;
-      min-width: 320px;
-      height: auto;
-      
-      .photo_frame {
-        margin-bottom: 2rem;
+    @media (max-width: 1060px) {
+      margin-top: 2rem;
+      margin-botttom: 2rem;
+      .Member_frame {
+        margin-top: 2rem;
+      }
+    }
 
-        height: clamp(2rem, 100%, 10rem);
-        width: clamp(6rem, 100%, 10rem);
-        
-        min-height: 10rem;
-        
+    @media (max-width: 520px) {
+      transform: scale(0.90);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 420px) {
+      transform: scale(0.80);
+      .Member_title {
+        padding: .5rem;
+        margin-bottom: 0;
+      }
+
+      .photo_frame {
+        height: auto;
+        width: auto;
       }
       
       .photo_frame_black {
-        width: clamp(6rem, 100%, 10rem);
-        height: clamp(6rem, 100%, 10rem);
-        max-height: 10rem;
-        min-height: 5rem;
+        height: 16rem;
+        width: 16rem;
 
+        min-height: 0;
       }
       
       .member_photo {
-        margin-left: max(1rem, .5vw);
-        margin-top: max(1rem, .5vw);
-        margin-right: max(1rem, 1vw);
-        margin-bottom: max(1rem, 1vw);
+        height: 15rem;
+        width: 15rem;
+
+        margin-left: .5rem;
+        margin-top: .5rem;
         
-        
-        // height: min(15rem, 15vw);
-
-        width: clamp(6rem, 100%, 10rem);
-        height: clamp(4rem, 100%, 8rem);
-        border-radius: 5px;
       }
-      
-
-      .Member_frame {
-        margin-left: 0rem;
-        margin-bottom: 8rem;
-
-        height: max(25rem, 25vw);
-        min-width: 15rem;
-      }
-      
-      .member_black_frame {
-        margin-inline: 0px;
-        margin-left: 0rem;
-        min-width: 13rem;
-
-        height: max(20rem, 20vw);
-        min-height: 22.8rem;
-      }
-
-
-      .bio {
-        font-size: max(14px, 1.5vw);
-        height: auto;
-      }  
     }
-  }
+    
+  
   
   .member_name {
     margin-bottom: max(2rem, 2vw);
-    font-size: 20px;
+    font-size: 25px;
   }
   
   .Member_frame {
     background-color: #000;
-    margin-inline: clamp(2rem, 100%, 5rem);
+    // margin-inline: clamp(2rem, 100%, 5rem);
     
     padding: 1rem;
     
-    height: min(25rem, 37vw);
-    width: min(40rem, 40vw); 
+    // height: min(25rem, 37vw);
+    // height: 25rem;
+    // height: auto;
+    // width: 40rem;
+    // width: min(40rem, 40vw); 
     
-    min-height: 25rem;
-    max-height: 50rem;
-    min-width: 30rem;
+    // min-height: 25rem;
+    // max-height: 50rem;
+    // min-width: 30rem;
 
     background-color: #7FE7D7;
     border-radius: 7px;
@@ -160,13 +156,12 @@ const StyledMemberSpotlight = styled.div`
     border-radius: 7px;
     max-width: 40rem;
     min-height: 22.5rem;
-    max-height: 23rem
     
     
   }
   
   .bio {
-    font-size: min(20px, 2vw);
+    font-size: 20px
     
   }
   
@@ -179,7 +174,7 @@ export function MemberSpotlight() {
         <div className='Member_title'>
           <h5>Member Spotlight</h5>
         </div>
-        <div className='Member_Over'>
+        
           <div className='Member_div'>
             <div className='photo_frame'>
               <div className='photo_frame_black'>
@@ -201,7 +196,6 @@ export function MemberSpotlight() {
               </div>
             </div>
           </div>
-        </div>
       </StyledMemberSpotlight>
     </>
   );
