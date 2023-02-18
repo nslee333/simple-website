@@ -13,16 +13,19 @@ const Form = styled.form`
   }
 
   input {
-    border: 1px solid #fff;
+    display: block;
+
     margin-top: .5rem;
     margin-bottom: 1rem;
-    display: block;
+
+    border: 1px solid #fff;
+    border-radius: 5px;
+
     width: auto;
     height: 2rem;
-    
-    font-size: 1.25rem;
-    border-radius: 5px;
+
     padding-left: 0.5rem;
+    font-size: 1.25rem;
   }
   
   input::placeholder {
@@ -37,16 +40,18 @@ const Form = styled.form`
   button {
     background-color: #fff;
     color: #000;
-    padding: .25rem;
+
+    border: 0px;
+
     height: 2.25rem;
     width: 7rem;
-    border: 0px;
+
     margin-top: 1.5rem;
+    padding: .25rem;
+
     font-size: 1.25rem;
     font-weight: normal;
-
   }
-
 `;
 
 export default function SignupForm({ children }) {
@@ -59,7 +64,6 @@ export default function SignupForm({ children }) {
       <label>
         <input type="email" name="email" placeholder='Email' />
       </label>
-
       <button className="button" type="submit">
         Sign up
       </button>

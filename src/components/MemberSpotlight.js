@@ -2,86 +2,78 @@ import styled from "styled-components";
 import slack_user_photo from "../images/slack-user.png";
 
 const StyledMemberSpotlight = styled.div`
-  background-color: #000;
-  color: #fff;
   margin-top: 5rem;
   margin-bottom: 2rem;
+  
+  height: auto;
   padding-bottom: 2rem;
 
-  height: auto;
+  background-color: #000;
+  color: #fff;
+  
   
   .Member_title {
-    display: flex;
     justify-content: center;
+    display: flex;
     
-    font-size: 30px;
-    font-weight: medium;
     margin-top: 5rem;
     padding: 3rem;
-    
+
+    font-size: 30px;
+    font-weight: medium;
   }
 
   .photo_frame {
     border-radius: 7px;
-    padding: 1rem;
-    min-height: px;
-    background-color: #7FE7D7;
-    // height: min(24rem, 24vw);
-    // width: min(25rem, 25vw);
 
-    height: 22rem;
     width: 22rem;
+    height: 22rem;
+    
+    min-height: px;
+    padding: 1rem;
+
+    background-color: #7FE7D7;
   }
   
   .photo_frame_black {
-    background-color: #000;
     display: flex;
     border-radius: 7px;
-
-    // width: clamp(15rem, 100%, 30rem);
-    // height: min(24rem, 24vw);
-
-    height: 22rem;
+        
     width: 22rem;
-
+    height: 22rem;
     
-
+    background-color: #000;
   }
   
   .member_photo {
-    // margin-left: max(1.5rem, 1.5vw);
-    // margin-top: max(1.5rem, 1.5vw);
-    // margin-right: max(1.5rem, 1.5vw);
-    // margin-bottom: max(1.5rem, 1.vw);
-
     margin-left: 2rem;
     margin-top: 2rem;
 
-    // height: min(20rem, 20vw);
-    height: 18rem;
-    width: 18rem;
-
-  
     border-radius: 5px;
+
+    width: 18rem;
+    height: 18rem;
   }
   
   
   .Member_div {
-    background-color: #000;
-
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: auto;
 
+    flex-wrap: wrap;
+    display: flex;
 
     margin-top: 5rem;
     margin-bottom: 5rem;
 
+    height: auto;
+    background-color: #000;
+
+
     @media (max-width: 1060px) {
       margin-top: 2rem;
       margin-botttom: 2rem;
+
       .Member_frame {
         margin-top: 2rem;
       }
@@ -89,79 +81,65 @@ const StyledMemberSpotlight = styled.div`
 
     @media (max-width: 520px) {
       transform: scale(0.90);
+
       margin-top: 0;
       margin-bottom: 0;
     }
 
     @media (max-width: 420px) {
       transform: scale(0.85);
+
       .Member_title {
-        padding: .5rem;
         margin-bottom: 0;
+        padding: .5rem;
       }
 
       .photo_frame {
-        height: auto;
         width: auto;
+        height: auto;
       }
       
       .photo_frame_black {
-        height: 16rem;
         width: 16rem;
 
+        height: 16rem;
         min-height: 0;
       }
       
       .member_photo {
-        height: 15rem;
         width: 15rem;
+        height: 15rem;
 
-        margin-left: .5rem;
         margin-top: .5rem;
-        
+        margin-left: .5rem;
       }
     }
     
-  
-  
+
   .member_name {
     margin-bottom: max(2rem, 2vw);
     font-size: 25px;
   }
   
   .Member_frame {
-    background-color: #000;
-    // margin-inline: clamp(2rem, 100%, 5rem);
-    
+    border-radius: 7px;
     padding: 1rem;
     
-    // height: min(25rem, 37vw);
-    // height: 25rem;
-    // height: auto;
-    // width: 40rem;
-    // width: min(40rem, 40vw); 
-    
-    // min-height: 25rem;
-    // max-height: 50rem;
-    // min-width: 30rem;
-
     background-color: #7FE7D7;
-    border-radius: 7px;
   }
 
   .member_black_frame {
-    padding: max(1rem, 1vw);
-    background-color: #000;
     border-radius: 7px;
+    padding: max(1rem, 1vw);
+
     max-width: 40rem;
     min-height: 22.5rem;
-    
-    
+
+    background-color: #000;
   }
   
   .bio {
-    font-size: 20px
-    
+    font-size: 20px  
   }
   
 `;

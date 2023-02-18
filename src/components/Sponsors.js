@@ -5,89 +5,106 @@ import codepen_logo from "../images/codepen_logo.png";
 import styled from "styled-components";
 
 const StyledSponsor = styled.div`
-  background: #ffffff;
   margin-top: min(14rem, 14vw);
   height: auto;
-  
+
+  background: #ffffff;
   
   .StyledSponsor__title {
-    display: flex;
     justify-content: center;
+    display: flex;
+
     min-width: 5rem;
     padding: 3.5rem;
+
+    font-size: max(2rem, 2vw);
     font-weight: 100;
     font-style: italic;
-    font-size: max(2rem, 2vw);
   }
 
   
   .StyledSponsor__logos {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    display: flex;
   }
 
   .uptech_logo {
-    max-height: 64px;
     margin: 1rem;
+    max-height: 64px;
   }
 
   .TAO_logo {
-    height: max(4rem, 4vw);
-    max-width: 300px;
     margin: 1rem;
+    max-width: 300px;
+    height: max(4rem, 4vw);
   }
   
   .ladd_logo {
-    height: max(6rem, 6vw);
     margin: 1rem;
+    height: max(6rem, 6vw);
   }
   
   .codepen_logo {
     margin-top: max(2rem, 1.5vw);
-    height: max(2.5rem, 2.5vw);
-    margin-left: 1rem;
     margin-right: 1rem;
+
     margin-bottom: 1rem;
+    margin-left: 1rem;
+
+    height: max(2.5rem, 2.5vw);
   }
 
 
   .StyledSponsor__new-sponsors {
-    padding: max(2rem, 2vw);
-    display: flex;
     justify-content: space-around;
+    display: flex;
+
+    padding: max(2rem, 2vw);
+
     font-weight: 300;
     font-style: italic;
   }
 
   .new-sponsors__div {
-    font-size: max(1.5rem, 1.5vw);
-    font-style: italic;
     justify-content: center;
+
     margin: 1rem;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem;
     max-width: 35rem;
 
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+
+    font-size: max(1.5rem, 1.5vw);
+    font-style: italic;
+
     .button_div {
-      display: flex;
       justify-content: center;
+      display: flex;
+
       margin: 1rem;
       min-width: 15rem;
+
       font-style: normal;
       font-size: 2rem;
+
       font-weight: normal;
     }
     
     .sponsors_a {
-      display: flex;
       justify-content: center;
-      padding-left: 2rem;
-      padding: 1rem;
-      background-color: #7FE7D7;
+      display: flex;
+      
       border: 0px;
       border-radius: 7px;
+      padding-left: 2rem;
+      
       width: 13rem;
+      padding: 1rem;
+      
+      background-color: #7FE7D7;
+      
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       &:hover,
       &:focus,
@@ -95,7 +112,7 @@ const StyledSponsor = styled.div`
       &:visited {
         box-shadow: none;
         transform: translate(1px, 1px);
-  }
+      }
     }
   }
 `;

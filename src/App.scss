@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   font-weight: 500;
 }
 
@@ -10,39 +9,13 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top right;
-
 }
 
 main {
-  min-width: 300px;
+  min-width: 320px;
 }
 
 a {
   text-decoration: none;
   color: #000;
-}
-
-p {
-  margin: 0 0 1rem 0;
-}
-
-.button {
-  text-decoration: none;
-  background: #eee;
-  display: block;
-  padding: 1rem;
-  border-radius: 4px;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  box-shadow: 1px 1px 0 rgba(black, 0.2);
-  cursor: pointer;
-  font-size: 115%;
-  &:hover,
-  &:focus,
-  &:active,
-  &:visited {
-    box-shadow: none;
-    transform: translate(1px, 1px);
-  }
 }

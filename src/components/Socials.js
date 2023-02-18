@@ -8,28 +8,31 @@ const StyledSocials = styled.div`
   margin-bottom: 5rem;
 
   .title_div {
-    display: flex;
     justify-content: center;
+    display: flex;
+
     margin-top: 1rem;
     padding: 1rem;
-    font-size: max(2rem, 2vw);
 
+    font-size: max(2rem, 2vw);
   }
   
   .social_logos {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: space-evenly;
+    flex-wrap: wrap;
+
+    display: flex;
 
     margin-top: 2rem;
     height: auto;
   }
 
   .slack_div {
-    display: flex;
     justify-content: center;
     align-items: center;
+
+    display: flex;
     height: 7rem;
   }
   
@@ -38,25 +41,25 @@ const StyledSocials = styled.div`
   }
 
   a {
-    display: flex;
     align-items: center;
+    display: flex;
   }
   
   .meetup_div {
-    margin-left: 5rem;
-    margin-right: 5rem;
-
-    display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 0.5rem;
+    display: flex;
 
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    padding: 0.5rem;
     width: 15rem;
+  
     height: 6rem;
 
     font-size: max(2rem, 2vw);
-
   }
   
   .meetup_logo {
@@ -65,9 +68,10 @@ const StyledSocials = styled.div`
   }
 
   .youtube_div {
-    display: flex;
     justify-content: center;
     align-items: center;
+
+    display: flex;
 
     height: 7rem;
   }
@@ -82,22 +86,25 @@ const StyledSocials = styled.div`
     margin-bottom: 0rem;
 
     .social_logos {
-      display: grid;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: space-evenly;
+
+      display: grid;
+
       padding: 0;
     }
 
    
     .slack_div {
-      margin-right: 0;
       margin-top: 1rem;
+      margin-right: 0;
     }
 
     .meetup_div {
       margin-top: 1rem;
       margin-left: 0;
+      
       margin-right: 0;
     }
 

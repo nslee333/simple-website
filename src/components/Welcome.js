@@ -2,16 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledWelcome = styled.div`
-  display: flex;
   justify-content: center;
+  display: flex;
+
   margin-top: min(13rem, 13vw);
   height: auto;
+
   font-size: max(2rem, 2vw);
   
-  .StyledWelcome__Div {
-    display: columns;
-
+  div {
     align-items: center;
+    display: columns;
 
     width: min(70rem, 70vw);
     min-width: 22rem; 
@@ -35,7 +36,7 @@ export default function Welcome () {
   return (
     <>
       <StyledWelcome>
-        <div className='StyledWelcome__Div'>
+        <div>
           <h4>BendJS</h4>
           <h5>A Javascript meetup in Bend, Oregon</h5>
           <h5>

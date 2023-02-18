@@ -2,43 +2,46 @@ import styled from 'styled-components';
 import SignupForm from './SignupForm';
 
 const StyledStayConnected = styled.div`
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   align-items: center;
+  display: flex;
 
   .Newsletter {
-    display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
+    display: flex;
 
-    min-height: 29rem;
-
-    width: max(45rem, 45vw);
-    max-width: 45rem;
-    min-width: 300px;
-
-    padding: 2rem;
     margin-inline: max(2rem, 2vw);
-    
+    margin-top: 2rem;
+
+    margin-bottom: 2rem;
     border-radius: 7px;
 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    width: max(45rem, 45vw);
+    min-width: 300px;
+
+    max-width: 45rem;
+    min-height: 29rem;
+    
+    padding: 2rem;
+    background-color: #fff;
     
     font-size: max(20px, 2vw);
 
     h3 {
+      margin-bottom: 1.5rem;
       font-size: max(35px, 2vw);
+
       font-weight: normal;
       font-style: italic;
-      margin-bottom: 1.5rem;
     }
 
     h4 {
+      margin-bottom: min(2rem, 2vw);
+
       font-size: max(30px, 1.5vw);
       font-weight: normal;
-      margin-bottom: min(2rem, 2vw);
     }
 
     .Newsletter_text {
@@ -46,63 +49,61 @@ const StyledStayConnected = styled.div`
     }
 
     .Newsletter_Signup {
-      
       background: #e1e1e1;
-      
+      margin-top: 2rem;
+
+      border-radius: 7px;
+     
       width: 17rem;
       height: 10rem;
-      
-      border-radius: 7px;
-      padding: 1rem 2rem;
 
-      margin-top: 2rem;
+      padding: 1rem 2rem;
     }
 
     @media (max-width: 370px) {
       transform: scale(0.85);
       margin-top: 0;
-
     }
-  
   }
   
   .Speaker {
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
     
-    background-color: #fff;
-    height: max(17rem, 13vw);
-    min-height: 29rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    margin-inline: max(2rem, 2vw);
+    border-radius: 7px;
 
     width: max(45rem, 45vw);
     max-width: 45rem;
     min-width: 300px;
 
+    height: max(17rem, 13vw);
+    min-height: 29rem;
+    
     padding: 2rem;
-
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-inline: max(2rem, 2vw);
-    border-radius: 7px;
-
-
+    background-color: #fff;
     
     h3 {
-      font-weight: normal;
-      font-size: max(35px, 2vw);
-      font-style: italic;
       margin-bottom: 4rem;
+
+      font-size: max(35px, 2vw);
+      font-weight: normal;
+      font-style: italic;
     }
     
     h4 {
-      font-weight: normal;
-      font-size: 30px;
       margin-bottom: 4rem;
+
+      font-size: 30px;
+      font-weight: normal;
     }
 
     div {
-      font-size: 20px;
       margin-bottom: 3rem;
+      font-size: 20px;
     }
     
 
@@ -111,16 +112,21 @@ const StyledStayConnected = styled.div`
     }
 
     a {
-      display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #7FE7D7;
+
+      display: flex;
+
+      border: none;
+      border-radius: 7px;
+
       width: 20rem;
       height: 3rem;
-      font-size: 1.75rem;
-      border-radius: 7px;
-      border: none;
+
+      background-color: #7FE7D7;
       cursor: pointer;
+
+      font-size: 1.75rem;
 
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       &:hover,
@@ -130,15 +136,13 @@ const StyledStayConnected = styled.div`
         box-shadow: none;
         transform: translate(1px, 1px);
     }
-
-    
-    
   }
   
   @media (max-width: 370px) {
-    display: flex;
     justify-content: center;
     align-items: center;
+
+    display: flex;
     .Newsletter {
       margin-top: 0rem;
       margin-bottom: 0rem;
@@ -146,17 +150,15 @@ const StyledStayConnected = styled.div`
     
     .Speaker {
       transform: scale(0.75);
+
       margin-top: 0rem;
       margin-bottom: 0rem;
-      
     }
 
     transform: scale(0.85);
       margin-top: 0;
-  }
-
+    }
 `;
-
 
 
 export default function Connected () {

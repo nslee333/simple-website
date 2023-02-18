@@ -3,15 +3,19 @@ import styled from "styled-components";
 import GitHubLogo from "../images/github-mark.svg";
 
 const StyledFooter = styled.footer`
+  justify-content: center;
+
+  display: flex;
+
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
-  display: flex;
-  justify-content: center;
+
   font-size: 1.25rem;
 
   div {
-    display: grid;
     justify-content: center;
+    display: grid;
+
     padding: .5rem;
   }
 
@@ -23,9 +27,9 @@ const StyledFooter = styled.footer`
   @media (max-width: 886px) {
     margin-top: 0rem;
     margin-bottom: 1.5rem;
+    
     div {
       transform: scale(0.85);
-      
     }
   }
 `;
