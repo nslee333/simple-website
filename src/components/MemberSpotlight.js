@@ -108,7 +108,7 @@ const StyledMemberSpotlight = styled.div`
     margin-left: 2rem;
     margin-top: 2rem;
 
-    border-radius: 5px;
+    border-radius: 7px;
 
     width: 18rem;
     height: 18rem;

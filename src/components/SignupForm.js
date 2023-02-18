@@ -19,7 +19,7 @@ const Form = styled.form`
     margin-bottom: 1rem;
 
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: 7px;
 
     width: auto;
     height: 2rem;
@@ -44,7 +44,7 @@ const Form = styled.form`
     color: #000;
 
     border: 0px;
-    border-radius: 8px;
+    border-radius: 7px;
 
     height: 2.25rem;
     width: 7rem;
