@@ -77,11 +77,15 @@ const StyledSocials = styled.div`
   }
 
   @media (max-width: 550px) {
+    transform: scale(0.8);
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
     .social_logos {
       display: grid;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      align-items: space-evenlu;
+      align-items: space-evenly;
       padding: 0;
     }
 

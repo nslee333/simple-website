@@ -21,8 +21,11 @@ const StyledFooter = styled.footer`
   }
 
   @media (max-width: 886px) {
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
     div {
       transform: scale(0.85);
+      
     }
   }
 `;

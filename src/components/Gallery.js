@@ -21,6 +21,10 @@ const StyledGallery = styled.div`
     height: clamp(100px, 95%, 1300px);
     border-radius: 7px;
   }
+
+  @media (max-width: 550px) {
+    margin-top: 1rem;
+  }
 `;
 
 export default function Gallery() {

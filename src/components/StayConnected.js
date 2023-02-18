@@ -136,15 +136,18 @@ const StyledStayConnected = styled.div`
   }
   
   @media (max-width: 370px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .Newsletter {
-      margin-block: 0.5rem;
-      margin-inline: 0.5rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
     }
     
     .Speaker {
       transform: scale(0.75);
-      margin-block: 0.5rem;
-      margin-inline: 0.5rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
       
     }
 
