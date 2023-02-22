@@ -1,44 +1,94 @@
 import bendjs_photo from "../images/bendjs_meeting_photo.webp";
+import React from 'react';
 import styled from "styled-components";
+import {Navigation, Pagination} from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import 'swiper/css'; 
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const StyledGallery = styled.div`
   justify-content: center;
+  align-items: center;
+  
   display: flex;
 
-  margin-top: 5rem;
+  
+  .image-container {
+    justify-content: space-evenly;
+    
+    display: flex;
+    border-radius: 10px;
+    
+    height: clamp(100px, 95%, 700px);
+    width: auto;
+  }
 
-  .gallery {
+  img {
     justify-content: center;
-    align-items: center;
-
     display: flex;
 
+    border: 10px solid #fff;
     border-radius: 7px;
-    width: clamp(200px, 100%, 1300px);
-
-    background-color: #ffffff;
-  }
-
-  .gallery__image {
+    
     width: clamp(100px, 95%, 1000px);
-    height: clamp(100px, 95%, 1300px);
-
-    border-radius: 7px;
-  }
-
-  @media (max-width: 550px) {
-    margin-top: 1rem;
   }
 `;
 
 export default function Gallery() {
+
   return (
-    <>
-      <StyledGallery>
-        <div className='gallery'>
-          <img className='gallery__image' src={bendjs_photo} />
-        </div>
-      </StyledGallery>
-    </>
-  )
+    <StyledGallery>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={true}
+          pagination={{clickable: true}}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('Slide change.')}
+          style={{
+            "--swiper-pagination-color": "#ffffff",
+            "--swiper-pagination-bullet-inactive-color": "#999999",
+            "--swiper-pagination-bullet-inactive-opacity": "1",
+            "--swiper-pagination-bullet-size": "10px",
+            "--swiper-pagination-bullet-horizontal-gap": "10px",
+            "--swiper-pagination-bottom": "25px",
+            "--swiper-navigation-color": "#000000",
+          }}
+        >
+          <SwiperSlide>
+            <div className='image-container'>
+              <img src={bendjs_photo} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='image-container'>
+              <img src={bendjs_photo} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='image-container' >
+              <img src={bendjs_photo} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='image-container'>
+              <img src={bendjs_photo} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='image-container'>
+              <img src={bendjs_photo} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='image-container'>
+              <img src={bendjs_photo} />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+    </StyledGallery>
+  );
 }
