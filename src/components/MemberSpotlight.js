@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import slack_user_photo from "../images/slack-user.png";
+import user from "../images/3.jpg";
 
 const StyledMemberSpotlight = styled.div`
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   
-  height: auto;
+  max-height: 65rem;
+
   padding-bottom: 2rem;
 
   background-color: #000;
@@ -15,9 +17,8 @@ const StyledMemberSpotlight = styled.div`
   .title-container {
     justify-content: center;
     display: flex;
-    
-    margin-top: 5rem;
-    padding: 3rem;
+
+    padding: 2rem;
 
     font-size: 30px;
     font-weight: medium;
@@ -37,9 +38,12 @@ const StyledMemberSpotlight = styled.div`
     background-color: #000;
 
 
-    @media (max-width: 1060px) {
+    @media (max-width: 1120px) {
       margin-top: 2rem;
       margin-botttom: 2rem;
+
+      padding-bottom: 2rem;
+      padding-top: 2rem;
 
       .member-container__bio-teal-frame {
         margin-top: 2rem;
@@ -51,10 +55,16 @@ const StyledMemberSpotlight = styled.div`
 
       margin-top: 0;
       margin-bottom: 0;
+
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 
     @media (max-width: 420px) {
-      transform: scale(0.80);
+      transform: scale(0.75);
+
+      margin-top: -5rem;
+      margin-bottom: 0;
 
       .title-container {
         margin-bottom: 0;
@@ -62,44 +72,47 @@ const StyledMemberSpotlight = styled.div`
       }
 
       .member-container__photo-teal-frame {
+        margin-top: 0;
+        margin-bottom: 0;
+
         width: auto;
         height: auto;
       }
       
       .member-container__photo-black-frame {
-        width: 16rem;
-
-        height: 16rem;
         min-height: 0;
       }
       
       .member-container__photo {
-        width: 15rem;
-        height: 15rem;
-
-        margin-top: .5rem;
-        margin-left: .5rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
       }
     }
+  }
 
   .member-container__photo-teal-frame {
     border-radius: 7px;
 
-    width: 22rem;
-    height: 22rem;
+    min-width: 24rem;
+    min-height: 24rem;
     
-    min-height: px;
     padding: 1rem;
 
     background-color: #7FE7D7;
+
+    @media (max-width: 340px) {
+      margin-top: 0;
+      margin-bottom: 0;
+      transform: scale(0.9);
+    }
   }
   
   .member-container__photo-black-frame {
     display: flex;
     border-radius: 7px;
         
-    width: 22rem;
-    height: 22rem;
+    width: 24rem;
+    height: 24rem;
     
     background-color: #000;
   }
@@ -110,15 +123,22 @@ const StyledMemberSpotlight = styled.div`
 
     border-radius: 7px;
 
-    width: 18rem;
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
   }
   
   .member-container__bio-teal-frame {
     border-radius: 7px;
     padding: 1rem;
+
+    min-width: 24rem;
+    min-height: 24rem;
     
     background-color: #7FE7D7;
+
+    @media (max-width: 340px) {
+      transform: scale(0.9);
+    }
   }
     
   .member-container__bio-black-frame {
@@ -126,7 +146,10 @@ const StyledMemberSpotlight = styled.div`
     padding: max(1rem, 1vw);
 
     max-width: 40rem;
-    min-height: 22.5rem;
+    min-width: 22rem;
+    
+    max-height: 30rem;
+    min-height: 22rem;
 
     background-color: #000;
   }
@@ -139,7 +162,21 @@ const StyledMemberSpotlight = styled.div`
   .member-container__bio-text {
     font-size: 20px  
   }
-  
+
+  @media (max-width: 560px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    padding: 0;
+  }
+
+  @media (max-width: 420px) {
+    height: 55rem;
+    
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
 `;
 
 export function MemberSpotlight() {
@@ -152,7 +189,7 @@ export function MemberSpotlight() {
         <div className='member-container'>
           <div className='member-container__photo-teal-frame'>
             <div className='member-container__photo-black-frame'>
-              <img src={slack_user_photo} className='member-container__photo'/>
+              <img src={user} className='member-container__photo'/>
             </div>
           </div>
           <div className='member-container__bio-teal-frame'>

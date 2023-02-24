@@ -63,6 +63,7 @@ const StyledStayConnected = styled.div`
     @media (max-width: 370px) {
       transform: scale(0.85);
       margin-top: 0;
+      margin-bottom: 0;
     }
   }
   
@@ -155,8 +156,9 @@ const StyledStayConnected = styled.div`
     }
 
     transform: scale(0.85);
-      margin-top: 0;
-    }
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 

@@ -14,7 +14,7 @@ const StyledSponsor = styled.div`
     justify-content: center;
     display: flex;
 
-    min-width: 5rem;
+    min-width: 15rem;
     padding: 3.5rem;
 
     font-size: max(2rem, 2vw);

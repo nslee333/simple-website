@@ -14,7 +14,6 @@ const StyledGallery = styled.div`
   
   display: flex;
 
-  
   .image-container {
     justify-content: space-evenly;
     
