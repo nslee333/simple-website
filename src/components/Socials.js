@@ -4,8 +4,8 @@ import youtube_logo from '../images/Youtube_logo.svg.png'
 import styled from 'styled-components';
 
 const StyledSocials = styled.div`
-  margin-top 5rem;
-  margin-bottom: 5rem;
+  margin-top 3rem;
+  margin-bottom: 7rem;
 
   .social-title {
     justify-content: center;
@@ -82,8 +82,8 @@ const StyledSocials = styled.div`
 
   @media (max-width: 550px) {
     transform: scale(0.8);
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: -3rem;
+    margin-bottom: -4rem;
 
     .social-logos {
       flex-wrap: wrap;

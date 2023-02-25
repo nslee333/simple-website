@@ -20,6 +20,8 @@ const StyledFooter = styled.footer`
   }
 
   img {
+    height: 5rem;
+    width: 5rem;
     margin-left: 5rem;
     margin-top: .5rem;
   }

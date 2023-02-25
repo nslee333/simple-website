@@ -13,9 +13,7 @@ const StyledStayConnected = styled.div`
     display: flex;
 
     margin-inline: max(2rem, 2vw);
-    margin-top: 2rem;
 
-    margin-bottom: 2rem;
     border-radius: 7px;
 
     width: max(45rem, 45vw);
@@ -53,20 +51,18 @@ const StyledStayConnected = styled.div`
       margin-top: 2rem;
 
       border-radius: 7px;
-     
+    
       width: 17rem;
       height: 10rem;
 
       padding: 1rem 2rem;
     }
 
-    @media (max-width: 370px) {
-      transform: scale(0.85);
-      margin-top: 0;
-      margin-bottom: 0;
+    @media (max-width: 745px) {
+      height: auto;
     }
   }
-  
+
   .speaker {
     flex-wrap: wrap;
     display: flex;
@@ -131,34 +127,36 @@ const StyledStayConnected = styled.div`
       &:visited {
         box-shadow: none;
         transform: translate(1px, 1px);
+      }
     }
 
     @media (max-width: 745px) {
       height: auto;
     }
   }
-  
+
   @media (max-width: 370px) {
     justify-content: center;
     align-items: center;
 
     display: flex;
     .Newsletter {
-      margin-top: 0rem;
-      margin-bottom: 0rem;
+      margin-top: -2rem;
+      margin-bottom: -2rem;
     }
     
     .Speaker {
       transform: scale(0.75);
 
-      margin-top: 0rem;
-      margin-bottom: 0rem;
+      margin-top: -2rem;
+      margin-bottom: -2rem;
     }
 
     transform: scale(0.85);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
   }
+}
 `;
 
 

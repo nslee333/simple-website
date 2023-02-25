@@ -13,6 +13,10 @@ const StyledGallery = styled.div`
   align-items: center;
   
   display: flex;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  margin-right: 1rem;
 
   .image-container {
     justify-content: space-evenly;
@@ -52,9 +56,9 @@ export default function Gallery() {
             "--swiper-pagination-bullet-inactive-color": "#999999",
             "--swiper-pagination-bullet-inactive-opacity": "1",
             "--swiper-pagination-bullet-size": "10px",
-            "--swiper-pagination-bullet-horizontal-gap": "10px",
+            // "--swiper-pagination-bullet-horizontal-gap": "10px",
             "--swiper-pagination-bottom": "25px",
-            "--swiper-navigation-color": "#000000",
+            "--swiper-navigation-color": "#0",
           }}
         >
           <SwiperSlide>
