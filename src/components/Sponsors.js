@@ -22,7 +22,6 @@ const StyledSponsor = styled.div`
     font-style: italic;
   }
 
-  
   .sponsor-logos {
     flex-wrap: wrap;
     justify-content: space-evenly;
