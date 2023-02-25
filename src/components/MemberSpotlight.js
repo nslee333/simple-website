@@ -38,7 +38,7 @@ const StyledMemberSpotlight = styled.div`
     background-color: #000;
 
 
-    @media (max-width: 1120px) {
+    @media (max-width: 1118px) {
       margin-top: 2rem;
       margin-botttom: 2rem;
 
@@ -53,7 +53,7 @@ const StyledMemberSpotlight = styled.div`
     @media (max-width: 520px) {
       transform: scale(0.90);
 
-      margin-top: 0;
+      margin-top: -2rem;
       margin-bottom: 0;
 
       padding-top: 1rem;
@@ -61,6 +61,8 @@ const StyledMemberSpotlight = styled.div`
     }
 
     @media (max-width: 420px) {
+
+      max-height: 55rem;
       transform: scale(0.75);
 
       margin-top: -5rem;
@@ -168,6 +170,10 @@ const StyledMemberSpotlight = styled.div`
     margin-bottom: 2rem;
 
     padding: 0;
+
+    .title-container {
+      padding-top: 5rem;
+    }
   }
 
   @media (max-width: 420px) {

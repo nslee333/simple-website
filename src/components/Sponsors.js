@@ -90,6 +90,10 @@ const StyledSponsor = styled.div`
       font-size: 2rem;
 
       font-weight: normal;
+
+      @media (max-width: 470px) {
+        transform: scale(0.8)
+      }
     }
     
     .sponsor-new__contact-link {
@@ -114,6 +118,7 @@ const StyledSponsor = styled.div`
         transform: translate(1px, 1px);
       }
     }
+
   }
 `;
 

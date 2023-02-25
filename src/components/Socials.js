@@ -11,10 +11,10 @@ const StyledSocials = styled.div`
     justify-content: center;
     display: flex;
 
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 1rem;
 
-    font-size: max(2rem, 2vw);
+    font-size: max(2.5rem, 2.5vw);
   }
   
   .social-logos {

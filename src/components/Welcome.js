@@ -29,6 +29,8 @@ const StyledWelcome = styled.div`
 
   @media (max-width: 400px) {
     transform: scale(0.9);
+    margin-top: -2rem;
+    margin-bottom: -2rem;
   }
 `;
 

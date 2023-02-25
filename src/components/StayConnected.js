@@ -140,21 +140,10 @@ const StyledStayConnected = styled.div`
     align-items: center;
 
     display: flex;
-    .Newsletter {
-      margin-top: -2rem;
-      margin-bottom: -2rem;
-    }
-    
-    .Speaker {
-      transform: scale(0.75);
-
-      margin-top: -2rem;
-      margin-bottom: -2rem;
-    }
 
     transform: scale(0.85);
-    margin-top: -2rem;
-    margin-bottom: -2rem;
+    margin-top: -5rem;
+    margin-bottom: -5rem;
   }
 }
 `;
