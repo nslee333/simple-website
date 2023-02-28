@@ -63,32 +63,32 @@ export default function Gallery() {
         >
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} />
+              <img src={bendjs_photo} alt='Bendjs 1'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} />
+              <img src={bendjs_photo} alt='bendjs 2'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container' >
-              <img src={bendjs_photo} />
+              <img src={bendjs_photo} alt='bendjs 3'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} />
+              <img src={bendjs_photo} alt='bendjs 4'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} />
+              <img src={bendjs_photo} alt='bendjs 5'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} />
+              <img src={bendjs_photo} alt='bendjs 6'/>
             </div>
           </SwiperSlide>
         </Swiper>

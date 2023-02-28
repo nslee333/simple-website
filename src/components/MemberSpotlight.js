@@ -195,7 +195,7 @@ export function MemberSpotlight() {
         <div className='member-container'>
           <div className='member-container__photo-teal-frame'>
             <div className='member-container__photo-black-frame'>
-              <img src={user} className='member-container__photo'/>
+              <img src={user} className='member-container__photo' alt='member profile'/>
             </div>
           </div>
           <div className='member-container__bio-teal-frame'>

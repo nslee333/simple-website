@@ -135,16 +135,16 @@ export default function Sponsors() {
       <div>
         <div className='sponsor-logos'>
           <a href='https://www.uptechstudio.com/'>
-            <img src={uptech} className='sponsor-logos__uptech-logo'/>
+            <img src={uptech} className='sponsor-logos__uptech-logo' alt='uptech logo'/>
           </a>
           <a href='https://www.techoregon.org/'>
-            <img src={tao} className='sponsor-logos__tao-logo'/>
+            <img src={tao} className='sponsor-logos__tao-logo' alt='tech oregon logo'/>
           </a>
           <a href='https://codepen.io/'>
-            <img src={codepen} className='sponsor-logos__codepen-logo'/>
+            <img src={codepen} className='sponsor-logos__codepen-logo' alt='codepen logo'/>
           </a>
           <a href='https://www.bendpropertysource.com/'>
-            <img src={ladd_group} className='sponsor-logos__ladd-logo'/>
+            <img src={ladd_group} className='sponsor-logos__ladd-logo' alt='Ladd group logo'/>
           </a>
         </div>
         <div className='sponsor-new'>
