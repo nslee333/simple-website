@@ -53,7 +53,8 @@ const StyledSponsor = styled.div`
     margin-bottom: 1rem;
     margin-left: 1rem;
 
-    height: max(2.5rem, 2.5vw);
+    width: 300px;
+    height: 55px;
   }
 
 
