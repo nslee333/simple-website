@@ -2,6 +2,7 @@ import slack_logo from '../../public/images/slack_logo.webp'
 import meetup_logo from '../../public/images/Meetup_Logo.png'
 import youtube_logo from '../../public/images/Youtube_logo.svg.png'
 import styled from 'styled-components';
+import Image from 'next/image';
 
 const StyledSocials = styled.div`
   margin-top 3rem;
@@ -125,18 +126,18 @@ export default function Socials() {
         <div className='social-logos'>
           <div className='social-logos__slack'>
             <a href='https://bendjs.slack.com/ssb/redirect'>
-              <img src={slack_logo} className='social-logos__slack-logo' alt='Slack Logo'/>
+              <Image src={slack_logo} className='social-logos__slack-logo' alt='Slack Logo'/>
             </a>
           </div>
           <div className='social-logos__meetup'>
             <a href='https://www.meetup.com/BendJS/'>
-              <img src={meetup_logo} className='social-logos__meetup-logo' alt='Meetup Logo'/>
+              <Image src={meetup_logo} className='social-logos__meetup-logo' alt='Meetup Logo'/>
               <h5>/BendJS</h5>
             </a>
           </div>
           <div className='social-logos__youtube'>
             <a href='https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ'>
-              <img src={youtube_logo} className='social-logos__youtube-logo' alt='Youtube Logo'/>
+              <Image src={youtube_logo} className='social-logos__youtube-logo' alt='Youtube Logo'/>
             </a>
           </div>
         </div>

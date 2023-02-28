@@ -3,6 +3,7 @@ import tao from "../../public/images/TAO_logo-with-wordmark.png";
 import uptech from "../../public/images/uptech_logo.png";
 import codepen from "../../public/images/codepen_logo.png";
 import styled from "styled-components";
+import Image from "next/image";
 
 const StyledSponsor = styled.div`
   margin-top: min(14rem, 14vw);
@@ -135,16 +136,16 @@ export default function Sponsors() {
       <div>
         <div className='sponsor-logos'>
           <a href='https://www.uptechstudio.com/'>
-            <img src={uptech} className='sponsor-logos__uptech-logo' alt='uptech logo'/>
+            <Image src={uptech} className='sponsor-logos__uptech-logo' alt='uptech logo'/>
           </a>
           <a href='https://www.techoregon.org/'>
-            <img src={tao} className='sponsor-logos__tao-logo' alt='tech oregon logo'/>
+            <Image src={tao} className='sponsor-logos__tao-logo' alt='tech oregon logo'/>
           </a>
           <a href='https://codepen.io/'>
-            <img src={codepen} className='sponsor-logos__codepen-logo' alt='codepen logo'/>
+            <Image src={codepen} className='sponsor-logos__codepen-logo' alt='codepen logo'/>
           </a>
           <a href='https://www.bendpropertysource.com/'>
-            <img src={ladd_group} className='sponsor-logos__ladd-logo' alt='Ladd group logo'/>
+            <Image src={ladd_group} className='sponsor-logos__ladd-logo' alt='Ladd group logo'/>
           </a>
         </div>
         <div className='sponsor-new'>

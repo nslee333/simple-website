@@ -3,6 +3,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 import 'swiper/css'; 
 import 'swiper/css/navigation';
@@ -63,32 +64,32 @@ export default function Gallery() {
         >
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} alt='Bendjs 1'/>
+              <Image src={bendjs_photo} alt='Bendjs 1'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} alt='bendjs 2'/>
+              <Image src={bendjs_photo} alt='bendjs 2'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container' >
-              <img src={bendjs_photo} alt='bendjs 3'/>
+              <Image src={bendjs_photo} alt='bendjs 3'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} alt='bendjs 4'/>
+              <Image src={bendjs_photo} alt='bendjs 4'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} alt='bendjs 5'/>
+              <Image src={bendjs_photo} alt='bendjs 5'/>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <img src={bendjs_photo} alt='bendjs 6'/>
+              <Image src={bendjs_photo} alt='bendjs 6'/>
             </div>
           </SwiperSlide>
         </Swiper>

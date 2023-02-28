@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GitHubLogo from "../../public/images/github-mark.svg";
+import Image from "next/image";
 
 const StyledFooter = styled.footer`
   justify-content: center;
@@ -45,7 +46,7 @@ export default function Footer() {
         <a href='https://github.com/BendJS/simple-website'>
           <div>
             Contribute to this website
-            <img src={GitHubLogo} alt='GitHub Logo'/>
+            <Image src={GitHubLogo} alt='GitHub Logo'/>
           </div>
         </a>
       </StyledFooter>

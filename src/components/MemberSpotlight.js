@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import slack_user_photo from "../../public/images/slack-user.png";
 import user from "../../public/images/3.jpg";
+import Image from "next/image";
 
 const StyledMemberSpotlight = styled.div`
   margin-top: 5rem;
@@ -195,7 +196,7 @@ export default function MemberSpotlight() {
         <div className='member-container'>
           <div className='member-container__photo-teal-frame'>
             <div className='member-container__photo-black-frame'>
-              <img src={user} className='member-container__photo' alt='member profile'/>
+              <Image src={user} className='member-container__photo' alt='member profile'/>
             </div>
           </div>
           <div className='member-container__bio-teal-frame'>

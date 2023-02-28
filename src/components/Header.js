@@ -1,6 +1,7 @@
 import React from "react";
 import bendjs_logo from "../../public/images/bendjs_logo_square.png";
 import styled from "styled-components";
+import Image from "next/image";
 
 
 const StyledHeader = styled.header`
@@ -62,7 +63,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <div>
-        <img className="bendjs-logo"src={bendjs_logo} alt="bendjs logo"></img>
+        <Image className="bendjs-logo" src={bendjs_logo} alt="bendjs logo" />
       </div>
       <div className="socials-link">
         <a href='https://www.meetup.com/bendjs/' alt="bendjs socials link">/BendJS</a>
