@@ -5,8 +5,8 @@ import Sponsors from "../components/Sponsors";
 import Socials from "../components/Socials";
 import Gallery from "../components/Gallery";
 import Connected from "../components/StayConnected";
+import MemberSpotlight from "../components/MemberSpotlight";
 
-import { MemberSpotlight } from "../components/MemberSpotlight";
 
 export default function Home() {
   return (
