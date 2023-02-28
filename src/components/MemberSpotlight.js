@@ -185,7 +185,7 @@ const StyledMemberSpotlight = styled.div`
 
 `;
 
-export function MemberSpotlight() {
+export default function MemberSpotlight() {
   return (
     <>
       <StyledMemberSpotlight>
