@@ -65,7 +65,7 @@ export default function Header() {
         <img className="bendjs-logo"src={bendjs_logo} alt="bendjs logo"></img>
       </div>
       <div className="socials-link">
-        <a url="" alt="bendjs socials link">/BendJS</a>
+        <a href='https://www.meetup.com/bendjs/' alt="bendjs socials link">/BendJS</a>
       </div>
     </StyledHeader>
   )
