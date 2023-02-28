@@ -4,8 +4,7 @@ import Footer from "../components/Footer";
 
 function App() {
   return (
-    <>
-    
+    <>   
       <div className="app">
         <Header>
           <h1>BendJS</h1>

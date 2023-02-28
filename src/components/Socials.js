@@ -38,7 +38,8 @@ const StyledSocials = styled.div`
   }
   
   .social-logos__slack-logo {
-    height: 10rem;
+    width: 159px;
+    height: 159px;
   }
 
   a {
@@ -65,7 +66,8 @@ const StyledSocials = styled.div`
   
   .social-logos__meetup-logo {
     margin: 0px;
-    height: 7rem;
+    height: 109px;
+    width: 120px;
   }
 
   .social-logos__youtube {
@@ -78,7 +80,8 @@ const StyledSocials = styled.div`
   }
   
   .social-logos__youtube-logo {
-    height: 5rem;
+    height: 75px;
+    width: 115px;
   }
 
   @media (max-width: 550px) {
