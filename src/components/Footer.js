@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GitHubLogo from "../images/github-mark.svg";
+import GitHubLogo from "../../public/images/github-mark.svg";
 
 const StyledFooter = styled.footer`
   justify-content: center;

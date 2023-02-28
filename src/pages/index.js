@@ -1,8 +1,6 @@
-import Home from "./screens/Home";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-import "./App.scss";
+import Home from "../screens/Home";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function App() {
   return (

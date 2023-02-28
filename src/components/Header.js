@@ -1,5 +1,5 @@
 import React from "react";
-import bendjs_logo from "../images/bendjs_logo_square.png";
+import bendjs_logo from "../../public/images/bendjs_logo_square.png";
 import styled from "styled-components";
 
 

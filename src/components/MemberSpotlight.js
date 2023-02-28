@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import slack_user_photo from "../images/slack-user.png";
-import user from "../images/3.jpg";
+import slack_user_photo from "../../public/images/slack-user.png";
+import user from "../../public/images/3.jpg";
 
 const StyledMemberSpotlight = styled.div`
   margin-top: 5rem;

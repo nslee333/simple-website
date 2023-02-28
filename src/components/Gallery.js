@@ -1,4 +1,4 @@
-import bendjs_photo from "../images/bendjs_meeting_photo.webp";
+import bendjs_photo from "../../public/images/bendjs_meeting_photo.webp";
 import React from 'react';
 import styled from "styled-components";
 import {Navigation, Pagination} from "swiper";

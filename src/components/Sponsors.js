@@ -1,7 +1,7 @@
-import ladd_group from "../images/ladd_group_logo.jpg";
-import tao from "../images/TAO_logo-with-wordmark.png";
-import uptech from "../images/uptech_logo.png";
-import codepen from "../images/codepen_logo.png";
+import ladd_group from "../../public/images/ladd_group_logo.jpg";
+import tao from "../../public/images/TAO_logo-with-wordmark.png";
+import uptech from "../../public/images/uptech_logo.png";
+import codepen from "../../public/images/codepen_logo.png";
 import styled from "styled-components";
 
 const StyledSponsor = styled.div`
