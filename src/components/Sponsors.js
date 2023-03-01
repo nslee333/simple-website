@@ -44,6 +44,7 @@ const StyledSponsor = styled.div`
   .sponsor-logos__ladd-logo {
     margin: 1rem;
     height: max(6rem, 6vw);
+    width: auto;
   }
   
   .sponsor-logos__codepen-logo {
