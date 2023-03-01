@@ -10,33 +10,34 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const StyledGallery = styled.div`
-  justify-content: center;
-  align-items: center;
   
-  display: flex;
   margin-top: 3rem;
-  margin-left: 1rem;
+  margin-left: 5rem;
   margin-bottom: 3rem;
-  margin-right: 1rem;
+  margin-right: 5rem;
 
   .image-container {
-    justify-content: space-evenly;
-    
-    display: flex;
     border-radius: 10px;
+    position: relative;
     
-    height: clamp(100px, 95%, 700px);
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    aspect-ratio: 1.3 / 1;
+    max-height: 600px;
+    
+    border: 10px solid #fff;
+
+    @media (max-width: 1190px) {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
   }
 
-  img {
-    justify-content: center;
-    display: flex;
-
-    border: 10px solid #fff;
-    border-radius: 7px;
-    
-    width: clamp(100px, 95%, 1000px);
+  @media (max-width: 1000px) {
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
 `;
 
@@ -64,32 +65,32 @@ export default function Gallery() {
         >
           <SwiperSlide>
             <div className='image-container'>
-              <Image src={bendjs_photo} alt='Bendjs 1'/>
+              <Image src={bendjs_photo} alt='Bendjs 1' fill priority />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 2'/>
+              <Image src={bendjs_photo} alt='bendjs 2' fill priority />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container' >
-              <Image src={bendjs_photo} alt='bendjs 3'/>
+              <Image src={bendjs_photo} alt='bendjs 3' fill priority />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 4'/>
+              <Image src={bendjs_photo} alt='bendjs 4' fill priority />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 5'/>
+              <Image src={bendjs_photo} alt='bendjs 5' fill priority />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 6'/>
+              <Image src={bendjs_photo} alt='bendjs 6' fill priority />
             </div>
           </SwiperSlide>
         </Swiper>
