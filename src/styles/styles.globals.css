@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html {
-  background: rgb(152,215,208);
-  background: linear-gradient(90deg, rgba(152,215,208,1) 0%, rgb(218, 195, 218) 50%, rgba(250,225,221,1) 100%);
+  /* background: rgb(127, 231, 215); */
+  /* background: linear-gradient(90deg, rgba(152,215,208,1) 0%, rgb(218, 195, 218) 50%, rgba(250,225,221,1) 100%); */
+  /* background: linear-gradient(125deg, rgba(250,225,221,1) 0%, rgb(218, 195, 218) 25%, rgba(152,215,208,1) 100%); */
+  /* background: linear-gradient(125deg, rgb(218, 195, 218) 0%, rgb(152,215,208) 100%); */
+  /* background: linear-gradient(90deg, rgb(255, 211, 122) 0%, rgb(216, 216, 216) 25%, rgb(118, 250, 231) 100%); */
   background-color: #000;
+  background-image: url('https://images.pexels.com/photos/7135051/pexels-photo-7135051.jpeg');
+  background-size: cover;
+  background-position: center;
   
 }
 
