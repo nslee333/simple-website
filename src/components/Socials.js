@@ -87,7 +87,7 @@ const StyledSocials = styled.div`
   @media (max-width: 550px) {
     transform: scale(0.8);
     margin-top: -3rem;
-    margin-bottom: -4rem;
+    margin-bottom: -2rem;
 
     .social-logos {
       flex-wrap: wrap;
@@ -101,7 +101,7 @@ const StyledSocials = styled.div`
 
    
     .social-logos__slack {
-      margin-top: 1rem;
+      margin-top: -2rem;
       margin-right: 0;
     }
 
