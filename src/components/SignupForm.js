@@ -47,7 +47,7 @@ const Form = styled.form`
     height: 2.25rem;
     width: 7rem;
 
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
     padding: .25rem;
 
     font-size: 1.25rem;
