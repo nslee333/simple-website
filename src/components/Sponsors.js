@@ -16,7 +16,10 @@ const StyledSponsor = styled.div`
     display: flex;
 
     min-width: 15rem;
-    padding: 3.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
 
     font-size: max(2rem, 2vw);
     font-weight: 100;
@@ -54,8 +57,8 @@ const StyledSponsor = styled.div`
     margin-bottom: 1rem;
     margin-left: 1rem;
 
-    width: 300px;
-    height: 55px;
+    width: 260px;
+    height: 45px;
   }
 
 
