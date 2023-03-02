@@ -56,9 +56,9 @@ const StyledStayConnected = styled.div`
       height: 10rem;
 
       padding-top: 1rem;
-      padding-left: 1.5rem;
+      padding-left: 1rem;
       padding-bottom: 2rem;
-      padding-right: 1.5rem;
+      padding-right: 1rem;
     }
 
     @media (max-width: 745px) {
