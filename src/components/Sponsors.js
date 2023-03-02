@@ -37,7 +37,7 @@ const StyledSponsor = styled.div`
 
   .sponsor-logos__tao-logo {
     margin: 1rem;
-    max-width: 300px;
+    max-width: 250px;
     height: max(4rem, 4vw);
   }
   
