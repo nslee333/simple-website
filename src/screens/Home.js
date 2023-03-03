@@ -10,8 +10,8 @@ import MemberSpotlight from "../components/MemberSpotlight";
 export default function Home() {
   return (
     <>
-      <Welcome/>
-      <Sponsors/>
+      <Welcome />
+      <Sponsors />
       <Socials />
       <Gallery />
       <MemberSpotlight />
