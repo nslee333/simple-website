@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Form } from "./SignupForm";
+import { useState } from "react";
 
 const FormExtended = styled(Form)`
   input {
@@ -97,30 +98,55 @@ const StyledContact = styled.div`
 
 
 export default function Contact() {
+  const [messageSent, setMessageSent] = useState(false);
+  
+  const sendMessage = (event) => {
+    event.preventDefault();
+    
+    if (messageSent === false) {
+      setMessageSent(true);
+    }
+  }
+
+  const renderForm = () => {
+    return (
+      messageSent ? (
+        <>
+          <h2>Message Sent!</h2>
+        </> 
+      ) : (
+        <>
+        <FormExtended name="contact" data-netlify="true" method="post" action={event => sendMessage(event)}>
+          <input type="hidden" name="form-name" value="contact"/>
+          <label>
+            <input type="text" name="name" placeholder="Full Name" required={true}/>
+          </label>
+          <label>
+            <input type="email" name="email" placeholder="Email" required={true}/>
+          </label>
+          <label>
+            <textarea className="contact__message" type="text" name='message' placeholder="..." required={true}/>
+          </label>
+          <button className="button" type="submit" onClick={event => sendMessage(event)}>
+            Send
+          </button>
+        </FormExtended>
+        </>
+       )
+    );
+  }
+
   return (
-    <>
-      <StyledContact>
-        <div className="contact" id='contact'>
-          <h1 className="contact__title">Contact Us...</h1>
-          <div className="contact__frame">
-            <FormExtended name="contact" data-netlify="true" method="post">
-              <input type="hidden" name="form-name" value="contact"/>
-              <label>
-                <input type="text" name="name" placeholder="Full Name" required='true'/>
-              </label>
-              <label>
-                <input type="email" name="email" placeholder="Email" required='true'/>
-              </label>
-              <label>
-                <textarea className="contact__message" type="text" name='message' placeholder="..." required='true'/>
-              </label>
-              <button className="button" type="submit">
-                Send
-              </button>
-            </FormExtended>
+      <>
+        <StyledContact>
+          <div className="contact" id='contact'>
+            <h1 className="contact__title">Contact Us...</h1>
+            <div className="contact__frame">
+              {renderForm()}
+            </div>
           </div>
-        </div>
-      </StyledContact>
-    </>
-  );
+        </StyledContact>
+      </>
+    )
+
 }
