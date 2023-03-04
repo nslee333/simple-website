@@ -73,10 +73,10 @@ export default function SignupForm() {
     <Form name="newsletter" data-netlify='true' method="post">
       <input type="hidden" name="form-name" value="newsletter" />
       <label>
-        <input type="text" name="name" placeholder='Full Name' required='true'/>
+        <input type="text" name="name" placeholder='Full Name' required={true}/>
       </label>
       <label>
-        <input type="email" name="email" placeholder='Email' required='true'/>
+        <input type="email" name="email" placeholder='Email' required={true}/>
       </label>
       <button className="button" type="submit">
         Sign up
