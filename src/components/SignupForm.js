@@ -70,7 +70,7 @@ export const Form = styled.form`
 
 export default function SignupForm() {
   return (
-    <Form name="newsletter" netlify method="post">
+    <Form name="newsletter" data-netlify='true' method="post">
       <input type="hidden" name="form-name" value="newsletter" />
       <label>
         <input type="text" name="name" placeholder='Full Name' required='true'/>
