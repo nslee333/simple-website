@@ -103,7 +103,7 @@ export default function Contact() {
         <div className="contact" id='contact'>
           <h1 className="contact__title">Contact Us...</h1>
           <div className="contact__frame">
-            <FormExtended name="contact" netlify method="post">
+            <FormExtended name="contact" data-netlify="true" method="post">
               <input type="hidden" name="form-name" value="contact"/>
               <label>
                 <input type="text" name="name" placeholder="Full Name" required='true'/>
