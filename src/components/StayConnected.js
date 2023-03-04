@@ -18,8 +18,8 @@ const StyledStayConnected = styled.div`
 
     width: max(45rem, 45vw);
     min-width: 300px;
-
     max-width: 45rem;
+
     min-height: 29rem;
     
     padding: 2rem;
@@ -77,8 +77,8 @@ const StyledStayConnected = styled.div`
     border-radius: 7px;
 
     width: max(45rem, 45vw);
-    max-width: 45rem;
     min-width: 300px;
+    max-width: 45rem;
 
     height: max(17rem, 13vw);
     min-height: 29rem;
@@ -176,7 +176,7 @@ export default function Connected () {
             If you have something to share, big or small,
             big or small, please get in touch!
           </div>
-          <a htmlFor='button' href='mailto:bendjsgroup@gmail.com'>Contact Us</a>
+          <a htmlFor='button' href='#contact'>Contact Us</a>
         </div>
       </StyledStayConnected>
     </>
