@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Form = styled.form`
-  
+export const Form = styled.form`
   label {
     span {
       display: block;
@@ -33,6 +31,10 @@ const Form = styled.form`
 
   input:focus {
     padding-left: 0.5rem;
+  }
+
+  input:focus-visible {
+    outline: 2px solid #000;
   }
 
   button {
@@ -71,10 +73,10 @@ export default function SignupForm() {
     <Form name="newsletter" netlify method="post">
       <input type="hidden" name="form-name" value="newsletter" />
       <label>
-        <input type="text" name="name" placeholder='Full Name' />
+        <input type="text" name="name" placeholder='Full Name' required='true'/>
       </label>
       <label>
-        <input type="email" name="email" placeholder='Email' />
+        <input type="email" name="email" placeholder='Email' required='true'/>
       </label>
       <button className="button" type="submit">
         Sign up
