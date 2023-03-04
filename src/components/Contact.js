@@ -116,7 +116,7 @@ export default function Contact() {
         </> 
       ) : (
         <>
-        <FormExtended name="contact" data-netlify="true" method="post" action=''>
+        <FormExtended name="contact" data-netlify="true" method="post">
           <input type="hidden" name="form-name" value="contact"/>
           <label>
             <input type="text" name="name" placeholder="Full Name" required={true}/>
