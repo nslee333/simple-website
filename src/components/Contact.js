@@ -98,24 +98,9 @@ const StyledContact = styled.div`
 
 
 export default function Contact() {
-  const [messageSent, setMessageSent] = useState(false);
-  
-  const sendMessage = (event) => {
-    event.preventDefault();
-
-    if (messageSent === false) {
-      setMessageSent(true);
-    }
-  }
-
   const renderForm = () => {
     return (
-      messageSent ? (
-        <>
-          <h2>Message Sent!</h2>
-        </> 
-      ) : (
-        <>
+      <>
         <FormExtended name="contact" data-netlify="true" method="post">
           <input type="hidden" name="form-name" value="contact"/>
           <label>
@@ -127,12 +112,11 @@ export default function Contact() {
           <label>
             <textarea className="contact__message" type="text" name='message' placeholder="..." required={true}/>
           </label>
-          <button className="button" type="submit" onClick={event => sendMessage(event)}>
+          <button className="button" type="submit">
             Send
           </button>
         </FormExtended>
-        </>
-       )
+      </>
     );
   }
 
