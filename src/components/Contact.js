@@ -102,7 +102,7 @@ export default function Contact() {
   
   const sendMessage = (event) => {
     event.preventDefault();
-    
+
     if (messageSent === false) {
       setMessageSent(true);
     }
@@ -116,7 +116,7 @@ export default function Contact() {
         </> 
       ) : (
         <>
-        <FormExtended name="contact" data-netlify="true" method="post" action={event => sendMessage(event)}>
+        <FormExtended name="contact" data-netlify="true" method="post" action=''>
           <input type="hidden" name="form-name" value="contact"/>
           <label>
             <input type="text" name="name" placeholder="Full Name" required={true}/>
