@@ -43,7 +43,7 @@ const StyledGallery = styled.div`
 
 
 export default function Gallery(images) {
-  const imagesObj = images.props[0];
+  const imagesArr = images.props;
   return (
     <StyledGallery>
         <Swiper
@@ -61,17 +61,16 @@ export default function Gallery(images) {
             "--swiper-navigation-color": "#0",
           }}
         >
-
-          
-          { imagesObj ? Object.entries(imagesObj).map(([key, value]) => {
-            return (
-              <SwiperSlide key={key}>
-                <div className='image-container' key={key}>
-                  <Image src={urlFor(value).url()} alt={`bendjs ${key}`} key={key} fill sizes="max-height: 600px" priority />
-                </div>
-              </SwiperSlide>
-            );
-          }) : <div></div>}
+          { imagesArr ? imagesArr.map((image, index) => {
+               return (
+                <SwiperSlide key={index}>
+                 <div className='image-container' key={index}>
+                     <Image src={urlFor(imagesArr[index].image).url()} alt={`bendjs ${index}`} key={index} fill sizes="max-height: 600px" priority />
+                   </div>
+                 </SwiperSlide>
+               );
+             }
+           ) : <div></div>}
         </Swiper>
     </StyledGallery>
   );
