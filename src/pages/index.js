@@ -33,19 +33,12 @@ const client = createClient({
 const builder = imageUrlBuilder(client)
 
 export function urlFor(source) {
-  return builder.image(source)
+  return builder.image(source);
 }
 
 export async function getStaticProps() {
-  const images = await client.fetch(`*[_type == "ImageGallery"]{
-    image1, 
-    image2, 
-    image3, 
-    image4, 
-    image5, 
-    image6
-  }`);
-  const member = await client.fetch(`*[_type == 'MemberSpotlight']`);
+  const images = await client.fetch(`*[_type == "Image"]`);
+  const member = await client.fetch(`*[_type == "memberSpotlight"]`);
   
   return {
     props: {
