@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import slack_user_photo from "../../public/images/slack-user.png";
-import user from "../../public/images/3.jpg";
 import Image from "next/image";
+import {createClient} from 'next-sanity';
+import { urlFor } from "../pages";
 
 const StyledMemberSpotlight = styled.div`
   margin-top: 5rem;
@@ -186,35 +186,51 @@ const StyledMemberSpotlight = styled.div`
 
 `;
 
-export default function MemberSpotlight() {
+export default function MemberSpotlight(member) {
+  const memberObj= member.props[0];
   return (
     <>
-      <StyledMemberSpotlight>
-        <div className='title-container'>
-          <h5>Member Spotlight</h5>
-        </div>
-        <div className='member-container'>
-          <div className='member-container__photo-teal-frame'>
-            <div className='member-container__photo-black-frame'>
-              <Image src={user} className='member-container__photo' alt='member profile'/>
-            </div>
+      {memberObj ? 
+        (<StyledMemberSpotlight>
+          <div className='title-container'>
+            <h5>Member Spotlight</h5>
           </div>
-          <div className='member-container__bio-teal-frame'>
-            <div className='member-container__bio-black-frame'>
-              <h5 className='member-container__bio-member-name'>John Doe</h5>
-              <div className='member-container__bio-text'>
-              If you can keep your head when all about you
-              Are losing theirs and blaming it on you,
-              If you can trust yourself when all men doubt you,
-              But make allowance for their doubting too;
-              If you can keep your head when all about you
-              Are losing theirs and blaming it on you,
-              If you can trust yourself when all men doubt you,d 
+          <div className='member-container'>
+            <div className='member-container__photo-teal-frame'>
+              <div className='member-container__photo-black-frame'>
+                <Image src={urlFor(memberObj.memberImage).url()} className='member-container__photo' alt='member profile' width={150} height={150}/>
+              </div>
+            </div>
+            <div className='member-container__bio-teal-frame'>
+              <div className='member-container__bio-black-frame'>
+                <h5 className='member-container__bio-member-name'>{memberObj.memberName}</h5>
+                <div className='member-container__bio-text'>
+                {memberObj.memberBio}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </StyledMemberSpotlight>
+        </StyledMemberSpotlight>)
+       : (<div></div>)}
     </>
   );
+}
+
+
+const client = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  apiVersion: '2023-03-05',
+  useCdn: false
+});
+
+export async function getStaticProps() {
+  const member = await client.fetch(`*[_type == 'MemberSpotlight']`);
+
+
+  return {
+    props: {
+      member
+    }
+  }
 }
