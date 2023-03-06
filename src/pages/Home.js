@@ -6,15 +6,14 @@ import Gallery from "../components/Gallery";
 import Connected from "../components/StayConnected";
 import MemberSpotlight from "../components/MemberSpotlight";
 
-
-export default function Home() {
+export default function Home({images, member}) {
   return (
     <>
       <Welcome />
       <Sponsors />
       <Socials />
-      <Gallery />
-      <MemberSpotlight />
+      <Gallery props={images}/>
+      <MemberSpotlight  props={member}/>
       <Connected />
     </>
   );
