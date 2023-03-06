@@ -1,6 +1,7 @@
 export default {
   name: 'ImageGallery',
   type: 'document',
+  title: 'Image Gallery',
   fields: [
     {
       name: 'image1',
