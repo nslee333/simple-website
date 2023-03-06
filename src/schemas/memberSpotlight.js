@@ -10,7 +10,7 @@ export default  {
     },
     {
       name: 'memberBio',
-      type: 'string',
+      type: 'text',
       title: 'Member Bio'
     },
     {
