@@ -6,17 +6,20 @@ export default  {
     {
       name: 'memberName',
       type: 'string',
-      title: 'Member Name'
+      title: 'Member Name',
+      validation: Rule => Rule.required()
     },
     {
       name: 'memberBio',
       type: 'text',
-      title: 'Member Bio'
+      title: 'Member Bio',
+      validation: Rule => Rule.required().max(687)
     },
     {
       name: 'memberImage',
       type: 'image',
-      title: 'Member Image'
+      title: 'Member Image',
+      validation: Rule => Rule.required()
     },
   ]
 }
