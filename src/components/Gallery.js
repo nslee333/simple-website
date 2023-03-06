@@ -61,7 +61,9 @@ export default function Gallery(images) {
             "--swiper-navigation-color": "#0",
           }}
         >
-          {Object.entries(imagesObj).map(([key, value]) => {
+
+          
+          { imagesObj ? Object.entries(imagesObj).map(([key, value]) => {
             return (
               <SwiperSlide key={key}>
                 <div className='image-container' key={key}>
@@ -69,7 +71,7 @@ export default function Gallery(images) {
                 </div>
               </SwiperSlide>
             );
-          })}
+          }) : <div></div>}
         </Swiper>
     </StyledGallery>
   );
