@@ -1,7 +1,7 @@
-import imageGallery from "./imageGallery";
+import image from "./image";
 import memberSpotlight from "./memberSpotlight";
 
 export const schemaTypes = [
-  imageGallery,
+  image,
   memberSpotlight
 ];
