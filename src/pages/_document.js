@@ -31,9 +31,14 @@ export default class MyDocument extends Document {
       <Html lang='en'>
         <Head></Head>
         <body>
-          <form name="newsletter" netlify='tru' netlify-honeypot="bot-field" hidden>
+          <form name="newsletter" netlify='true' netlify-honeypot="bot-field" hidden>
             <input type="text" name="name" />
             <input type="email" name="email" />
+          </form>
+          <form name="contact" netlify='true' netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea className="contact__message" type="text" name='message' />
           </form>
           <Main />
           <NextScript />
