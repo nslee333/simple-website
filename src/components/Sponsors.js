@@ -1,5 +1,5 @@
 import ladd_group from "../../public/images/ladd_group_logo.jpg";
-import tao from "../../public/images/TAO_logo-with-wordmark.png";
+import tao from "../../public/images/tao_logo.png";
 import uptech from "../../public/images/uptech_logo.png";
 import codepen from "../../public/images/codepen_logo.png";
 import styled from "styled-components";

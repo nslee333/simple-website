@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GitHubLogo from "../../public/images/github-mark.svg";
+import github_logo from "../../public/images/github_logo.svg";
 import Image from "next/image";
 
 const StyledFooter = styled.footer`
@@ -20,7 +20,7 @@ const StyledFooter = styled.footer`
     padding: .5rem;
   }
 
-  img {
+  .Footer__github-logo {
     height: 5rem;
     width: 5rem;
     margin-left: 5rem;
@@ -46,7 +46,7 @@ export default function Footer() {
         <a href='https://github.com/BendJS/simple-website'>
           <div>
             Contribute to this website
-            <Image src={GitHubLogo} alt='GitHub Logo'/>
+            <Image src={github_logo} alt='GitHub Logo'className='Footer__github-logo'/>
           </div>
         </a>
       </StyledFooter>

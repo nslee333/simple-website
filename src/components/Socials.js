@@ -1,6 +1,6 @@
 import slack_logo from '../../public/images/slack_logo.webp'
-import meetup_logo from '../../public/images/Meetup_Logo.png'
-import youtube_logo from '../../public/images/Youtube_logo.svg.png'
+import meetup_logo from '../../public/images/meetup_logo.png'
+import youtube_logo from '../../public/images/youtube_logo.svg.png'
 import styled from 'styled-components';
 import Image from 'next/image';
 
