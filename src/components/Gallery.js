@@ -51,8 +51,6 @@ export default function Gallery() {
           slidesPerView={1}
           navigation={true}
           pagination={{clickable: true}}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('Slide change.')}
           style={{
             "--swiper-pagination-color": "#ffffff",
             "--swiper-pagination-bullet-inactive-color": "#999999",
