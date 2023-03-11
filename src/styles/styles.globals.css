@@ -10,7 +10,7 @@ html {
   background-position: center;
   background-attachment: fixed;
 
-  background-image: url("/public/images/hero_image.jpg");
+  background-image: url("../../public/images/hero_image.jpg");
   /* background-position: top; */
 }
 
