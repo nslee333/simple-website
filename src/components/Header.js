@@ -7,10 +7,14 @@ import meetup_logo from "../../public/images/meetup_logo.png";
 import youtube_logo from "../../public/images/youtube_logo.svg.png";
 import slack_logo from "../../public/images/slack_logo.webp";
 import github_logo from "../../public/images/github_logo.svg";
+import hero_image from "../../public/images/hero_image.jpg"
 import 'animate.css';
 
 
 const StyledHeader = styled.header`
+
+background-image: url("../../public/images/hero_image.jpg");
+background-position: top;
 justify-content: space-around;
 display: flex;
 
@@ -48,7 +52,8 @@ span {
   height: 6px;
 
   width: 50px;
-  background-color: black
+  background-color: black;
+  background-color: white;
 }
 
 
@@ -120,7 +125,7 @@ const StyledDropdown = styled.div`
   }
 `;
 
-export default function Header() {
+function Header() {
   const [naviClicked, setNaviClicked] = useState(false);
 
   function handleNaviClick(e) {
@@ -193,3 +198,60 @@ export default function Header() {
     </StyledHeader>
   )
 }
+
+const StyledWelcome = styled.div`
+color: #fff;
+
+  justify-content: center;
+  display: flex;
+
+  margin-top: min(13rem, 13vw);
+  height: auto;
+
+  font-size: max(2rem, 2vw);
+  
+  div {
+    align-items: center;
+    display: columns;
+
+    width: min(70rem, 70vw);
+    min-width: 22rem; 
+  }
+  
+
+  h4, h5 {
+    margin: max(1rem, 1vw);
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  @media (max-width: 400px) {
+    transform: scale(0.9);
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+  }
+`;
+
+function Welcome() {
+  return (
+    <>
+      <StyledWelcome>
+        <div>
+          <h4>BendJS</h4>
+          <h5>A Javascript meetup in Bend, Oregon</h5>
+          <h5>
+            This group is for anyone interested in learning Javascript, 
+            sharing something they know, networking with other devs, and having a great time! 
+          </h5>
+          <h5>
+            All levels are welcome. Please join our slack workspace for future updates and continuing the conversation.
+          </h5>
+        </div>
+      </StyledWelcome>
+    </>
+  )
+}
+
+export {Header, Welcome}

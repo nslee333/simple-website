@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 const StyledSocials = styled.div`
+  color: #fff;
+
+
   margin-top 3rem;
   margin-bottom: 7rem;
 
@@ -82,6 +85,10 @@ const StyledSocials = styled.div`
   .social-logos__youtube-logo {
     height: 75px;
     width: 115px;
+  }
+
+  h5 {
+    color: #fff;
   }
 
   @media (max-width: 550px) {

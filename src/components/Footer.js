@@ -1,19 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import github_logo from "../../public/images/github_logo.svg";
+// import github_logo from "../../public/images/github_logo.svg";
+import github_logo from "../../public/images/github_logo_white.svg";
 import Image from "next/image";
 
 const StyledFooter = styled.footer`
-  justify-content: center;
 
-  display: flex;
 
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+justify-content: center;
 
-  font-size: 1.25rem;
+display: flex;
 
-  div {
+margin-top: 3.5rem;
+margin-bottom: 3.5rem;
+
+font-size: 1.25rem;
+
+div {
+    color: #fff;
     justify-content: center;
     display: grid;
 

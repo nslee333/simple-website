@@ -1,14 +1,17 @@
 import Home from "../screens/Home";
-import Header from "../components/Header";
+import {Header, Welcome} from "../components/Header";
 import Footer from "../components/Footer";
+// import {Welcome} from "../components/Welcome";
+import HeaderWrapper, { StyledWrapper } from "../components/HeaderWrapper";
 
 function App() {
   return (
     <>
       <div className="app">
-        <Header>
-          <h1>BendJS</h1>
-        </Header>
+        <StyledWrapper>
+          <Header />
+          <Welcome />
+        </ StyledWrapper>
 
         <main>
             <Home />

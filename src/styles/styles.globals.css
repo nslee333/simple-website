@@ -3,9 +3,14 @@
 html {
   scroll-behavior: smooth;
   background-color: #000;
-  background-image: url('https://images.pexels.com/photos/7135051/pexels-photo-7135051.jpeg');
+  /* background-image: url('https://images.pexels.com/photos/7135051/pexels-photo-7135051.jpeg'); */
+  /* background-image: url('https://images.pexels.com/photos/7135051/pexels-photo-7135051.jpeg'); */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+
+  background-image: url("../../public/images/hero_image.jpg");
+  /* background-position: top; */
 }
 
 
