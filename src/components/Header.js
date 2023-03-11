@@ -145,9 +145,9 @@ export default function Header() {
       <>
         <StyledDropdown className="animate__animated animate__slideInDown">
           <OutsideClickHandler onOutsideClick={() => {setNaviClicked(false)}}>
-          <a href='/studio' ><div>Admin</div></a>
-          <a href='' ><div>Previous Talks</div></a>
-          <a href='/#contact' ><div>Contact Us</div></a>
+          <a href='/studio' onClick={() => {setNaviClicked(false)}} ><div>Admin</div></a>
+          <a href='' onClick={() => {setNaviClicked(false)}}><div>Previous Talks</div></a>
+          <a href='#contact' onClick={() => {setNaviClicked(false)}} ><div>Contact Us</div></a>
           <div className='socials'>Socials</div>
           <a href='https://www.meetup.com/BendJS/' >
             <div className="meetup-wrapper">

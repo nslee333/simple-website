@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Form } from "./SignupForm";
-import { useState } from "react";
 
 const FormExtended = styled(Form)`
   input {
