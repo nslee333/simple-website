@@ -1,0 +1,1 @@
+Redesign and implementation by [Nathan Lee](github.com/nslee333).
