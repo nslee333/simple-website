@@ -1,4 +1,4 @@
-import Home from "../screens/Home";
+import Home from "../pages/Home";
 import {Header, Welcome} from "../components/Header";
 import Footer from "../components/Footer";
 // import {Welcome} from "../components/Welcome";
