@@ -11,7 +11,7 @@ import Contact from "../components/Contact";
 export default function Home() {
   return (
     <>
-      {/* <Welcome/> */}
+      <Welcome />
       <Sponsors/>
       <Socials />
       <Gallery />
