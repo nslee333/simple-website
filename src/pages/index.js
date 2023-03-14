@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 function App() {
   return (
     <>
+    <div className='background-container'>
       <div className="app">
           <Header />
         <main>
@@ -12,6 +13,7 @@ function App() {
 
         <Footer />
       </div>
+    </div>
     </>
   );
 }
