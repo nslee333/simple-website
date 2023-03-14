@@ -29,7 +29,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-y: scroll;
   z-index: -1;
   background: url("../../public/images/hero_image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
