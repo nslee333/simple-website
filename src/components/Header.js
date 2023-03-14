@@ -1,47 +1,52 @@
-import {useState} from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import bendjs_logo from "../../public/images/bendjs_logo_square.png";
-import OutsideClickHandler from "react-outside-click-handler";
-import meetup_logo from "../../public/images/meetup_logo.png";
-import youtube_logo from "../../public/images/youtube_logo.svg.png";
-import slack_logo from "../../public/images/slack_logo.webp";
-import github_logo from "../../public/images/github_logo.svg";
-import hero_image from "../../public/images/hero_image.jpg"
-import 'animate.css';
 
 
 const StyledHeader = styled.header`
+  justify-content: space-around;
+  display: flex;
 
-background-image: url("../../public/images/hero_image.jpg");
-background-position: top;
-justify-content: space-around;
-display: flex;
-
-height: 12rem;
-padding: 1rem;
+  height: 12rem;
+  padding: 1rem;
 
 .bendjs-logo {
-  margin-top: 2rem;
-  margin-left: 1rem;
+  margin-top: 5rem;
+  margin-right: 10rem;
   
-  border-radius: min(1rem, 2vw);
+  border-radius: 1rem;
   
   width: 8rem;
   height: auto;
 }
 
 .socials-link {
-    &:hover {
-      transform: translate(0px, 1.25px);
-    }
   
-  margin-right: 1rem;
-  margin-top: 3rem;
-
-  height: 4rem;
+  margin-top: 2.25rem;
+  margin-right: 2rem;
+  
+  height: 3rem;
   padding: .5rem;
+  
+  
+  background-color: #fff;
+  border-radius: 7px;
+}
 
+.links-bar {
+  display: flex;
+  
+  margin-inline: .5rem;
+  font-size: 1.75rem;
+      
+  margin-top: .25rem;
+
+  font-style: italic;
+  
+}
+
+div {
+  margin-inline: 2rem;
 }
 
 span {
@@ -56,6 +61,12 @@ span {
   background-color: white;
 }
 
+@media (max-width: 630px) {
+  .bendjs-logo {
+    margin-left: 2rem;
+  }
+}
+
 
 @media (max-width: 400px) {
   justify-content: space-between;
@@ -65,193 +76,31 @@ span {
     margin-right: 0rem;
   }
   .bendjs-logo {
-    margin-left: 0rem;
+    position: absolute;
+    margin-left: 0;
+    top: -50px;
+    left: 10px;
   }
 }
 `;
 
-const StyledDropdown = styled.div`
-  position: absolute;
-  top: 0px;
-
-  border-radius: 0px 0px 7px 7px;
-  margin: 0;
-
-  padding-top: .5rem;
-  padding-left: 3rem;
-
-  padding-right: 3rem;
-  padding-bottom: .5rem;
-
-  background-color: #fff;
-  width: 350px;
-
-  font-size: 2.25rem;
-
-  * {
-    margin-block: 1.5rem;
-  }
-
-  .meetup-wrapper, 
-  .slack-wrapper, 
-  .youtube-wrapper, 
-  .github-wrapper {
-    display: flex;
-    align-items: center;
-
-    margin-block: 2px;
-    height: 120px;
-    
-    width: 300px;
-    padding-left: 5px;
-  }
-
-  .meetup-logo {
-    margin-right: 1rem;
-  }
-  
-  .slack-logo {
-    margin-left: -1.5rem;
-    margin-right: -.7rem;
-  }
-
-  .youtube-logo {
-    margin-right: .8rem;
-  }
-  
-  .github-logo {
-    margin-left: 1rem;
-    margin-right: 1.1rem;
-  }
-`;
-
 function Header() {
-  const [naviClicked, setNaviClicked] = useState(false);
-
-  function handleNaviClick(e) {
-    e.preventDefault();
-    setNaviClicked(!naviClicked)
-  }
-
-  function NaviButton() {
-    return (
-      <StyledHeader>
-        <a href='' onClick={handleNaviClick} className='socials-link'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </StyledHeader>
-    );
-  }
-
-  function NaviDropdown() {
-    return (
-      <>
-        <StyledDropdown className="animate__animated animate__slideInDown">
-          <OutsideClickHandler onOutsideClick={() => {setNaviClicked(false)}}>
-          <a href='/studio' onClick={() => {setNaviClicked(false)}} ><div>Admin</div></a>
-          <a href='' onClick={() => {setNaviClicked(false)}}><div>Previous Talks</div></a>
-          <a href='#contact' onClick={() => {setNaviClicked(false)}} ><div>Contact Us</div></a>
-          <div className='socials'>Socials</div>
-          <a href='https://www.meetup.com/BendJS/' >
-            <div className="meetup-wrapper">
-            <Image src={meetup_logo} className='meetup-logo' width={100} height={100} />
-            /BendJS
-            </div>
-          </a>
-          <a href='https://bendjs.slack.com/ssb/redirect' >
-            <div className="slack-wrapper">
-            <Image src={slack_logo} className='slack-logo' width={150} height={150} />
-            /BendJS
-            </div>
-          </a>
-          <a href='https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ' >
-            <div className="youtube-wrapper">
-            <Image src={youtube_logo} className='youtube-logo' width={100} height={70} />
-            /BendJS
-            </div>
-          </a>
-          <a href='https://github.com/BendJS' >
-            <div className="github-wrapper">
-            <Image src={github_logo} className='github-logo' width={75} height={75} />
-            /BendJS
-            </div>
-          </a>
-          </OutsideClickHandler>
-        </StyledDropdown>
-      </>
-    );
-  }
-
   return (
     <StyledHeader>
       <div>
-        <Image className="bendjs-logo" src={bendjs_logo} alt="bendjs logo" />
+        <a href='/'><Image className="bendjs-logo" src={bendjs_logo} alt="bendjs logo" /></a>
       </div>
-      <div >
-        {NaviButton()}
-      {
-        naviClicked ? NaviDropdown() : <div></div>
-      }
+      <div>
+        <div className="socials-link" hidden>
+          <div className='links-bar'>
+            <a href='/studio' onClick={() => {setNaviClicked(false)}} ><div>Admin</div></a>
+            <a href='' onClick={() => {setNaviClicked(false)}}><div>Previous Talks</div></a>
+          </div>
+        </div>
       </div>
     </StyledHeader>
   )
 }
 
-const StyledWelcome = styled.div`
-color: #fff;
 
-  justify-content: center;
-  display: flex;
-
-  margin-top: min(13rem, 13vw);
-  height: auto;
-
-  font-size: max(2rem, 2vw);
-  
-  div {
-    align-items: center;
-    display: columns;
-
-    width: min(70rem, 70vw);
-    min-width: 22rem; 
-  }
-  
-
-  h4, h5 {
-    margin: max(1rem, 1vw);
-  }
-
-  h4 {
-    font-style: italic;
-  }
-
-  @media (max-width: 400px) {
-    transform: scale(0.9);
-    margin-top: -2rem;
-    margin-bottom: -2rem;
-  }
-`;
-
-function Welcome() {
-  return (
-    <>
-      <StyledWelcome>
-        <div>
-          <h4>BendJS</h4>
-          <h5>A Javascript meetup in Bend, Oregon</h5>
-          <h5>
-            This group is for anyone interested in learning Javascript, 
-            sharing something they know, networking with other devs, and having a great time! 
-          </h5>
-          <h5>
-            All levels are welcome. Please join our slack workspace for future updates and continuing the conversation.
-          </h5>
-        </div>
-      </StyledWelcome>
-    </>
-  )
-}
-
-export {Header, Welcome}
+export {Header}
