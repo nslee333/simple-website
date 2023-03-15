@@ -8,20 +8,18 @@ const StyledMemberSpotlight = styled.div`
   margin-bottom: 5rem;
   
   max-height: 65rem;
-
   padding-bottom: 2rem;
 
   background-color: #000;
   color: #fff;
-  
   
   .title-container {
     justify-content: center;
     display: flex;
 
     padding: 2rem;
-
     font-size: 30px;
+
     font-weight: medium;
   }
 
@@ -53,16 +51,15 @@ const StyledMemberSpotlight = styled.div`
 
     @media (max-width: 520px) {
       transform: scale(0.90);
-
       margin-top: -2rem;
-      margin-bottom: 0;
 
+      margin-bottom: 0;
       padding-top: 1rem;
+
       padding-bottom: 1rem;
     }
 
     @media (max-width: 420px) {
-
       max-height: 55rem;
       transform: scale(0.75);
 
@@ -95,10 +92,9 @@ const StyledMemberSpotlight = styled.div`
 
   .member-container__photo-teal-frame {
     border-radius: 7px;
-
     min-width: 24rem;
+
     min-height: 24rem;
-    
     padding: 1rem;
 
     background-color: #7FE7D7;
@@ -125,8 +121,8 @@ const StyledMemberSpotlight = styled.div`
     margin-top: 2rem;
 
     border-radius: 7px;
-
     width: 20rem;
+
     height: 20rem;
   }
   
@@ -225,7 +221,6 @@ const client = createClient({
 
 export async function getStaticProps() {
   const member = await client.fetch(`*[_type == 'MemberSpotlight']`);
-
 
   return {
     props: {

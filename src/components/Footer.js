@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-// import github_logo from "../../public/images/github_logo.svg";
 import github_logo from "../../public/images/github_logo_white.svg";
 import Image from "next/image";
 
 const StyledFooter = styled.footer`
-
-
 justify-content: center;
-
 display: flex;
 
 margin-top: 3.5rem;
@@ -19,14 +15,15 @@ font-size: 1.25rem;
 div {
     color: #fff;
     justify-content: center;
-    display: grid;
 
+    display: grid;
     padding: .5rem;
   }
 
   .Footer__github-logo {
     height: 5rem;
     width: 5rem;
+
     margin-left: 5rem;
     margin-top: .5rem;
   }
@@ -40,8 +37,6 @@ div {
     }
   }
 `;
-
-
 
 export default function Footer() {
   return (

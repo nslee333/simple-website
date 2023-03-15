@@ -10,7 +10,8 @@ function App({images, member}) {
     <>
     <div className='background-container'>
       <div className="app">
-          <Header />
+        <Header />
+
         <main>
             <Home images={images} member={member}/>
         </main>

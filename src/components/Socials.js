@@ -7,7 +7,6 @@ import Image from 'next/image';
 const StyledSocials = styled.div`
   color: #fff;
 
-
   margin-top 3rem;
   margin-bottom: 7rem;
 
@@ -24,8 +23,8 @@ const StyledSocials = styled.div`
   .social-logos {
     justify-content: space-evenly;
     align-items: space-evenly;
-    flex-wrap: wrap;
 
+    flex-wrap: wrap;
     display: flex;
 
     margin-top: 2rem;
@@ -55,13 +54,12 @@ const StyledSocials = styled.div`
     align-items: center;
 
     display: flex;
-
     margin-left: 5rem;
-    margin-right: 5rem;
 
+    margin-right: 5rem;
     padding: 0.5rem;
+
     width: 15rem;
-  
     height: 6rem;
 
     font-size: max(2rem, 2vw);
@@ -70,6 +68,7 @@ const StyledSocials = styled.div`
   .social-logos__meetup-logo {
     margin: 0px;
     height: 109px;
+
     width: 120px;
   }
 
@@ -78,7 +77,6 @@ const StyledSocials = styled.div`
     align-items: center;
 
     display: flex;
-
     height: 7rem;
   }
   
@@ -94,19 +92,19 @@ const StyledSocials = styled.div`
   @media (max-width: 550px) {
     transform: scale(0.8);
     margin-top: -3rem;
+
     margin-bottom: -2rem;
 
     .social-logos {
       flex-wrap: wrap;
       justify-content: space-evenly;
-      align-items: space-evenly;
 
+      align-items: space-evenly;
       display: grid;
 
       padding: 0;
     }
 
-   
     .social-logos__slack {
       margin-top: -2rem;
       margin-right: 0;

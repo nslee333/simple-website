@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledWelcome = styled.div`
-
   justify-content: center;
   display: flex;
 
@@ -32,6 +31,7 @@ const StyledWelcome = styled.div`
   @media (max-width: 400px) {
     transform: scale(0.9);
     margin-top: -4rem;
+    
     margin-bottom: -2rem;
   }
 `;

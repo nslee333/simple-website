@@ -13,13 +13,12 @@ const StyledStayConnected = styled.div`
     display: flex;
 
     margin-inline: max(2rem, 2vw);
-
     border-radius: 7px;
 
     width: max(45rem, 45vw);
     min-width: 300px;
-    max-width: 45rem;
 
+    max-width: 45rem;
     min-height: 29rem;
     
     padding: 2rem;
@@ -41,8 +40,8 @@ const StyledStayConnected = styled.div`
 
     h4 {
       margin-bottom: min(2rem, 2vw);
-
       font-size: max(30px, 1.5vw);
+
       font-weight: normal;
     }
 
@@ -51,13 +50,14 @@ const StyledStayConnected = styled.div`
       margin-top: 2rem;
 
       border-radius: 7px;
-    
       width: 17rem;
-      height: 10rem;
 
+      height: 10rem;
       padding-top: 1rem;
+
       padding-left: 1rem;
       padding-bottom: 2rem;
+
       padding-right: 1rem;
     }
 
@@ -78,18 +78,19 @@ const StyledStayConnected = styled.div`
 
     width: max(45rem, 45vw);
     min-width: 300px;
-    max-width: 45rem;
 
+    max-width: 45rem;
     height: max(17rem, 13vw);
+
     min-height: 29rem;
-    
     padding: 2rem;
+
     background-color: #fff;
     
     h3 {
       margin-bottom: 4rem;
-
       font-size: max(35px, 2vw);
+
       font-weight: normal;
       font-style: italic;
     }
@@ -143,14 +144,13 @@ const StyledStayConnected = styled.div`
     align-items: center;
 
     display: flex;
-
     transform: scale(0.85);
+
     margin-top: -5rem;
     margin-bottom: -5rem;
   }
 }
 `;
-
 
 export default function Connected () {
   return (

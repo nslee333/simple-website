@@ -131,5 +131,4 @@ export default function Contact() {
         </StyledContact>
       </>
     )
-
 }

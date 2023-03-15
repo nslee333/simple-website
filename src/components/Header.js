@@ -10,78 +10,72 @@ const StyledHeader = styled.header`
   height: 12rem;
   padding: 1rem;
 
-.bendjs-logo {
-  margin-top: 5rem;
-  margin-right: 10rem;
-  
-  border-radius: 1rem;
-  
-  width: 8rem;
-  height: auto;
-}
-
-.socials-link {
-  
-  margin-top: 2.25rem;
-  margin-right: 2rem;
-  
-  height: 3rem;
-  padding: .5rem;
-  
-  
-  background-color: #fff;
-  border-radius: 7px;
-}
-
-.links-bar {
-  display: flex;
-  
-  margin-inline: .5rem;
-  font-size: 1.75rem;
-      
-  margin-top: .25rem;
-
-  font-style: italic;
-  
-}
-
-div {
-  margin-inline: 2rem;
-}
-
-span {
-  display: flex;
-  margin-block: .75rem;
-
-  border-radius: 3px;
-  height: 6px;
-
-  width: 50px;
-  background-color: black;
-  background-color: white;
-}
-
-@media (max-width: 630px) {
   .bendjs-logo {
-    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-right: 10rem;
+    
+    border-radius: 1rem;
+    width: 8rem;
+
+    height: auto;
   }
-}
 
-
-@media (max-width: 400px) {
-  justify-content: space-between;
-  
-  transform: scale(0.9);
   .socials-link {
-    margin-right: 0rem;
+    margin-top: 2.25rem;
+    margin-right: 2rem;
+    
+    height: 3rem;
+    padding: .5rem;
+    
+    background-color: #fff;
+    border-radius: 7px;
   }
-  .bendjs-logo {
-    position: absolute;
-    margin-left: 0;
-    top: -50px;
-    left: 10px;
+
+  .links-bar {
+    display: flex;
+    margin-inline: .5rem;
+
+    font-size: 1.75rem;
+    margin-top: .25rem;
+
+    font-style: italic;
   }
-}
+
+  div {
+    margin-inline: 2rem;
+  }
+
+  span {
+    display: flex;
+    margin-block: .75rem;
+
+    border-radius: 3px;
+    height: 6px;
+
+    width: 50px;  
+    background-color: white;
+  }
+
+  @media (max-width: 630px) {
+    .bendjs-logo {
+      margin-left: 2rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    justify-content: space-between;
+    
+    transform: scale(0.9);
+    .socials-link {
+      margin-right: 0rem;
+    }
+    .bendjs-logo {
+      position: absolute;
+      margin-left: 0;
+      top: -50px;
+      left: 10px;
+    }
+  }
 `;
 
 export default function Header() {

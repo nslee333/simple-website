@@ -17,11 +17,13 @@ const StyledSponsor = styled.div`
 
     min-width: 15rem;
     padding-top: 1.5rem;
+
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-right: 1.5rem;
 
+    padding-right: 1.5rem;
     font-size: max(2rem, 2vw);
+
     font-weight: 100;
     font-style: italic;
   }
@@ -41,6 +43,7 @@ const StyledSponsor = styled.div`
   .sponsor-logos__tao-logo {
     margin: 1rem;
     max-width: 250px;
+
     height: max(4rem, 4vw);
   }
   
@@ -74,14 +77,14 @@ const StyledSponsor = styled.div`
 
   .sponsor-new__container {
     justify-content: center;
-
     margin: 1rem;
+
     max-width: 35rem;
-
     padding-inline: 0.5rem;
-    padding-block: 0.5rem;
 
+    padding-block: 0.5rem;
     font-size: max(1.5rem, 1.5vw);
+
     font-style: italic;
 
     .sponsor-new__contact-container {
@@ -126,7 +129,6 @@ const StyledSponsor = styled.div`
 
   }
 `;
-
 
 export default function Sponsors() {
   return (

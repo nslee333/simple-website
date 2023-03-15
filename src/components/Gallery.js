@@ -10,9 +10,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const StyledGallery = styled.div`
-  
   margin-top: 3rem;
   margin-left: 5rem;
+
   margin-bottom: 3rem;
   margin-right: 5rem;
 
@@ -40,7 +40,6 @@ const StyledGallery = styled.div`
     margin-right: .5rem;
   }
 `;
-
 
 export default function Gallery(images) {
   const imagesArr = images.props;
