@@ -13,7 +13,7 @@ export default function Home({images, member}) {
       <Welcome />
       <Sponsors />
       <Socials />
-      <Gallery props={images}/>
+      <Gallery props={images} />
       <MemberSpotlight  props={member}/>
       <Connected />
       <Contact />

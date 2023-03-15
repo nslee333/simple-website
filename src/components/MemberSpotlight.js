@@ -187,10 +187,9 @@ const StyledMemberSpotlight = styled.div`
 `;
 
 export default function MemberSpotlight(member) {
-  const memberObj= member.props[0];
   return (
     <>
-      {memberObj ? 
+      {member.props ? 
         (<StyledMemberSpotlight>
           <div className='title-container'>
             <h5>Member Spotlight</h5>
@@ -198,14 +197,14 @@ export default function MemberSpotlight(member) {
           <div className='member-container'>
             <div className='member-container__photo-teal-frame'>
               <div className='member-container__photo-black-frame'>
-                <Image src={urlFor(memberObj.memberImage).url()} className='member-container__photo' alt='member profile' width={150} height={150}/>
+                <Image src={urlFor(member.props[0].memberImage).url()} className='member-container__photo' alt='member profile' width={150} height={150}/>
               </div>
             </div>
             <div className='member-container__bio-teal-frame'>
               <div className='member-container__bio-black-frame'>
-                <h5 className='member-container__bio-member-name'>{memberObj.memberName}</h5>
+                <h5 className='member-container__bio-member-name'>{member.props[0].memberName}</h5>
                 <div className='member-container__bio-text'>
-                {memberObj.memberBio}
+                {member.props[0].memberBio}
                 </div>
               </div>
             </div>
