@@ -1,9 +1,9 @@
-import bendjs_photo from "../../public/images/bendjs_meeting_photo.webp";
 import React from 'react';
 import styled from "styled-components";
 import {Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import { urlFor } from "../pages";
 
 import 'swiper/css'; 
 import 'swiper/css/navigation';
@@ -41,8 +41,9 @@ const StyledGallery = styled.div`
   }
 `;
 
-export default function Gallery() {
 
+export default function Gallery(images) {
+  const imagesArr = images.props;
   return (
     <StyledGallery>
         <Swiper
@@ -60,36 +61,16 @@ export default function Gallery() {
             "--swiper-navigation-color": "#0",
           }}
         >
-          <SwiperSlide>
-            <div className='image-container'>
-              <Image src={bendjs_photo} alt='Bendjs 1' fill priority />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 2' fill priority />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='image-container' >
-              <Image src={bendjs_photo} alt='bendjs 3' fill priority />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 4' fill priority />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 5' fill priority />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='image-container'>
-              <Image src={bendjs_photo} alt='bendjs 6' fill priority />
-            </div>
-          </SwiperSlide>
+          { imagesArr ? imagesArr.map((image, index) => {
+               return (
+                <SwiperSlide key={index}>
+                 <div className='image-container' key={index}>
+                     <Image src={urlFor(imagesArr[index].image).url()} alt={`bendjs ${index}`} key={index} fill sizes="max-height: 600px" priority />
+                   </div>
+                 </SwiperSlide>
+               );
+             }
+           ) : <div></div>}
         </Swiper>
     </StyledGallery>
   );

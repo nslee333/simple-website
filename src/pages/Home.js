@@ -7,15 +7,14 @@ import Connected from "../components/StayConnected";
 import MemberSpotlight from "../components/MemberSpotlight";
 import Contact from "../components/Contact";
 
-
-export default function Home() {
+export default function Home({images, member}) {
   return (
     <>
       <Welcome />
-      <Sponsors/>
+      <Sponsors />
       <Socials />
-      <Gallery />
-      <MemberSpotlight />
+      <Gallery props={images}/>
+      <MemberSpotlight  props={member}/>
       <Connected />
       <Contact />
     </>
