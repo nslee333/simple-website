@@ -84,7 +84,7 @@ span {
 }
 `;
 
-function Header() {
+export default function Header() {
   return (
     <StyledHeader>
       <div>
@@ -101,6 +101,3 @@ function Header() {
     </StyledHeader>
   )
 }
-
-
-export {Header}
