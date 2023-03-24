@@ -84,14 +84,6 @@ export default function Header() {
       <div>
         <a href='/'><Image className="bendjs-logo" src={bendjs_logo} alt="bendjs logo" /></a>
       </div>
-      <div>
-        <div className="socials-link" hidden>
-          <div className='links-bar'>
-            <a href='/studio' onClick={() => {setNaviClicked(false)}} ><div>Admin</div></a>
-            <a href='' onClick={() => {setNaviClicked(false)}}><div>Previous Talks</div></a>
-          </div>
-        </div>
-      </div>
     </StyledHeader>
   )
 }
