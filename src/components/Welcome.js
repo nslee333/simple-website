@@ -3,8 +3,8 @@ import React from "react";
 export default function Welcome () {
   return (
     <>
-      <div className='flex justify-center pl-5 pt-10 pr-5'>
-        <div className='italic text-white w-[50rem] '>
+      <div className='flex justify-center px-5 pt-10'>
+        <div className='italic text-white w-[50rem]'>
           <h4 className='text-4xl my-5'>BendJS</h4>
           <h5 className='text-3xl my-5'>A Javascript meetup in Bend, Oregon</h5>
           <h5 className='text-3xl my-10'>
