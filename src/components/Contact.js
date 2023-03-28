@@ -1,134 +1,105 @@
-import styled from "styled-components";
-import { Form } from "./SignupForm";
-
-const FormExtended = styled(Form)`
-  input {
-    width: min(35rem, 100% - .9rem);
-    height: 2rem;
-
-    @media (max-width: 430px) {
-      max-width: 15.5rem;
-    }
-  }
-
-  input:focus-visible {
-    outline: 2px solid #000;
-  }
-`;
-
-const StyledContact = styled.div`
-  justify-content: center;
-  display: flex;
-
-  border-radius: 10px;
-  padding: 2rem;
-
-
-  .contact {
-    border-radius: 7px;
-    width: max(35rem, 45vw);
-
-    min-width: 300px;
-    max-width: 35rem;
-
-    padding: 2rem;
-    background-color: #fff;
-
-    @media (max-width: 745px) {
-      height: auto;
-    }
-  }
-
-  h3 {
-    font-style: italic;
-    font-size: 30px;
-  }
-
-  .contact__title {
-    padding-left: .5rem;
-    padding-bottom: 1.5rem;
-
-    padding-right: .5rem;
-  }
-  
-  .contact__frame {
-    border-radius: 7px;
-    padding: 1.5rem;
-
-    background-color: #e1e1e1;
-  }
-
-  .contact__message {
-    border: none;
-    border-radius: 7px;
-
-    height: 10rem;
-    width: min(35rem, 100% - 1rem);
-    
-    padding-top: .5rem;
-    padding-left: .5rem;
-
-    padding-bottom: .5rem;
-    padding-right: .5rem;
-
-    font-size: 1rem;
-    font-family: 'Open Sans';
-
-    resize: none;
-  }
-
-  .contact__message:focus-visible {
-    outline: 2px solid #000;
-  }
-
-  @media (max-width: 370px) {
-    justify-content: center;
-    align-items: center;
-
-    display: flex;
-    transform: scale(0.85);
-
-    margin-top: -10rem;
-    margin-bottom: -2rem;
-  }
-
-`;
-
-
-
 export default function Contact() {
   const renderForm = () => {
     return (
       <>
-        <FormExtended name="contact" data-netlify="true" method="post">
-          <input type="hidden" name="form-name" value="contact"/>
+        <div name="contact" data-netlify="true" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <label>
-            <input type="text" name="name" placeholder="Full Name" required={true}/>
+            <div>
+              <input
+                className="my-2 
+                          block 
+                          w-full 
+                          rounded-md 
+                          p-2"
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required={true}
+              />
+            </div>
           </label>
           <label>
-            <input type="email" name="email" placeholder="Email" required={true}/>
+            <div className="my-3">
+              <input
+                className="my-2 
+                          block 
+                          w-full 
+                          rounded-md 
+                          p-2"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required={true}
+              />
+            </div>
           </label>
           <label>
-            <textarea className="contact__message" type="text" name='message' placeholder="..." required={true}/>
+            <div
+              className="my-4
+                        block
+                        w-full"
+            >
+              <textarea
+                className="my-2 
+                          h-[10rem] 
+                          w-full 
+                          resize-none 
+                          rounded-md 
+                          p-2"
+                type="text"
+                name="message"
+                placeholder="..."
+                required={true}
+              />
+            </div>
           </label>
-          <button className="button" type="submit">
+          <button
+            className="shadow-grey mt-4 
+                            ml-2 
+                            mb-2 
+                            block
+                            h-[2rem] 
+                            w-[7rem] 
+                            rounded-md 
+                            bg-white 
+                            text-xl 
+                            shadow 
+                            hover:origin-bottom 
+                            hover:shadow-none"
+            type="submit"
+          >
             Send
           </button>
-        </FormExtended>
+        </div>
       </>
     );
-  }
+  };
 
   return (
-      <>
-        <StyledContact>
-          <div className="contact" id='contact'>
-            <h1 className="contact__title">Contact Us...</h1>
-            <div className="contact__frame">
-              {renderForm()}
-            </div>
+    <>
+      <div className="flex justify-center">
+        <div
+          className="mx-2 
+                      mt-5 
+                      w-[32rem] 
+                      min-w-[5rem] 
+                      rounded-md
+                      bg-white "
+          id="contact"
+        >
+          <h1 className="m-5 
+                          flex 
+                          justify-center 
+                          text-2xl">Contact Us...</h1>
+          <div className="m-5 
+                          rounded-md
+                          bg-neutral-300 
+                          p-5">
+            {renderForm()}
           </div>
-        </StyledContact>
-      </>
-    )
+        </div>
+      </div>
+    </>
+  );
 }
