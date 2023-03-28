@@ -26,7 +26,7 @@ export default function Socials() {
             <a href="https://www.meetup.com/BendJS/" className="flex">
               <Image
                 src={meetup_logo}
-                className="mysm:w-[110px] xs:w-[96px] "
+                className="my:w-[110px] xs:w-[96px] "
                 alt="Meetup Logo"
               />
               <h5 className="mt-10 text-2xl text-white xs:text-lg sm:text-2xl">
@@ -34,7 +34,7 @@ export default function Socials() {
               </h5>
             </a>
           </div>
-          <div className="my-5 mx-6 xs:mt-0 sm:mt-4">
+          <div className="my-5 mx-6 xs:mt-0 sm:mt-2">
             <a href="https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ">
               <Image
                 src={youtube_logo}
