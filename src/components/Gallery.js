@@ -23,7 +23,7 @@ export default function Gallery(images) {
         className="border-white-200
                     rounded-md
                     border-8
-                    xs:w-[20rem]
+                    xs:w-[19rem]
                     sm:w-[30rem]
                     md:w-[40rem]
                     lg:w-[50rem]"
@@ -50,7 +50,6 @@ export default function Gallery(images) {
                   <SwiperSlide key={index}>
                     <div className="aspect" key={index}>
                       <Image
-                        className=""
                         src={urlFor(imagesArr[index].image).url()}
                         alt={`bendjs ${index}`}
                         key={index}
