@@ -4,21 +4,20 @@ import Footer from "../components/Footer";
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
 
-
-function App({images, member}) {
+function App({ images, member }) {
   return (
     <>
-    <div className='background-container'>
-      <div className="app">
-        <Header />
+      <div className="background-container">
+        <div className="app">
+          <Header />
 
-        <main>
-            <Home images={images} member={member}/>
-        </main>
+          <main>
+            <Home images={images} member={member} />
+          </main>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
-    </div>
     </>
   );
 }
@@ -26,11 +25,11 @@ function App({images, member}) {
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  apiVersion: '2023-03-05',
-  useCdn: false
+  apiVersion: "2023-03-05",
+  useCdn: false,
 });
 
-const builder = imageUrlBuilder(client)
+const builder = imageUrlBuilder(client);
 
 export function urlFor(source) {
   return builder.image(source);
@@ -39,13 +38,13 @@ export function urlFor(source) {
 export async function getStaticProps() {
   const images = await client.fetch(`*[_type == "Image"]`);
   const member = await client.fetch(`*[_type == "memberSpotlight"]`);
-  
+
   return {
     props: {
       images,
-      member
-    }
-  }
+      member,
+    },
+  };
 }
 
 export default App;
