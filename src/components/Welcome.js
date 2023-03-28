@@ -4,7 +4,7 @@ export default function Welcome() {
   return (
     <>
       <div className="flex justify-center px-5 pt-10">
-        <div className="w-[50rem] italic text-white">
+        <div className="w-[50rem] italic text-white xs:my-8 xs:mx-2 sm:my-16 md:my-32">
           <h4 className="my-5 text-4xl">BendJS</h4>
           <h5 className="my-5 text-3xl">A Javascript meetup in Bend, Oregon</h5>
           <h5 className="my-10 text-3xl">
