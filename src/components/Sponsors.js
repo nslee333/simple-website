@@ -9,7 +9,7 @@ export default function Sponsors() {
     <>
       <div className="bg-white p-10">
         <div>
-          <h5 className="mb-5 flex justify-center text-3xl text-black">
+          <h5 className="mb-5 flex justify-center text-black xs:text-2xl md:text-3xl">
             Thank you so much to our incredible sponsors!
           </h5>
         </div>
@@ -26,9 +26,9 @@ export default function Sponsors() {
               <Image
                 src={uptech}
                 className="m-5 
-                                          aspect-auto 
-                                          xs:w-[200px] 
-                                          md:w-[260px]"
+                          aspect-auto 
+                          xs:w-[200px] 
+                          md:w-[260px]"
                 alt="uptech logo"
               />
             </a>
@@ -50,36 +50,37 @@ export default function Sponsors() {
               <Image
                 src={ladd_group}
                 className="ml-5 
-                                              mr-5 
-                                              mb-5 
-                                              aspect-auto 
-                                              xs:mb-0 
-                                              xs:mt-5 
-                                              xs:w-[200px] 
-                                              md:mt-2 
-                                              md:w-[260px]"
+                            mr-5 
+                            mb-5 
+                            aspect-auto 
+                            xs:mb-0 
+                            xs:mt-5 
+                            xs:w-[200px] 
+                            md:mt-2 
+                            md:w-[260px]"
                 alt="ladd group logo"
               />
             </a>
           </div>
           <div className="flex justify-center">
             <div>
-              <h5 className="mt-5 text-3xl italic">
+              <h5 className="mt-5 text-2xl italic md:text-3xl">
                 We are always looking for new sponsors
               </h5>
               <div className="flex justify-center">
                 <a
                   htmlFor="button"
                   className="shadow-grey 
-                                            mt-5 
-                                            rounded 
-                                            bg-[#7FE7D7] 
-                                            p-3 
-                                            text-2xl 
-                                            shadow 
-                                            hover:origin-bottom 
-                                            hover:translate-y-0.5 
-                                            hover:shadow-none"
+                              mt-5 
+                              rounded 
+                              bg-[#7FE7D7] 
+                              p-3 
+                              text-xl 
+                              shadow 
+                              hover:origin-bottom 
+                              hover:translate-y-0.5 
+                              hover:shadow-none 
+                              md:text-2xl"
                   href="#contact"
                 >
                   Contact Us
