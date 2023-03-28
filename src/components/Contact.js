@@ -78,7 +78,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center p-2.5">
         <div
           className="mx-2 
                       mt-5 
