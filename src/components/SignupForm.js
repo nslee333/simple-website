@@ -33,9 +33,9 @@ export default function SignupForm() {
         </label>
         <button
           className="shadow-grey 
-                      mt-4 
+                      mb-2 
                       ml-2 
-                      mb-2
+                      mt-4
                       block 
                       h-[2rem] 
                       w-[7rem] 

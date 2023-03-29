@@ -55,9 +55,9 @@ export default function Contact() {
             </div>
           </label>
           <button
-            className="shadow-grey mt-4 
+            className="shadow-grey mb-2 
                             ml-2 
-                            mb-2 
+                            mt-4 
                             block
                             h-[2rem] 
                             w-[7rem] 
@@ -88,14 +88,20 @@ export default function Contact() {
                       bg-white "
           id="contact"
         >
-          <h1 className="m-5 
+          <h1
+            className="m-5 
                           flex 
                           justify-center 
-                          text-2xl">Contact Us...</h1>
-          <div className="m-5 
+                          text-2xl"
+          >
+            Contact Us...
+          </h1>
+          <div
+            className="m-5 
                           rounded-md
                           bg-neutral-300 
-                          p-5">
+                          p-5"
+          >
             {renderForm()}
           </div>
         </div>

@@ -13,7 +13,7 @@ export default function Connected() {
               Bend, tech news and our community member spotlight!
             </div>
           </div>
-          <div className="my-2 mx-2 flex">
+          <div className="mx-2 my-2 flex">
             <SignupForm />
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function Connected() {
             If you have something to share, big or small, big or small, please
             get in touch!
           </div>
-          <div className="mt-10 mb-2 sm:mt-32">
+          <div className="mb-2 mt-10 sm:mt-32">
             <a
               htmlFor="button"
               href="#contact"

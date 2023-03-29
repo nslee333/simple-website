@@ -13,11 +13,9 @@ module.exports = {
     ],
   },
 
-  // ^ Added workaround for mini-css-extract-plugin url prefix error. 
+  // ^ Added workaround for mini-css-extract-plugin url prefix error.
   // ^ Please refer to this issue: https://github.com/webpack-contrib/mini-css-extract-plugin/issues/945
-  webpack: ( 
-    config
-  ) => {
+  webpack: (config) => {
     plugins: [
       (config.module.generator.asset.publicPath = "/_next/"),
       new MiniCssExtractPlugin({

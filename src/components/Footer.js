@@ -2,7 +2,6 @@ import React from "react";
 import github_logo from "../../public/images/github_logo_white.svg";
 import Image from "next/image";
 
-
 export default function Footer() {
   return (
     <>

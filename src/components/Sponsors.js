@@ -19,8 +19,8 @@ export default function Sponsors() {
                         justify-around 
                         xs:flex-wrap 
                         xs:pb-5 
-                        md:pt-20 
-                        md:pb-14 "
+                        md:pb-14 
+                        md:pt-20 "
           >
             <a href="https://www.uptechstudio.com/">
               <Image
@@ -42,16 +42,16 @@ export default function Sponsors() {
             <a href="https://codepen.io/">
               <Image
                 src={codepen}
-                className="ml-5 mr-5 mb-5 mt-8 aspect-auto xs:w-[200px] md:w-[260px] "
+                className="mb-5 ml-5 mr-5 mt-8 aspect-auto xs:w-[200px] md:w-[260px] "
                 alt="codepen logo"
               />
             </a>
             <a href="https://www.bendpropertysource.com/">
               <Image
                 src={ladd_group}
-                className="ml-5 
+                className="mb-5 
+                            ml-5 
                             mr-5 
-                            mb-5 
                             aspect-auto 
                             xs:mb-0 
                             xs:mt-5 
