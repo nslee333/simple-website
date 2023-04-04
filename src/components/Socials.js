@@ -14,7 +14,7 @@ export default function Socials() {
         </div>
         <div className="flex justify-center">
           <div className="sm:w-[40rem]">
-            <div className="flex xs:justify-center sm:justify-around xs:grid xs:w-60 sm:w-auto sm:flex md:flex">
+            <div className="flex xs:grid xs:w-60 xs:justify-center sm:flex sm:w-auto sm:justify-around md:flex">
               <div className="flex justify-center">
                 <a href="https://bendjs.slack.com/ssb/redirect">
                   <Image
@@ -24,7 +24,7 @@ export default function Socials() {
                   />
                 </a>
               </div>
-              <div className='sm:ml-0 xs:ml-[4.2rem] xs:my-5 sm:my-0'>
+              <div className="xs:my-5 xs:ml-[4.2rem] sm:my-0 sm:ml-0">
                 <div className="sm:mt-[1.35rem]">
                   <a href="https://www.meetup.com/BendJS/" className="flex">
                     <Image
