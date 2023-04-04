@@ -20,7 +20,7 @@ export default function Sponsors() {
                         xs:flex-wrap 
                         xs:pb-5 
                         md:pb-14 
-                        md:pt-20 "
+                        md:pt-20"
           >
             <a href="https://www.uptechstudio.com/">
               <Image

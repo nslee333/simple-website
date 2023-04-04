@@ -42,11 +42,11 @@ export default function Contact() {
             >
               <textarea
                 className="my-2 
-                          h-[10rem] 
-                          w-full 
-                          resize-none 
-                          rounded-md 
-                          p-2"
+                            h-[10rem] 
+                            w-full 
+                            resize-none 
+                            rounded-md 
+                            p-2"
                 type="text"
                 name="message"
                 placeholder="..."
@@ -55,18 +55,19 @@ export default function Contact() {
             </div>
           </label>
           <button
-            className="shadow-grey mb-2 
-                            ml-2 
-                            mt-4 
-                            block
-                            h-[2rem] 
-                            w-[7rem] 
-                            rounded-md 
-                            bg-white 
-                            text-xl 
-                            shadow 
-                            hover:origin-bottom 
-                            hover:shadow-none"
+            className="shadow-grey 
+                        mb-2 
+                        ml-2 
+                        mt-4 
+                        block
+                        h-[2rem] 
+                        w-[7rem] 
+                        rounded-md 
+                        bg-white 
+                        text-xl 
+                        shadow 
+                        hover:origin-bottom 
+                        hover:shadow-none"
             type="submit"
           >
             Send
@@ -90,17 +91,17 @@ export default function Contact() {
         >
           <h1
             className="m-5 
-                          flex 
-                          justify-center 
-                          text-2xl"
+                        flex 
+                        justify-center 
+                        text-2xl"
           >
             Contact Us...
           </h1>
           <div
             className="m-5 
-                          rounded-md
-                          bg-neutral-300 
-                          p-5"
+                        rounded-md
+                        bg-neutral-300 
+                        p-5"
           >
             {renderForm()}
           </div>
