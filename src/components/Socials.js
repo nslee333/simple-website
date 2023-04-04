@@ -29,7 +29,7 @@ export default function Socials() {
                   <a href="https://www.meetup.com/BendJS/" className="flex">
                     <Image
                       src={meetup_logo}
-                      className=" xs:w-[80px]"
+                      className="xs:w-[80px]"
                       alt="Meetup Logo"
                     />
                     <div className="pt-7">
