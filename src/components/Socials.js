@@ -7,41 +7,49 @@ export default function Socials() {
   return (
     <>
       <div>
-        <div className="m-5 flex justify-center">
+        <div className="m-5 flex justify-center ">
           <h5 className="text-white xs:text-2xl md:text-3xl">
             Check us out on...
           </h5>
         </div>
-        <div className="flex justify-around xs:flex-wrap sm:flex">
-          <div className="mx-6 my-0">
-            <a href="https://bendjs.slack.com/ssb/redirect">
-              <Image
-                src={slack_logo}
-                className="my-5 aspect-auto xs:w-[130px] sm:w-[160px]"
-                alt="Slack Logo"
-              />
-            </a>
-          </div>
-          <div className="mx-6 my-5 ms:mt-0 mm:mt-0 ml:mt-9 sm:mt-12">
-            <a href="https://www.meetup.com/BendJS/" className="flex">
-              <Image
-                src={meetup_logo}
-                className="my:w-[110px] xs:w-[96px] "
-                alt="Meetup Logo"
-              />
-              <h5 className="mt-10 text-2xl text-white xs:text-lg sm:text-2xl">
-                /BendJS
-              </h5>
-            </a>
-          </div>
-          <div className="mx-6 my-5 xs:mt-0 sm:mt-2">
-            <a href="https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ">
-              <Image
-                src={youtube_logo}
-                className="my-5 xs:w-[96px] mm:mt-3 ml:mt-12 sm:w-[115px]"
-                alt="Youtube Logo"
-              />
-            </a>
+        <div className="flex justify-center">
+          <div className="sm:w-[40rem]">
+            <div className="flex xs:justify-center sm:justify-around xs:grid xs:w-60 sm:w-auto sm:flex md:flex">
+              <div className="flex justify-center">
+                <a href="https://bendjs.slack.com/ssb/redirect">
+                  <Image
+                    src={slack_logo}
+                    className="aspect-auto xs:w-[100px] sm:w-[120px]"
+                    alt="Slack Logo"
+                  />
+                </a>
+              </div>
+              <div className='sm:ml-0 xs:ml-[4.2rem] xs:my-5 sm:my-0'>
+                <div className="sm:mt-[1.35rem]">
+                  <a href="https://www.meetup.com/BendJS/" className="flex">
+                    <Image
+                      src={meetup_logo}
+                      className=" xs:w-[80px]"
+                      alt="Meetup Logo"
+                    />
+                    <div className="pt-7">
+                      <h5 className="text-2xl text-white xs:text-lg sm:text-xl">
+                        /BendJS
+                      </h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-center sm:mt-[.7rem]">
+                <a href="https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ">
+                  <Image
+                    src={youtube_logo}
+                    className="my-5 ml-1.5 xs:w-[70px] sm:w-[80px]"
+                    alt="Youtube Logo"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
