@@ -4,7 +4,7 @@ export default function Connected() {
   return (
     <>
       <div className="flex justify-evenly xs:flex-wrap">
-        <div className="m-5 h-auto w-[42rem] rounded-md bg-white p-5 sm:h-[25rem]">
+        <div className="m-5 h-auto w-[42rem] min-w-[18.85rem] rounded-md bg-white p-5 sm:h-[25rem]">
           <div className="">
             <h3 className="p-2 text-3xl italic">Newsletter</h3>
             <h4 className="p-2 text-2xl italic">Stay up to date</h4>

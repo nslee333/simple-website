@@ -84,7 +84,7 @@ export default function Contact() {
           className="mx-2 
                       mt-5 
                       w-[32rem] 
-                      min-w-[5rem] 
+                      min-w-[18.85rem] 
                       rounded-md
                       bg-white "
           id="contact"
