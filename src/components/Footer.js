@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="text-white">
             <div>Contribute to this website</div>
             <div className="flex justify-center p-2">
-              <Image src={github_logo} alt="GitHub Logo" className="" />
+              <Image src={github_logo} alt="GitHub Logo" className="w-[5rem]" />
             </div>
           </div>
         </a>
