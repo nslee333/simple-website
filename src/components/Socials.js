@@ -17,7 +17,7 @@ export default function Socials() {
             <div className="flex xs:grid xs:w-60 xs:justify-center sm:flex sm:w-auto sm:justify-around md:flex">
               <div className="xs:ml-[4.2rem] sm:my-0 sm:ml-0">
                 <div className="sm:mt-[1rem]">
-                  <a href="https://www.meetup.com/BendJS/" className="flex">
+                  <a href="https://www.meetup.com/BendJS/" target="_blank" className="flex">
                     <Image
                       src={meetup_logo}
                       className="xs:w-[80px]"
@@ -32,7 +32,7 @@ export default function Socials() {
                 </div>
               </div>
               <div className="flex justify-center xs:my-12 sm:my-8 sm:mr-10">
-                <a href="https://bendjs.slack.com/ssb/redirect">
+                <a href="https://bendjs.slack.com/ssb/redirect" target="_blank">
                   <Image
                     src={slack_logo}
                     className="aspect-auto xs:w-[175px] sm:w-[175px]"
@@ -41,7 +41,7 @@ export default function Socials() {
                 </a>
               </div>
               <div className="flex justify-center sm:mr-10 sm:mt-[.59em]">
-                <a href="https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ">
+                <a href="https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ" target="_blank">
                   <Image
                     src={youtube_logo}
                     className="xs:h-[50px] xs:w-[70px] sm:my-[1.22rem]"

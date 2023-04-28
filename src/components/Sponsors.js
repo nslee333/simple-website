@@ -22,7 +22,7 @@ export default function Sponsors() {
                         md:pb-14 
                         md:pt-20"
           >
-            <a href="https://www.uptechstudio.com/">
+            <a href="https://www.uptechstudio.com/" target="_blank">
               <Image
                 src={uptech}
                 className="m-5 
@@ -32,21 +32,21 @@ export default function Sponsors() {
                 alt="uptech logo"
               />
             </a>
-            <a href="https://www.techoregon.org/">
+            <a href="https://www.techoregon.org/" target="_blank">
               <Image
                 src={tao}
                 className="m-5 aspect-auto xs:w-[200px] md:w-[260px]"
                 alt="tech oregon logo"
               />
             </a>
-            <a href="https://codepen.io/">
+            <a href="https://codepen.io/" target="_blank">
               <Image
                 src={codepen}
                 className="mb-5 ml-5 mr-5 mt-8 aspect-auto xs:w-[200px] md:w-[260px] "
                 alt="codepen logo"
               />
             </a>
-            <a href="https://www.bendpropertysource.com/">
+            <a href="https://www.bendpropertysource.com/" target="_blank">
               <Image
                 src={ladd_group}
                 className="mb-5 
