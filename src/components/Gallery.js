@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -8,12 +7,6 @@ import { urlFor } from "../pages";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-const StyledGallery = styled.div`
-  .aspect {
-    aspect-ratio: 1.3 / 1;
-  }
-`;
 
 export default function Gallery(images) {
   const imagesArr = images.props;
@@ -28,7 +21,6 @@ export default function Gallery(images) {
                     md:w-[40rem]
                     lg:w-[50rem]"
       >
-        <StyledGallery>
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={50}
@@ -64,7 +56,6 @@ export default function Gallery(images) {
               <div></div>
             )}
           </Swiper>
-        </StyledGallery>
       </div>
     </div>
   );
