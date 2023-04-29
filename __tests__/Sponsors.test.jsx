@@ -1,0 +1,1 @@
+test.todo("Sponsors renders without crashing")
