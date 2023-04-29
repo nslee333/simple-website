@@ -4,9 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { urlFor } from "../pages";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
 
 export default function Gallery(images) {
   const imagesArr = images.props;
@@ -21,41 +20,41 @@ export default function Gallery(images) {
                     md:w-[40rem]
                     lg:w-[50rem]"
       >
-          <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={50}
-            slidesPerView={1}
-            navigation={true}
-            pagination={{ clickable: true }}
-            style={{
-              "--swiper-pagination-color": "#ffffff",
-              "--swiper-pagination-bullet-inactive-color": "#999999",
-              "--swiper-pagination-bullet-inactive-opacity": "1",
-              "--swiper-pagination-bullet-size": "10px",
-              "--swiper-pagination-bottom": "25px",
-              "--swiper-navigation-color": "#0",
-            }}
-          >
-            {imagesArr ? (
-              imagesArr.map((image, index) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <div className="aspect" key={index}>
-                      <Image
-                        src={urlFor(imagesArr[index].image).url()}
-                        alt={`bendjs ${index}`}
-                        key={index}
-                        fill
-                        priority
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              })
-            ) : (
-              <div></div>
-            )}
-          </Swiper>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={true}
+          pagination={{ clickable: true }}
+          style={{
+            "--swiper-pagination-color": "#ffffff",
+            "--swiper-pagination-bullet-inactive-color": "#999999",
+            "--swiper-pagination-bullet-inactive-opacity": "1",
+            "--swiper-pagination-bullet-size": "10px",
+            "--swiper-pagination-bottom": "25px",
+            "--swiper-navigation-color": "#0",
+          }}
+        >
+          {imagesArr ? (
+            imagesArr.map((image, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className="aspect" key={index}>
+                    <Image
+                      src={urlFor(imagesArr[index].image).url()}
+                      alt={`bendjs ${index}`}
+                      key={index}
+                      fill
+                      priority
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            })
+          ) : (
+            <div></div>
+          )}
+        </Swiper>
       </div>
     </div>
   );
