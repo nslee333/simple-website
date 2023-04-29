@@ -1,9 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  compiler: {
-    styledComponents: true,
-  },
   images: {
     remotePatterns: [
       {
