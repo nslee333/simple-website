@@ -6,7 +6,7 @@ export default function MemberSpotlight(member) {
   return (
     <>
       {member.props ? (
-        <div className="sm:py-15 bg-black p-5 xs:my-0 xs:flex-wrap md:block">
+        <div className="sm:py-15 bg-black p-5 xs:my-0 xs:flex-wrap md:block pb-12">
           <h5
             className="mx-1
                       flex
