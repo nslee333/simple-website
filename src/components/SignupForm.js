@@ -1,6 +1,6 @@
 export default function SignupForm() {
   return (
-    <div className="grid  rounded-md bg-neutral-300 p-2 w-[100%]">
+    <div className="grid  w-[100%] rounded-md bg-neutral-300 p-2">
       <div
         className="flex-wrap"
         name="newsletter"
@@ -14,8 +14,9 @@ export default function SignupForm() {
           value="newsletter"
         />
         <label>
+          <div hidden>name</div>
           <input
-            className="m-2 block rounded-md p-2 min-w-[13.25rem] w-[95%]"
+            className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
             type="text"
             name="name"
             placeholder="Full Name"
@@ -23,8 +24,9 @@ export default function SignupForm() {
           />
         </label>
         <label>
+          <div hidden>email</div>
           <input
-            className="m-2 block rounded-md p-2 min-w-[13.25rem] w-[95%]"
+            className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
             type="email"
             name="email"
             placeholder="Email"
@@ -38,8 +40,8 @@ export default function SignupForm() {
                       mt-4
                       block 
                       h-[2rem] 
-                      min-w-[7rem] 
                       w-[20%] 
+                      min-w-[7rem] 
                       rounded-md 
                       bg-white 
                       text-xl 
