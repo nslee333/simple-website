@@ -5,6 +5,7 @@ export default function Contact() {
         <div name="contact" data-netlify="true" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <label>
+            <div hidden>name</div>
             <div>
               <input
                 className="my-2 
@@ -20,6 +21,7 @@ export default function Contact() {
             </div>
           </label>
           <label>
+            <div hidden>email</div>
             <div className="my-3">
               <input
                 className="my-2 
