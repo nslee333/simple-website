@@ -25,14 +25,13 @@ test("tech oregon logo has link to techoregon.org", () => {
 
 test("Codepen logo has link to codepen.io", () => {
   render(<Sponsors />);
-  
+
   expect(screen.getByRole("link", { name: "codepen logo" })).toHaveAttribute(
     "href",
     "https://codepen.io/"
-    );
-  });
-  
-  
+  );
+});
+
 test("Ladd group logo has link to bendpropertysource.com", () => {
   render(<Sponsors />);
 
@@ -44,10 +43,9 @@ test("Ladd group logo has link to bendpropertysource.com", () => {
 
 test("Contact Us has link to contact form", () => {
   render(<Sponsors />);
-  
+
   expect(screen.getByRole("link", { name: "Contact Us" })).toHaveAttribute(
     "href",
     "#contact"
   );
-  
-})
+});

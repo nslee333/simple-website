@@ -1,7 +1,6 @@
-import {render } from "@testing-library/react";
-import Gallery from "../src/components/Gallery"
-
+import { render } from "@testing-library/react";
+import Gallery from "../src/components/Gallery";
 
 test("Gallery renders without crashing", () => {
-  render(<Gallery />)
-})
+  render(<Gallery />);
+});
