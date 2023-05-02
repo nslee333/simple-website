@@ -15,8 +15,8 @@ export default function Share() {
         We're always looking for speakers
       </h4>
       <div className="italic xs:mt-10">
-        If you have something to share, big or small, big or small, please
-        get in touch!
+        If you have something to share, big or small, big or small, please get
+        in touch!
       </div>
       <div className="mb-2 mt-10 sm:mt-32">
         <a
