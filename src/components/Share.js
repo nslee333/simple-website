@@ -18,7 +18,7 @@ export default function Share() {
         If you have something to share, big or small, big or small, please get
         in touch!
       </div>
-      <div className="mb-2 mt-10 sm:mt-32">
+      <div className="mb-2 mt-10 sm:mt-32 hover:translate-y-0.5">
         <a
           htmlFor="button"
           href="#contact"
@@ -29,7 +29,6 @@ export default function Share() {
                       text-2xl 
                       shadow 
                       hover:origin-bottom 
-                      hover:translate-y-0.5 
                       hover:shadow-none"
         >
           Contact Us

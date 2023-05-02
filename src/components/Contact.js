@@ -65,7 +65,8 @@ export default function Contact() {
                         rounded-md 
                         bg-white 
                         text-xl 
-                        shadow 
+                        shadow
+                        hover:translate-y-0.5
                         hover:origin-bottom 
                         hover:shadow-none"
             type="submit"
