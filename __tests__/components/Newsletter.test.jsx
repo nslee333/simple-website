@@ -7,9 +7,7 @@ test("Newsletter renders without crashing", () => {
 });
 
 test("Newsletter renders correctly according to snapshot", () => {
-  const tree = renderer
-    .create(<Newsletter />)
-    .toJSON();
+  const tree = renderer.create(<Newsletter />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});

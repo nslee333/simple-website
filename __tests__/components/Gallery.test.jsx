@@ -6,9 +6,7 @@ test("Gallery renders without crashing", () => {
 });
 
 test("Gallery renders correctly according to snapshot.", () => {
-  const tree = renderer
-    .create(<Gallery />)
-    .toJSON();
+  const tree = renderer.create(<Gallery />).toJSON();
 
-    expect(tree).toMatchSnapshot();
-})
+  expect(tree).toMatchSnapshot();
+});

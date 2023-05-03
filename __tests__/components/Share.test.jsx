@@ -8,12 +8,10 @@ test("Share renders without crashing", () => {
 });
 
 test("Share renders correctly according to snapshot", () => {
-  const tree = renderer
-    .create(<Share />)
-    .toJSON();
+  const tree = renderer.create(<Share />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});
 
 test("Contact Us button has a href value of #contact", () => {
   render(<Share />);

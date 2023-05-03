@@ -8,12 +8,10 @@ test("Contact renders without crashing", () => {
 });
 
 test("Contact renders correctly according to snapshot.", () => {
-  const tree = renderer
-    .create(<Contact />)
-    .toJSON();
+  const tree = renderer.create(<Contact />).toJSON();
 
-    expect(tree).toMatchSnapshot();
-})
+  expect(tree).toMatchSnapshot();
+});
 
 test("Name input is present", () => {
   const { getByLabelText } = render(<Contact />);

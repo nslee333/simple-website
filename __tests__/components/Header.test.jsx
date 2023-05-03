@@ -7,8 +7,6 @@ test("Header renders without crashing", () => {
 });
 
 it("Header renders correctly according to snapshot", () => {
-  const tree = renderer
-    .create(<Header />)
-    .toJSON();
-    expect(tree).toMatchSnapshot();
-})
+  const tree = renderer.create(<Header />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
