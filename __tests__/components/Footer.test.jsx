@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Footer from "../src/components/Footer";
+import Footer from "../../src/components/Footer";
 import { toHaveAttribute } from "@testing-library/jest-dom";
 
 test("Footer renders without crashing", () => {

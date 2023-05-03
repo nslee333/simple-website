@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import SignupForm from "../src/components/SignupForm";
+import SignupForm from "../../src/components/SignupForm";
 import { toBeInTheDocument } from "@testing-library/jest-dom";
 
 test("SignupForm renders without crashing", () => {

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Socials from "../src/components/Socials";
+import Socials from "../../src/components/Socials";
 import { toHaveAttribute } from "@testing-library/jest-dom";
 
 test("Socials renders without crashing", () => {

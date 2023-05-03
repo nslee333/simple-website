@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
-import MemberSpotlight from "../src/components/MemberSpotlight";
-import client from "../src/components/MemberSpotlight";
-import { getStaticProps } from "../src/components/MemberSpotlight";
+import MemberSpotlight from "../../src/components/MemberSpotlight";
+import client from "../../src/components/MemberSpotlight";
+import { getStaticProps } from "../../src/components/MemberSpotlight";
 
 import * as matchers from 'jest-extended';
 expect.extend(matchers);

@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { toHaveAttribute } from "@testing-library/jest-dom";
-import Sponsors from "../src/components/Sponsors";
+import Sponsors from "../../src/components/Sponsors";
 
 test("Sponsors renders without crashing", () => {
   render(<Sponsors />);

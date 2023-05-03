@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { toHaveAttribute } from "@testing-library/jest-dom";
-import Share from "../src/components/Share";
+import Share from "../../src/components/Share";
 
 test("Share renders without crashing", () => {
   render(<Share />);
