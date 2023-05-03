@@ -1,10 +1,19 @@
 import { render, screen } from "@testing-library/react";
 import { toHaveAttribute } from "@testing-library/jest-dom";
 import Sponsors from "../../src/components/Sponsors";
+import renderer from "react-test-renderer";
 
 test("Sponsors renders without crashing", () => {
   render(<Sponsors />);
 });
+
+test("Sponsors renders correctly according to snapshot.", () => {
+  const tree = renderer
+    .create(<Sponsors />)
+    .toJSON();
+
+  expect(tree).toMatchSnapshot();
+})
 
 test("Uptech logo has link to uptechstudio.com", () => {
   render(<Sponsors />);

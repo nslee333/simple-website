@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Memberspotlight renders correctly according to snapshot. 1`] = `<div />`;
