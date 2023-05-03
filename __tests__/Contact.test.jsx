@@ -17,7 +17,7 @@ test("Name input is present", () => {
 test("Email input is present", () => {
   const { getByLabelText } = render(<Contact />);
 
-  const emailInput = getByLabelText("name");
+  const emailInput = getByLabelText("email");
 
   expect(emailInput).toBeInTheDocument();
 });
