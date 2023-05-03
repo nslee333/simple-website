@@ -8,9 +8,7 @@ test("Renders Home without crashing", () => {
 });
 
 test("Home renders correctly according to snapshot", () => {
-  const tree = renderer
-    .create(<Home />)
-    .toJSON();
+  const tree = renderer.create(<Home />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});

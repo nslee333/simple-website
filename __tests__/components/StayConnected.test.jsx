@@ -7,9 +7,7 @@ test("StayConnected renders without crashing", () => {
 });
 
 test("StayConnected renders correctly according to snapshot", () => {
-  const tree = renderer
-    .create(<StayConnected />)
-    .toJSON();
+  const tree = renderer.create(<StayConnected />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});

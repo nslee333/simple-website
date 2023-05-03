@@ -8,12 +8,10 @@ test("Sponsors renders without crashing", () => {
 });
 
 test("Sponsors renders correctly according to snapshot.", () => {
-  const tree = renderer
-    .create(<Sponsors />)
-    .toJSON();
+  const tree = renderer.create(<Sponsors />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});
 
 test("Uptech logo has link to uptechstudio.com", () => {
   render(<Sponsors />);

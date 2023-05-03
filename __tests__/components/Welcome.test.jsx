@@ -7,9 +7,7 @@ test("Welcome renders without crashing", () => {
 });
 
 test("Welcome renders correctly according to snapshot.", () => {
-  const tree = renderer
-    .create(<Welcome />)
-    .toJSON();
+  const tree = renderer.create(<Welcome />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});

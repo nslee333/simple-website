@@ -8,12 +8,10 @@ test("Socials renders without crashing", () => {
 });
 
 test("Socials renders correctly according to snapshot.", () => {
-  const tree = renderer
-    .create(<Socials />)
-    .toJSON();
+  const tree = renderer.create(<Socials />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});
 
 test("Meetup logo has link to Meetup page.", () => {
   render(<Socials />);

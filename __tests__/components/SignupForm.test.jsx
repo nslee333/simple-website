@@ -1,19 +1,17 @@
 import { render } from "@testing-library/react";
 import SignupForm from "../../src/components/SignupForm";
 import { toBeInTheDocument } from "@testing-library/jest-dom";
-import renderer from "react-test-renderer"
+import renderer from "react-test-renderer";
 
 test("SignupForm renders without crashing", () => {
   render(<SignupForm />);
 });
 
 test("SignupForm renders correctly according to snapshot.", () => {
-  const tree = renderer
-    .create(<SignupForm />)
-    .toJSON();
+  const tree = renderer.create(<SignupForm />).toJSON();
 
   expect(tree).toMatchSnapshot();
-})
+});
 
 test("Name input is present", () => {
   const { getByLabelText } = render(<SignupForm />);
