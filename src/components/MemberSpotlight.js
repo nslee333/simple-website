@@ -35,11 +35,14 @@ export default function MemberSpotlight(member) {
 
                               xs:max-w-[12.5rem]
                               sm:m-2
+                              sm:min-w-[12.5rem]
+                              sm:max-w-[12.5rem]
+
                               md:m-5
                               md:max-h-[15.3rem]
 
-                              md:min-h-[16rem]
-                              md:min-w-[16rem] 
+                              md:min-h-[15rem]
+                              md:min-w-[15rem] 
                               md:max-w-[16rem]
                               min-[964px]:min-h-[13rem]
 
@@ -99,11 +102,29 @@ export default function MemberSpotlight(member) {
                             md:m-5
                             lg:max-w-[40rem]"
               >
-                <div className="m-5 rounded-md bg-black xs:m-2 xs:p-2">
+                <div className="m-5 
+                                rounded-md 
+                                bg-black 
+                                xs:m-2 
+                                xs:p-2 
+
+                                xs:min-h-[15rem]
+                                xs:min-w-[16rem] 
+
+                                sm:min-h-[17rem]
+                                sm:min-w-[25rem] 
+                                
+                                md:min-h-[17rem]
+                                md:min-w-[25rem]
+
+                                lg:min-h-[20rem]
+                                lg:min-w-[35rem]
+                                "
+                  >
                   <h5 className="sm:text-md my-2 text-white sm:text-lg md:text-xl lg:text-2xl">
                     {member.props[0].memberName}
                   </h5>
-                  <div className=" md:text-md md:text-md text-white xs:text-sm lg:text-lg">
+                  <div className="md:text-md md:text-md text-white xs:text-sm lg:text-lg">
                     {member.props[0].memberBio}
                   </div>
                 </div>
