@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Newsletter renders correctly according to snapshot 1`] = `
+<div
+  className="m-5 h-auto w-[42rem] min-w-[18.85rem] rounded-md bg-white p-5 sm:h-[25rem]"
+>
+  <div>
+    <h3
+      className="p-2 text-3xl italic"
+    >
+      Newsletter
+    </h3>
+    <h4
+      className="p-2 text-2xl italic"
+    >
+      Stay up to date
+    </h4>
+    <div
+      className="p-2 italic"
+    >
+      Sign up for our monthly newsletter where we share local events in Bend, tech news and our community member spotlight!
+    </div>
+  </div>
+  <div
+    className="mx-2 my-2 flex"
+  >
+    <div
+      className="grid  w-[100%] rounded-md bg-neutral-300 p-2"
+    >
+      <div
+        className="flex-wrap"
+        data-netlify="true"
+        method="post"
+        name="newsletter"
+      >
+        <input
+          className="m-2 block rounded-md p-2"
+          name="form-name"
+          type="hidden"
+          value="newsletter"
+        />
+        <label>
+          <div
+            hidden={true}
+          >
+            name
+          </div>
+          <input
+            className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
+            name="name"
+            placeholder="Full Name"
+            required={true}
+            type="text"
+          />
+        </label>
+        <label>
+          <div
+            hidden={true}
+          >
+            email
+          </div>
+          <input
+            className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
+            name="email"
+            placeholder="Email"
+            required={true}
+            type="email"
+          />
+        </label>
+        <button
+          className="shadow-grey  mb-2  ml-2  mt-4 block  h-[2rem]  w-[20%]  min-w-[7rem]  rounded-md  bg-white  text-xl  shadow  hover:origin-bottom  hover:translate-y-0.5 hover:shadow-none"
+          type="submit"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

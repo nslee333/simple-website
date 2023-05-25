@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery renders correctly according to snapshot. 1`] = `
+<div
+  className="my-10 flex justify-center "
+>
+  <div
+    className="border-white-200 rounded-md border-8 xs:w-[19rem] sm:w-[30rem] md:w-[40rem] lg:w-[50rem]"
+  >
+    <div
+      className="swiper-container"
+      modules={
+        [
+          {
+            "create": [Function],
+            "name": "navigation",
+            "on": {
+              "click": [Function],
+              "destroy": [Function],
+              "enable disable": [Function],
+              "fromEdge": [Function],
+              "init": [Function],
+              "toEdge": [Function],
+            },
+            "params": {
+              "navigation": {
+                "disabledClass": "swiper-button-disabled",
+                "hiddenClass": "swiper-button-hidden",
+                "hideOnClick": false,
+                "lockClass": "swiper-button-lock",
+                "nextEl": null,
+                "prevEl": null,
+              },
+            },
+          },
+          {
+            "create": [Function],
+            "name": "pagination",
+            "on": {
+              "activeIndexChange": [Function],
+              "click": [Function],
+              "destroy": [Function],
+              "enable disable": [Function],
+              "init": [Function],
+              "slidesLengthChange": [Function],
+              "snapGridLengthChange": [Function],
+              "snapIndexChange": [Function],
+            },
+            "params": {
+              "pagination": {
+                "bulletActiveClass": "swiper-pagination-bullet-active",
+                "bulletClass": "swiper-pagination-bullet",
+                "bulletElement": "span",
+                "clickable": false,
+                "clickableClass": "swiper-pagination-clickable",
+                "currentClass": "swiper-pagination-current",
+                "dynamicBullets": false,
+                "dynamicMainBullets": 1,
+                "el": null,
+                "formatFractionCurrent": [Function],
+                "formatFractionTotal": [Function],
+                "hiddenClass": "swiper-pagination-hidden",
+                "hideOnClick": false,
+                "lockClass": "swiper-pagination-lock",
+                "modifierClass": "swiper-pagination-",
+                "progressbarFillClass": "swiper-pagination-progressbar-fill",
+                "progressbarOpposite": false,
+                "progressbarOppositeClass": "swiper-pagination-progressbar-opposite",
+                "renderBullet": null,
+                "renderCustom": null,
+                "renderFraction": null,
+                "renderProgressbar": null,
+                "totalClass": "swiper-pagination-total",
+                "type": "bullets",
+              },
+            },
+          },
+        ]
+      }
+      style={
+        {
+          "--swiper-navigation-color": "#0",
+          "--swiper-pagination-bottom": "25px",
+          "--swiper-pagination-bullet-inactive-color": "#999999",
+          "--swiper-pagination-bullet-inactive-opacity": "1",
+          "--swiper-pagination-bullet-size": "10px",
+          "--swiper-pagination-color": "#ffffff",
+        }
+      }
+    >
+      <div
+        className="swiper-button-prev"
+      />
+      <div
+        className="swiper-button-next"
+      />
+      <div
+        className="swiper-pagination"
+      />
+      <div
+        className="swiper-wrapper"
+      />
+      <div />
+    </div>
+  </div>
+</div>
+`;

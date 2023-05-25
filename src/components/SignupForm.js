@@ -1,44 +1,59 @@
-import React from "react";
-import styled from "styled-components";
-
-import "../App.scss";
-
-const Form = styled.form`
-  
-  label {
-    span {
-      display: block;
-      margin: 0 0 0.5rem 0;
-    }
-  }
-
-  input {
-    width: auto;
-    border: none;
-    border: 1px solid #ccc;
-    font-size: 1.5rem;
-    padding: 0.5rem
-    margin: 0 0 1rem 0;
-    border-radius: 4px;
-  }
-`;
-
-export default function SignupForm({ children }) {
+export default function SignupForm() {
   return (
-    <Form name="newsletter" netlify method="post">
-      <input type="hidden" name="form-name" value="newsletter" />
-      <label>
-        <span>Full Name</span>
-        <input type="text" name="name" />
-      </label>
-      <label>
-        <span>Email Address</span>
-        <input type="email" name="email" />
-      </label>
-
-      <button className="button" type="submit">
-        Sign up
-      </button>
-    </Form>
+    <div className="grid  w-[100%] rounded-md bg-neutral-300 p-2">
+      <div
+        className="flex-wrap"
+        name="newsletter"
+        data-netlify="true"
+        method="post"
+      >
+        <input
+          className="m-2 block rounded-md p-2"
+          type="hidden"
+          name="form-name"
+          value="newsletter"
+        />
+        <label>
+          <div hidden>name</div>
+          <input
+            className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required={true}
+          />
+        </label>
+        <label>
+          <div hidden>email</div>
+          <input
+            className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required={true}
+          />
+        </label>
+        <button
+          className="shadow-grey 
+                      mb-2 
+                      ml-2 
+                      mt-4
+                      block 
+                      h-[2rem] 
+                      w-[20%] 
+                      min-w-[7rem] 
+                      rounded-md 
+                      bg-white 
+                      text-xl 
+                      shadow 
+                      hover:origin-bottom 
+                      hover:translate-y-0.5
+                      hover:shadow-none"
+          type="submit"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
   );
 }

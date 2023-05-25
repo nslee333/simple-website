@@ -1,0 +1,583 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly according to snapshot 1`] = `
+[
+  <div
+    className="flex justify-center px-5 pt-2"
+  >
+    <div
+      className="w-[50rem] italic text-white xs:mx-2 xs:my-8 sm:my-16 md:my-32"
+    >
+      <h4
+        className="my-5 xs:text-3xl md:text-4xl"
+      >
+        BendJS
+      </h4>
+      <h5
+        className="my-5 xs:text-2xl md:text-3xl"
+      >
+        A Javascript meetup in Bend, Oregon
+      </h5>
+      <h5
+        className="my-10 xs:text-2xl md:text-3xl"
+      >
+        This group is for anyone interested in learning Javascript, sharing something they know, networking with other devs, and having a great time!
+      </h5>
+      <h5
+        className="xs:text-2xl sm:my-5 md:my-10 md:text-3xl"
+      >
+        All levels are welcome. Please join our slack workspace for future updates and continuing the conversation.
+      </h5>
+    </div>
+  </div>,
+  <div
+    className="bg-white p-10"
+  >
+    <div>
+      <h5
+        className="mb-5 flex justify-center text-black xs:text-2xl md:text-3xl"
+      >
+        Thank you so much to our incredible sponsors!
+      </h5>
+    </div>
+    <div
+      className=""
+    >
+      <div
+        className="flex  justify-around  xs:flex-wrap  xs:pb-5  md:pb-14  md:pt-20"
+      >
+        <a
+          href="https://www.uptechstudio.com/"
+          target="_blank"
+        >
+          <img
+            alt="uptech logo"
+            className="m-5  aspect-auto  xs:w-[200px]  md:w-[260px]"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.techoregon.org/"
+          target="_blank"
+        >
+          <img
+            alt="tech oregon logo"
+            className="m-5 aspect-auto xs:w-[200px] md:w-[260px]"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+        </a>
+        <a
+          href="https://codepen.io/"
+          target="_blank"
+        >
+          <img
+            alt="codepen logo"
+            className="mb-5 ml-5 mr-5 mt-8 aspect-auto xs:w-[200px] md:w-[260px] "
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.bendpropertysource.com/"
+          target="_blank"
+        >
+          <img
+            alt="ladd group logo"
+            className="mb-5  ml-5  mr-5  aspect-auto  xs:mb-0  xs:mt-5  xs:w-[200px]  md:mt-2  md:w-[260px]"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+        </a>
+      </div>
+      <div
+        className="flex justify-center"
+      >
+        <div>
+          <h5
+            className="mt-5 text-2xl italic md:text-3xl"
+          >
+            We are always looking for new sponsors
+          </h5>
+          <div
+            className="flex justify-center"
+          >
+            <a
+              className="shadow-grey  mt-5  rounded  bg-[#7FE7D7]  p-3  text-xl  shadow  hover:origin-bottom  hover:translate-y-0.5  hover:shadow-none  md:text-2xl"
+              href="#contact"
+              htmlFor="button"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="my-10"
+  >
+    <div
+      className="m-5 flex justify-center "
+    >
+      <h5
+        className="text-white xs:text-2xl md:text-3xl"
+      >
+        Check us out on...
+      </h5>
+    </div>
+    <div
+      className="flex justify-center"
+    >
+      <div
+        className="sm:w-[50rem]"
+      >
+        <div
+          className="flex xs:grid xs:w-60 xs:justify-center sm:flex sm:w-auto sm:justify-around md:flex"
+        >
+          <div
+            className="xs:ml-[4.2rem] sm:my-0 sm:ml-0"
+          >
+            <div
+              className="sm:mt-[1rem]"
+            >
+              <a
+                className="flex"
+                href="https://www.meetup.com/BendJS/"
+                target="_blank"
+              >
+                <img
+                  alt="Meetup Logo"
+                  className="xs:w-[80px]"
+                  data-nimg="1"
+                  decoding="async"
+                  height={40}
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                  style={
+                    {
+                      "color": "transparent",
+                    }
+                  }
+                  width={40}
+                />
+                <div
+                  className="pt-6"
+                >
+                  <h5
+                    className="text-2xl text-white xs:text-lg sm:text-xl"
+                  >
+                    /BendJS
+                  </h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            className="flex justify-center xs:my-12 sm:my-8 sm:mr-10"
+          >
+            <a
+              href="https://bendjs.slack.com/ssb/redirect"
+              target="_blank"
+            >
+              <img
+                alt="Slack Logo"
+                className="aspect-auto xs:w-[175px] sm:w-[175px]"
+                data-nimg="1"
+                decoding="async"
+                height={40}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={40}
+              />
+            </a>
+          </div>
+          <div
+            className="flex justify-center sm:mr-10 sm:mt-[.59em]"
+          >
+            <a
+              href="https://www.youtube.com/channel/UCCT744K1sGX-lPtaEivXCDQ"
+              target="_blank"
+            >
+              <img
+                alt="Youtube Logo"
+                className="xs:h-[50px] xs:w-[70px] sm:my-[1.22rem]"
+                data-nimg="1"
+                decoding="async"
+                height={40}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={40}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="my-10 flex justify-center "
+  >
+    <div
+      className="border-white-200 rounded-md border-8 xs:w-[19rem] sm:w-[30rem] md:w-[40rem] lg:w-[50rem]"
+    >
+      <div
+        className="swiper-container"
+        modules={
+          [
+            {
+              "create": [Function],
+              "name": "navigation",
+              "on": {
+                "click": [Function],
+                "destroy": [Function],
+                "enable disable": [Function],
+                "fromEdge": [Function],
+                "init": [Function],
+                "toEdge": [Function],
+              },
+              "params": {
+                "navigation": {
+                  "disabledClass": "swiper-button-disabled",
+                  "hiddenClass": "swiper-button-hidden",
+                  "hideOnClick": false,
+                  "lockClass": "swiper-button-lock",
+                  "nextEl": null,
+                  "prevEl": null,
+                },
+              },
+            },
+            {
+              "create": [Function],
+              "name": "pagination",
+              "on": {
+                "activeIndexChange": [Function],
+                "click": [Function],
+                "destroy": [Function],
+                "enable disable": [Function],
+                "init": [Function],
+                "slidesLengthChange": [Function],
+                "snapGridLengthChange": [Function],
+                "snapIndexChange": [Function],
+              },
+              "params": {
+                "pagination": {
+                  "bulletActiveClass": "swiper-pagination-bullet-active",
+                  "bulletClass": "swiper-pagination-bullet",
+                  "bulletElement": "span",
+                  "clickable": false,
+                  "clickableClass": "swiper-pagination-clickable",
+                  "currentClass": "swiper-pagination-current",
+                  "dynamicBullets": false,
+                  "dynamicMainBullets": 1,
+                  "el": null,
+                  "formatFractionCurrent": [Function],
+                  "formatFractionTotal": [Function],
+                  "hiddenClass": "swiper-pagination-hidden",
+                  "hideOnClick": false,
+                  "lockClass": "swiper-pagination-lock",
+                  "modifierClass": "swiper-pagination-",
+                  "progressbarFillClass": "swiper-pagination-progressbar-fill",
+                  "progressbarOpposite": false,
+                  "progressbarOppositeClass": "swiper-pagination-progressbar-opposite",
+                  "renderBullet": null,
+                  "renderCustom": null,
+                  "renderFraction": null,
+                  "renderProgressbar": null,
+                  "totalClass": "swiper-pagination-total",
+                  "type": "bullets",
+                },
+              },
+            },
+          ]
+        }
+        style={
+          {
+            "--swiper-navigation-color": "#0",
+            "--swiper-pagination-bottom": "25px",
+            "--swiper-pagination-bullet-inactive-color": "#999999",
+            "--swiper-pagination-bullet-inactive-opacity": "1",
+            "--swiper-pagination-bullet-size": "10px",
+            "--swiper-pagination-color": "#ffffff",
+          }
+        }
+      >
+        <div
+          className="swiper-button-prev"
+        />
+        <div
+          className="swiper-button-next"
+        />
+        <div
+          className="swiper-pagination"
+        />
+        <div
+          className="swiper-wrapper"
+        />
+        <div />
+      </div>
+    </div>
+  </div>,
+  <div />,
+  <div
+    className="flex justify-evenly xs:flex-wrap"
+  >
+    <div
+      className="m-5 h-auto w-[42rem] min-w-[18.85rem] rounded-md bg-white p-5 sm:h-[25rem]"
+    >
+      <div>
+        <h3
+          className="p-2 text-3xl italic"
+        >
+          Newsletter
+        </h3>
+        <h4
+          className="p-2 text-2xl italic"
+        >
+          Stay up to date
+        </h4>
+        <div
+          className="p-2 italic"
+        >
+          Sign up for our monthly newsletter where we share local events in Bend, tech news and our community member spotlight!
+        </div>
+      </div>
+      <div
+        className="mx-2 my-2 flex"
+      >
+        <div
+          className="grid  w-[100%] rounded-md bg-neutral-300 p-2"
+        >
+          <div
+            className="flex-wrap"
+            data-netlify="true"
+            method="post"
+            name="newsletter"
+          >
+            <input
+              className="m-2 block rounded-md p-2"
+              name="form-name"
+              type="hidden"
+              value="newsletter"
+            />
+            <label>
+              <div
+                hidden={true}
+              >
+                name
+              </div>
+              <input
+                className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
+                name="name"
+                placeholder="Full Name"
+                required={true}
+                type="text"
+              />
+            </label>
+            <label>
+              <div
+                hidden={true}
+              >
+                email
+              </div>
+              <input
+                className="m-2 block w-[95%] min-w-[13.25rem] rounded-md p-2"
+                name="email"
+                placeholder="Email"
+                required={true}
+                type="email"
+              />
+            </label>
+            <button
+              className="shadow-grey  mb-2  ml-2  mt-4 block  h-[2rem]  w-[20%]  min-w-[7rem]  rounded-md  bg-white  text-xl  shadow  hover:origin-bottom  hover:translate-y-0.5 hover:shadow-none"
+              type="submit"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="m-5  h-auto  w-[42rem]  min-w-[18.85rem]  rounded-md  bg-white  p-5  sm:h-[25rem]"
+    >
+      <h3
+        className="text-3xl italic xs:mt-2"
+      >
+        Have something to share?
+      </h3>
+      <h4
+        className="text-2xl italic xs:mt-10"
+      >
+        We're always looking for speakers
+      </h4>
+      <div
+        className="italic xs:mt-10"
+      >
+        If you have something to share, big or small, big or small, please get in touch!
+      </div>
+      <div
+        className="mb-2 mt-10 sm:mt-32 hover:translate-y-0.5"
+      >
+        <a
+          className="shadow-grey  rounded-lg  bg-[#7FE7D7]  p-3  text-2xl  shadow  hover:origin-bottom  hover:shadow-none"
+          href="#contact"
+          htmlFor="button"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="flex justify-center p-2.5"
+  >
+    <div
+      className="mx-2  mt-5  w-[32rem]  min-w-[18.85rem]  rounded-md bg-white "
+      id="contact"
+    >
+      <h1
+        className="m-5  flex  justify-center  text-2xl"
+      >
+        Contact Us...
+      </h1>
+      <div
+        className="m-5  rounded-md bg-neutral-300  p-5"
+      >
+        <div
+          data-netlify="true"
+          method="post"
+          name="contact"
+        >
+          <input
+            name="form-name"
+            type="hidden"
+            value="contact"
+          />
+          <label>
+            <div
+              hidden={true}
+            >
+              name
+            </div>
+            <div>
+              <input
+                className="my-2  block  w-full  rounded-md  p-2"
+                name="name"
+                placeholder="Full Name"
+                required={true}
+                type="text"
+              />
+            </div>
+          </label>
+          <label>
+            <div
+              hidden={true}
+            >
+              email
+            </div>
+            <div
+              className="my-3"
+            >
+              <input
+                className="my-2  block  w-full  rounded-md  p-2"
+                name="email"
+                placeholder="Email"
+                required={true}
+                type="email"
+              />
+            </div>
+          </label>
+          <label>
+            <div
+              className="my-4 block w-full"
+            >
+              <textarea
+                className="my-2  h-[10rem]  w-full  resize-none  rounded-md  p-2"
+                name="message"
+                placeholder="..."
+                required={true}
+                type="text"
+              />
+            </div>
+          </label>
+          <button
+            className="shadow-grey  mb-2  ml-2  mt-4  block h-[2rem]  w-[7rem]  rounded-md  bg-white  text-xl  shadow hover:translate-y-0.5 hover:origin-bottom  hover:shadow-none"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

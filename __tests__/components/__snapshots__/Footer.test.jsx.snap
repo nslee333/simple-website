@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly according to snapshot. 1`] = `
+<div
+  className="m-5 flex justify-center p-10"
+>
+  <a
+    href="https://github.com/BendJS/simple-website"
+    target="_blank"
+  >
+    <div
+      className="text-white"
+    >
+      <div>
+        Contribute to this website
+      </div>
+      <div
+        className="flex justify-center p-2"
+      >
+        <img
+          alt="GitHub Logo"
+          className="w-[5rem]"
+          data-nimg="1"
+          decoding="async"
+          height={40}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          width={40}
+        />
+      </div>
+    </div>
+  </a>
+</div>
+`;
