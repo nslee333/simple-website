@@ -1,1 +1,1 @@
-Redesign and implementation by [Nathan Lee](github.com/nslee333).
+Redesign and implementation by [Nathan Lee](https://github.com/nslee333).
