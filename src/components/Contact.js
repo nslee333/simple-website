@@ -2,7 +2,7 @@ export default function Contact() {
   const renderForm = () => {
     return (
       <>
-        <div name="contact" data-netlify="true" method="post">
+        <form name="contact" data-netlify="true" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <label>
             <div hidden>name</div>
@@ -75,7 +75,7 @@ export default function Contact() {
           >
             Send
           </button>
-        </div>
+        </form>
       </>
     );
   };

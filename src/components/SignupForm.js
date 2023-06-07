@@ -1,7 +1,7 @@
 export default function SignupForm() {
   return (
     <div className="grid  w-[100%] rounded-md bg-neutral-300 p-2">
-      <div
+      <form
         className="flex-wrap"
         name="newsletter"
         data-netlify="true"
@@ -53,7 +53,7 @@ export default function SignupForm() {
         >
           Sign up
         </button>
-      </div>
+      </form>
     </div>
   );
 }
